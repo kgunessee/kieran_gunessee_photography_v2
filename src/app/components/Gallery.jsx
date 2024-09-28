@@ -2,14 +2,41 @@
 
 //Hooks & Plugins
 import { useEffect } from "react";
-import { Fancybox } from "@fancyapps/ui";
+import { Fancybox, Toolbar, ToolbarItems } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import Image from "next/image";
 
 //Components
+
+const options = {
+  Toolbar: {
+    display: {
+      left: ["infobar"],
+      middle: [
+        "zoomIn",
+        "zoomOut",
+        "toggle1to1",
+        "rotateCCW",
+        "rotateCW",
+        "flipX",
+        "flipY",
+      ],
+      right: ["slideshow", "thumbs", "close"],
+    },
+  },
+};
+
 const Gallery = ({ images }) => {
   useEffect(() => {
-    Fancybox.bind("[data-fancybox]", {});
+    Fancybox.bind("[data-fancybox]", {
+      Toolbar: {
+        display: {
+          left: [], //"infobar" - show number of images and current index
+          middle: ["download"],
+          right: ["toggle1to1", "fullscreen", "thumbs", "close"],
+        },
+      },
+    });
 
     // Clean up Fancybox instance on component unmount
     return () => {
@@ -18,7 +45,7 @@ const Gallery = ({ images }) => {
   }, []);
 
   return (
-    <div className="gallery grid grid-cols-4 gap-1">
+    <div className="gallery px-mobileXPadding grid grid-cols-3 gap-0.5">
       {images.map((image) => {
         return (
           <a

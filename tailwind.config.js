@@ -21,6 +21,22 @@ module.exports = {
       padding: {
         mobileXPadding: "0.5rem",
       },
+      keyframes: {
+        themeButtonSet: {
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(200%)" },
+        },
+        themeButtonRise: {
+          "0%": { transform: "translateY(200%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        themeButtonSet:
+          "themeButtonSet 300ms cubic-bezier(0.68, -0.6, 0.32, 1.6) both",
+        themeButtonRise:
+          "themeButtonRise 300ms cubic-bezier(0.68, -0.6, 0.32, 1.6) both 350ms",
+      },
     },
   },
   plugins: [],
