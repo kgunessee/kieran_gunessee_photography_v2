@@ -1,15 +1,13 @@
 "use client";
 
-//Plugins
+//Hooks & Plugins
 import { useEffect } from "react";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import Image from "next/image";
 
 //Components
-import { waterImageInfo } from "@/app/components/ImageInfo";
-
-const Gallery = () => {
+const Gallery = ({ images }) => {
   useEffect(() => {
     Fancybox.bind("[data-fancybox]", {});
 
@@ -21,7 +19,7 @@ const Gallery = () => {
 
   return (
     <div className="gallery grid grid-cols-4 gap-1">
-      {waterImageInfo.map((image) => {
+      {images.map((image) => {
         return (
           <a
             href={image.fullRes}
