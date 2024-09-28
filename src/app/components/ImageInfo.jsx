@@ -1268,7 +1268,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_The_first_cascade.webp",
     fullRes: "/images/full_res/water/fs_The_first_cascade.webp",
-    title: "Looking Upstream",
+    title: "The First Cascade",
     camera: daytimeEquipmentInfo.camera.Z7II.name,
     lens: daytimeEquipmentInfo.lens["Nikon Z 24-70mm f4"].name,
     imageDate: "07/08/2024",

@@ -25,3 +25,16 @@
     text-wrap: balance;
   }
 }
+
+.fancybox__slide.has-caption {
+  flex-direction: row !important;
+}
+
+.fancybox__caption {
+  max-width: 250px !important;
+  padding: 1rem 3rem 1rem 1rem !important;
+}
+
+.fancybox__backdrop {
+  background: #21252d !important;
+}
