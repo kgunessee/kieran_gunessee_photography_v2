@@ -149,7 +149,33 @@ export const daytimeEquipmentInfo = {
 
 export const astroImageInfo = [
   {
-    original: "/images/modal/astrophotography/PelicanNebula.webp",
+    thumb:
+      "/images/thumbnails/astrophotography/thumb_ElephantsTrunkNebulaHOO.webp",
+    fullRes:
+      "/images/full_res/astrophotography/fs_ElephantsTrunkNebulaHOO.webp",
+    title: "The Elephants Trunk Nebula in HOO",
+    catalogue: "IC 1396",
+    captureDetails: {
+      exposureTime: "180s",
+      integration: "13hrs",
+      darks: "30",
+      flats: "30",
+      darkFlats: "30",
+      scope: astroEquipmentInfo.scope.GT71ii.name,
+      mount: astroEquipmentInfo.mount.name,
+      camera: astroEquipmentInfo.camera["533MMPRO"].name,
+      filters: astroEquipmentInfo.filters.antliaEdge.name,
+      imagingCapture: astroEquipmentInfo.imagingCapture.name,
+      guidescope: astroEquipmentInfo.guidescope.name,
+      guideCamera: astroEquipmentInfo.guideCamera["220mmMini"].name,
+      software: `${astroEquipmentInfo.software.affinity.name} & ${astroEquipmentInfo.software.pixinsight.name}`,
+      imageDate: "28/09/2024",
+    },
+    description: "",
+  },
+  {
+    thumb: "/images/thumbnails/astrophotography/thumb_PelicanNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_PelicanNebula.webp",
     title: "The Pelican Nebula",
     catalogue: "IC 5070",
     captureDetails: {
@@ -158,20 +184,21 @@ export const astroImageInfo = [
       darks: "30",
       flats: "30",
       darkFlats: "30",
-      scope: "GT71ii",
-      mount: "Mount",
-      camera: "533MMPRO",
-      filters: "Antlia Edge",
-      imagingCapture: "Imaging Capture",
-      guidescope: "Guidescope",
-      guideCamera: "220mm Mini",
-      software: "Affinity & Pixinsight",
-      imageDate: "08/13/2024",
+      scope: astroEquipmentInfo.scope.GT71ii.name,
+      mount: astroEquipmentInfo.mount.name,
+      camera: astroEquipmentInfo.camera["533MMPRO"].name,
+      filters: astroEquipmentInfo.filters.antliaEdge.name,
+      imagingCapture: astroEquipmentInfo.imagingCapture.name,
+      guidescope: astroEquipmentInfo.guidescope.name,
+      guideCamera: astroEquipmentInfo.guideCamera["220mmMini"].name,
+      software: `${astroEquipmentInfo.software.affinity.name} & ${astroEquipmentInfo.software.pixinsight.name}`,
+      imageDate: "13/08/2024",
     },
     description: "",
   },
   {
-    original: "/images/modal/astrophotography/WR134.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_WR134.webp",
+    fullRes: "/images/full_res/astrophotography/fs_WR134.webp",
     title: "WR134",
     catalogue: "WR134",
     captureDetails: {
@@ -180,20 +207,21 @@ export const astroImageInfo = [
       darks: "60",
       flats: "60",
       darkFlats: "60",
-      scope: "GT71ii",
-      mount: "Mount",
-      camera: "533MMPRO",
-      filters: "Antlia Edge & Optolong LRGB",
-      imagingCapture: "Imaging Capture",
-      guidescope: "Guidescope",
-      guideCamera: "220mm Mini",
-      software: "Affinity & Pixinsight",
+      scope: astroEquipmentInfo.scope.explorer130PDS.name,
+      mount: astroEquipmentInfo.mount.name,
+      camera: astroEquipmentInfo.camera["533MMPRO"].name,
+      filters: astroEquipmentInfo.filters.antliaEdge.name,
+      imagingCapture: astroEquipmentInfo.imagingCapture.name,
+      guidescope: astroEquipmentInfo.guidescope.name,
+      guideCamera: astroEquipmentInfo.guideCamera["220mmMini"].name,
+      software: `${astroEquipmentInfo.software.affinity.name} & ${astroEquipmentInfo.software.pixinsight.name}`,
       imageDate: "06/17/2024",
     },
     description: "",
   },
   {
-    original: "/images/modal/astrophotography/ComaGalaxyCluster.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_ComaGalaxyCluster.webp",
+    fullRes: "/images/full_res/astrophotography/fs_ComaGalaxyCluster.webp",
     title: "The Coma Galaxy Cluster",
     catalogue: "",
     captureDetails: {
@@ -202,20 +230,21 @@ export const astroImageInfo = [
       darks: "60",
       flats: "60",
       darkFlats: "60",
-      scope: "Explorer 130PDS",
-      mount: "Mount",
-      camera: "533MCPRO",
-      filters: "L Pro",
-      imagingCapture: "Imaging Capture",
-      guidescope: "Guidescope",
-      guideCamera: "220mm Mini",
-      software: "Affinity & Pixinsight",
-      imageDate: "05/22/2024",
+      scope: astroEquipmentInfo.scope.explorer130PDS.name,
+      mount: astroEquipmentInfo.mount.name,
+      camera: astroEquipmentInfo.camera["533MMPRO"].name,
+      filters: astroEquipmentInfo.filters.optolongLRGB.name,
+      imagingCapture: astroEquipmentInfo.imagingCapture.name,
+      guidescope: astroEquipmentInfo.guidescope.name,
+      guideCamera: astroEquipmentInfo.guideCamera["220mmMini"].name,
+      software: `${astroEquipmentInfo.software.affinity.name} & ${astroEquipmentInfo.software.pixinsight.name}`,
+      imageDate: "22/05/2024",
     },
     description: "",
   },
   {
-    original: "/images/modal/astrophotography/M101May2024.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_M101May2024.webp",
+    fullRes: "/images/full_res/astrophotography/fs_M101May2024.webp",
     title: "The Pinwheel Galaxy",
     catalogue: "M101",
     captureDetails: {
@@ -232,12 +261,15 @@ export const astroImageInfo = [
       guidescope: "Guidescope",
       guideCamera: "220mm Mini",
       software: "Affinity & Pixinsight",
-      imageDate: "05/23/2024",
+      imageDate: "23/05/2024",
     },
     description: "",
   },
   {
-    original: "/images/modal/astrophotography/HorseheadAndFlameNebula.webp",
+    thumb:
+      "/images/thumbnails/astrophotography/thumb_HorseheadAndFlameNebula.webp",
+    fullRes:
+      "/images/full_res/astrophotography/fs_HorseheadAndFlameNebula.webp",
     title: "The Horsehead and Flame Nebula",
     catalogue: "IC 1805",
     captureDetails: {
@@ -246,20 +278,21 @@ export const astroImageInfo = [
       darks: "60",
       flats: "60",
       darkFlats: "60",
-      scope: "GT71ii",
-      mount: "Mount",
-      camera: "533MMPRO",
-      filters: "Antlia Edge & Optolong LRGB",
-      imagingCapture: "Imaging Capture",
-      guidescope: "Guidescope",
-      guideCamera: "220mm Mini",
-      software: "Affinity & Pixinsight",
-      imageDate: "01/20/2024",
+      scope: astroEquipmentInfo.scope.GT71ii.name,
+      mount: astroEquipmentInfo.mount.name,
+      camera: astroEquipmentInfo.camera["533MMPRO"].name,
+      filters: astroEquipmentInfo.filters.antliaEdge.name,
+      imagingCapture: astroEquipmentInfo.imagingCapture.name,
+      guidescope: astroEquipmentInfo.guidescope.name,
+      guideCamera: astroEquipmentInfo.guideCamera["220mmMini"].name,
+      software: `${astroEquipmentInfo.software.affinity.name} & ${astroEquipmentInfo.software.pixinsight.name}`,
+      imageDate: "20/01/2024",
     },
     description: "",
   },
   {
-    original: "/images/modal/astrophotography/HeartNebula.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_HeartNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_HeartNebula.webp",
     title: "The Heart Nebula",
     catalogue: "IC 1805",
     captureDetails: {
@@ -282,7 +315,8 @@ export const astroImageInfo = [
       "<div><h3 className='my-2 text-xl text-headerText'>Description</h3><p className='text-contentText'>First light with my new ZWO ASI 533MM Pro camera, and my first mono image! <br /><br /> I've finally jumped on to the mono bandwagon and I can see what all the fuss is about now. It's more work sure, but the extra detail and contrast is instantly noticeable in the image.<br /><br /> The Heart Nebula (IC 1805) was also one of the first images I took with the 533MC Pro when I first got it, and it's crazy to see the difference in image quality and processing skills compared to that!</p></div>",
   },
   {
-    original: "/images/modal/astrophotography/AndromedaGalaxy.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_AndromedaGalaxy.webp",
+    fullRes: "/images/full_res/astrophotography/fs_AndromedaGalaxy.webp",
     title: "The Andromeda Galaxy",
     catalogue: "M31",
     captureDetails: {
@@ -314,7 +348,8 @@ export const astroImageInfo = [
     ),
   }, //10/01/2022
   {
-    original: "/images/modal/astrophotography/ThePleiades.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_ThePleiades.webp",
+    fullRes: "/images/full_res/astrophotography/fs_ThePleiades.webp",
     title: "The Pleiades",
     catalogue: "M45",
     captureDetails: {
@@ -336,7 +371,8 @@ export const astroImageInfo = [
     description: "",
   }, //03/12/2021
   {
-    original: "/images/modal/astrophotography/GhostOfCassiopeia.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_GhostOfCassiopeia.webp",
+    fullRes: "/images/full_res/astrophotography/fs_GhostOfCassiopeia.webp",
     title: "The Ghost of Cassiopeia",
     catalogue: "IC 63",
     captureDetails: {
@@ -372,7 +408,8 @@ export const astroImageInfo = [
     ),
   }, //02/10/2022
   {
-    original: "/images/modal/astrophotography/RosetteNebula.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_RosetteNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_RosetteNebula.webp",
     title: "The Rosette Nebula",
     catalogue: "NGC 2244",
     captureDetails: {
@@ -407,7 +444,8 @@ export const astroImageInfo = [
     ),
   }, //16/12/2022
   {
-    original: "/images/modal/astrophotography/LouiesStar.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_LouiesStar.webp",
+    fullRes: "/images/full_res/astrophotography/fs_LouiesStar.webp",
     title: "Louie's Star",
     catalogue: "M33",
     captureDetails: {
@@ -446,7 +484,8 @@ export const astroImageInfo = [
     ),
   }, //27/12/2023
   {
-    original: "/images/modal/astrophotography/CrescentNebula.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_CrescentNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_CrescentNebula.webp",
     title: "The Crescent Nebula",
     catalogue: "NGC 6888",
     captureDetails: {
@@ -468,8 +507,8 @@ export const astroImageInfo = [
     description: "",
   }, //04/06/2023
   {
-    original: "/images/modal/astrophotography/BodesAndCigarGalaxy.webp",
-
+    thumb: "/images/thumbnails/astrophotography/thumb_BodesAndCigarGalaxy.webp",
+    fullRes: "/images/full_res/astrophotography/fs_BodesAndCigarGalaxy.webp",
     title: "Bodes & Cigar Galaxy",
     catalogue: "M81 & M82",
     captureDetails: {
@@ -508,8 +547,8 @@ export const astroImageInfo = [
     ),
   }, //05/04/2023
   {
-    original: "/images/modal/astrophotography/MTheWhirlpoolGalaxy.webp",
-
+    thumb: "/images/thumbnails/astrophotography/thumb_MTheWhirlpoolGalaxy.webp",
+    fullRes: "/images/full_res/astrophotography/fs_MTheWhirlpoolGalaxy.webp",
     title: "The Whirlpool Galaxy",
     catalogue: "M51",
     captureDetails: {
@@ -531,7 +570,8 @@ export const astroImageInfo = [
     description: "",
   }, //08/04/2023
   {
-    original: "/images/modal/astrophotography/TadpolesNebula.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_TadpolesNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_TadpolesNebula.webp",
     title: "The Tadpoles Nebula",
     catalogue: "IC 410",
     captureDetails: {
@@ -570,7 +610,8 @@ export const astroImageInfo = [
     ),
   }, //14/02/2023
   {
-    original: "/images/modal/astrophotography/OrionNebula.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_OrionNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_OrionNebula.webp",
     title: "The Orion Nebula",
     catalogue: "M42",
     captureDetails: {
@@ -611,8 +652,8 @@ export const astroImageInfo = [
     ),
   }, //27/01/2023
   {
-    original: "/images/modal/astrophotography/TriangulumGalaxy.webp",
-
+    thumb: "/images/thumbnails/astrophotography/thumb_TriangulumGalaxy.webp",
+    fullRes: "/images/full_res/astrophotography/fs_TriangulumGalaxy.webp",
     title: "The Triangulum Galaxy",
     catalogue: "M33",
     captureDetails: {
@@ -641,7 +682,8 @@ export const astroImageInfo = [
     ),
   }, //10/01/2023
   {
-    original: "/images/modal/astrophotography/IrisNebula.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_IrisNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_IrisNebula.webp",
     title: "The Iris Nebula",
     catalogue: "NGC 7023",
     captureDetails: {
@@ -673,7 +715,8 @@ export const astroImageInfo = [
     ),
   }, //11/12/2021
   {
-    original: "/images/modal/astrophotography/HerculesCluster.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_HerculesCluster.webp",
+    fullRes: "/images/full_res/astrophotography/fs_HerculesCluster.webp",
     title: "Hercules Star Cluster",
     catalogue: "M13",
     captureDetails: {
@@ -704,31 +747,32 @@ export const astroImageInfo = [
       </div>
     ),
   }, //10/05/2022
-  {
-    original: "/images/modal/astrophotography/FlamingStarNebula.webp",
-    title: "The Flaming Star Nebula",
-    catalogue: "IC 405",
-    captureDetails: {
-      exposureTime: "300s",
-      integration: "10hrs",
-      darks: "100",
-      flats: "100",
-      darkFlats: "100",
-      scope: astroEquipmentInfo.scope.evostar72ED.name,
-      mount: astroEquipmentInfo.mount.name,
-      camera: astroEquipmentInfo.camera["533MCPRO"].name,
-      filters: astroEquipmentInfo.filters.lPro.name,
-      imagingCapture: astroEquipmentInfo.imagingCapture.name,
-      guidescope: astroEquipmentInfo.guidescope.name,
-      guideCamera: astroEquipmentInfo.guideCamera["120mmMini"].name,
-      software: `${astroEquipmentInfo.software.affinity.name} & ${astroEquipmentInfo.software.pixinsight.name}`,
-      imageDate: "22/01/2022",
-    },
-    description: "",
-  }, //22/01/2022
+  // {
+  //   thumb: "/images/thumbnails/astrophotography/thumb_FlamingStarNebula.webp",
+  //   title: "The Flaming Star Nebula",
+  //   catalogue: "IC 405",
+  //   captureDetails: {
+  //     exposureTime: "300s",
+  //     integration: "10hrs",
+  //     darks: "100",
+  //     flats: "100",
+  //     darkFlats: "100",
+  //     scope: astroEquipmentInfo.scope.evostar72ED.name,
+  //     mount: astroEquipmentInfo.mount.name,
+  //     camera: astroEquipmentInfo.camera["533MCPRO"].name,
+  //     filters: astroEquipmentInfo.filters.lPro.name,
+  //     imagingCapture: astroEquipmentInfo.imagingCapture.name,
+  //     guidescope: astroEquipmentInfo.guidescope.name,
+  //     guideCamera: astroEquipmentInfo.guideCamera["120mmMini"].name,
+  //     software: `${astroEquipmentInfo.software.affinity.name} & ${astroEquipmentInfo.software.pixinsight.name}`,
+  //     imageDate: "22/01/2022",
+  //   },
+  //   description: "",
+  // }, //22/01/2022
 
   {
-    original: "/images/modal/astrophotography/QuestionMarkNebula.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_QuestionMarkNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_QuestionMarkNebula.webp",
     title: "A Section of the Question Mark Nebula",
     catalogue: "NGC 7822",
     captureDetails: {
@@ -762,7 +806,8 @@ export const astroImageInfo = [
     ),
   }, //19/03/2022
   {
-    original: "/images/modal/astrophotography/VeilNebulaMosaic.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_VeilNebulaMosaic.webp",
+    fullRes: "/images/full_res/astrophotography/fs_VeilNebulaMosaic.webp",
     title: "The Cygnus Loop",
     catalogue: "SH2-103",
     captureDetails: {
@@ -795,7 +840,9 @@ export const astroImageInfo = [
     ),
   }, //June 2022
   {
-    original: "/images/modal/astrophotography/SadrAndCrescentNebula.webp",
+    thumb:
+      "/images/thumbnails/astrophotography/thumb_SadrAndCrescentNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_SadrAndCrescentNebula.webp",
     title: "Sadr Region & Crescent Nebula",
     catalogue: "SH2-103",
     captureDetails: {
@@ -818,8 +865,8 @@ export const astroImageInfo = [
   }, //09/06/2022
 
   {
-    original:
-      "/images/modal/astrophotography/NorthAmericaAndPelicanNebula.webp",
+    thumb:
+      "/images/thumbnails/astrophotogthumb_raphy/NorthAmericaAndPelicanNebula.webp",
     title: "The North America & Pelican Nebula",
     catalogue: "NGC 7000 / IC 5070",
     captureDetails: {
@@ -855,7 +902,7 @@ export const astroImageInfo = [
     ),
   }, //11/08/2022
   {
-    original: "/images/modal/astrophotography/LionNebula.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_LionNebula.webp",
     title: "The Lion Nebula",
     catalogue: "SH2-132",
     captureDetails: {
@@ -887,7 +934,7 @@ export const astroImageInfo = [
     ),
   }, //13/08/2022
   {
-    original: "/images/modal/astrophotography/EasternVeilNebula.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_EasternVeilNebula.webp",
     title: "The Eastern Veil Nebula",
     catalogue: "NGC 6992",
     captureDetails: {
@@ -917,7 +964,7 @@ export const astroImageInfo = [
     ),
   }, //17/09/2022
   {
-    original: "/images/modal/astrophotography/PacmanNebulaNatural.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_PacmanNebulaNatural.webp",
 
     title: "The Pacman Nebula",
     catalogue: "NGC 281",
@@ -942,7 +989,7 @@ export const astroImageInfo = [
         <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
 
         <p className={`text-contentText`}>
-          I originally captured this back in Jan &apos;22, but only had around
+          I initially captured this back in Jan &apos;22, but only had around
           2hrs worth of data to work with. I&apos;ve combined this with 4 more
           hrs of new data that was taken in August &apos;22, and this is the
           result.
@@ -951,7 +998,7 @@ export const astroImageInfo = [
     ),
   }, //20/08/2022
   {
-    original: "/images/modal/astrophotography/TheTulipNebula.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_TheTulipNebula.webp",
     title: "The Tulip Nebula",
     catalogue: "SH2-101",
     captureDetails: {
@@ -973,7 +1020,8 @@ export const astroImageInfo = [
     description: "",
   }, //12/07/2022
   {
-    original: "/images/modal/astrophotography/ElephantsTrunkNebula.webp",
+    thumb:
+      "/images/thumbnails/astrophotography/thumb_ElephantsTrunkNebula.webp",
 
     title: "The Elephants Trunk Nebula",
     catalogue: "IC 1396",
@@ -997,7 +1045,7 @@ export const astroImageInfo = [
   }, //01/09/2022
 
   {
-    original: "/images/modal/astrophotography/SmallClusterNebula.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_SmallClusterNebula.webp",
 
     title: "The Small Cluster Nebula",
     catalogue: "NGC 7129",
@@ -1020,7 +1068,7 @@ export const astroImageInfo = [
     description: "",
   }, //25/09/2022
   {
-    original: "/images/modal/astrophotography/CaveNebula.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_CaveNebula.webp",
     title: "The Cave Nebula",
     catalogue: "SH2-155",
     captureDetails: {
@@ -1043,7 +1091,8 @@ export const astroImageInfo = [
   }, //08/10/2022
 
   {
-    original: "/images/modal/astrophotography/ChristmasTreeCluster.webp",
+    thumb:
+      "/images/thumbnails/astrophotography/thumb_ChristmasTreeCluster.webp",
 
     title: "The Christmas Tree Cluster",
     catalogue: "NGC 2264",
@@ -1067,8 +1116,8 @@ export const astroImageInfo = [
   }, //25/12/2022
 
   {
-    original:
-      "/images/modal/astrophotography/CasperTheFriendlyGhostNebula.webp",
+    thumb:
+      "/images/thumbnails/astrophotogthumb_raphy/CasperTheFriendlyGhostNebula.webp",
 
     title: "Casper the Friendly Ghost Nebula",
     catalogue: "M78",
@@ -1103,7 +1152,7 @@ export const astroImageInfo = [
     ),
   }, //14/01/2023
   {
-    original: "/images/modal/astrophotography/JellyfishNebula.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_JellyfishNebula.webp",
     title: "The Jellyfish Nebula",
     catalogue: "IC 443",
     captureDetails: {
@@ -1139,7 +1188,7 @@ export const astroImageInfo = [
     ),
   }, //22/01/2023
   {
-    original: "/images/modal/astrophotography/CometZTF.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_CometZTF.webp",
     title: "Comet E3 2022 ZTF",
     catalogue: "E3 2022 ZTF",
     captureDetails: {
@@ -1180,7 +1229,8 @@ export const astroImageInfo = [
   }, //25/01/2023
 
   {
-    original: "/images/modal/astrophotography/PinwheelGalaxySupernova.webp",
+    thumb:
+      "/images/thumbnails/astrophotography/thumb_PinwheelGalaxySupernova.webp",
     title: "SN2023IXF Supernova in the Pinwheel Galaxy",
     catalogue: "M101",
     captureDetails: {
@@ -1219,7 +1269,7 @@ export const astroImageInfo = [
   }, //22/05/2023
 
   {
-    original: "/images/modal/astrophotography/PropellerNebula.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_PropellerNebula.webp",
     title: "The Propeller Nebula",
     catalogue: "DWB 111/119",
     captureDetails: {
@@ -1241,7 +1291,7 @@ export const astroImageInfo = [
     description: "",
   }, //18/06/2023
   {
-    original: "/images/modal/astrophotography/SoulNebula.webp",
+    thumb: "/images/thumbnails/astrophotography/thumb_SoulNebula.webp",
     title: "The Soul Nebula",
     catalogue: "IC 1848",
     captureDetails: {
@@ -1253,7 +1303,7 @@ export const astroImageInfo = [
       scope: astroEquipmentInfo.scope.GT71ii.name,
       mount: astroEquipmentInfo.mount.name,
       camera: astroEquipmentInfo.camera["533MCPRO"].name,
-      filters: astroEquipmentInfo.filters.lExtreme.name.name,
+      filters: astroEquipmentInfo.filters.lExtreme.name,
       imagingCapture: astroEquipmentInfo.imagingCapture.name,
       guidescope: astroEquipmentInfo.guidescope.name,
       guideCamera: astroEquipmentInfo.guideCamera["120mmMini"].name,
@@ -1377,7 +1427,7 @@ export const waterImageInfo = [
 
 export const landscapeImageInfo = [
   {
-    original: "/images/modal/landscape/Tenerife_01.webp",
+    original: "/images/thumbnails/landscape/Tenerife_01.webp",
     fullscreen: "/images/fullscreen/landscape/fs_Tenerife_01.webp",
     title: "Rock formation in the Tenerife Desert",
     camera: daytimeEquipmentInfo.camera.D3300.name,
@@ -1386,7 +1436,7 @@ export const landscapeImageInfo = [
     location: "Tenerife",
   },
   {
-    original: "/images/modal/landscape/Iceland_17.webp",
+    original: "/images/thumbnails/landscape/Iceland_17.webp",
     fullscreen: "/images/fullscreen/landscape/fs_Iceland_17.webp",
     title: "Kirkjufell",
     camera: daytimeEquipmentInfo.camera.D3300.name,
@@ -1395,7 +1445,7 @@ export const landscapeImageInfo = [
     location: "Iceland",
   },
   {
-    original: "/images/modal/landscape/Iceland_15.webp",
+    original: "/images/thumbnails/landscape/Iceland_15.webp",
     fullscreen: "/images/fullscreen/landscape/fs_Iceland_15.webp",
     title: "Kirkjufell",
     camera: daytimeEquipmentInfo.camera.D3300.name,
@@ -1404,7 +1454,7 @@ export const landscapeImageInfo = [
     location: "Iceland",
   },
   {
-    original: "/images/modal/landscape/Iceland_11.webp",
+    original: "/images/thumbnails/landscape/Iceland_11.webp",
     fullscreen: "/images/fullscreen/landscape/fs_Iceland_11.webp",
     title: "Kirkjufell",
     camera: daytimeEquipmentInfo.camera.D3300.name,
@@ -1413,7 +1463,7 @@ export const landscapeImageInfo = [
     location: "Iceland",
   },
   {
-    original: "/images/modal/landscape/Iceland_3.webp",
+    original: "/images/thumbnails/landscape/Iceland_3.webp",
     fullscreen: "/images/fullscreen/landscape/fs_Iceland_3.webp",
     title: "View from the top of Saxhóll Crater",
     camera: daytimeEquipmentInfo.camera.D3300.name,
@@ -1422,7 +1472,7 @@ export const landscapeImageInfo = [
     location: "Iceland",
   },
   {
-    original: "/images/modal/landscape/Iceland_2.webp",
+    original: "/images/thumbnails/landscape/Iceland_2.webp",
     fullscreen: "/images/fullscreen/landscape/fs_Iceland_2.webp",
     title: "The Black Church of Budir",
     camera: daytimeEquipmentInfo.camera.D3300.name,

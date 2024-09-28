@@ -8,24 +8,6 @@ import Image from "next/image";
 
 //Components
 
-const options = {
-  Toolbar: {
-    display: {
-      left: ["infobar"],
-      middle: [
-        "zoomIn",
-        "zoomOut",
-        "toggle1to1",
-        "rotateCCW",
-        "rotateCW",
-        "flipX",
-        "flipY",
-      ],
-      right: ["slideshow", "thumbs", "close"],
-    },
-  },
-};
-
 const Gallery = ({ images }) => {
   const [isImageHovered, setIsImageHovered] = useState(false);
 
@@ -34,8 +16,8 @@ const Gallery = ({ images }) => {
       Toolbar: {
         display: {
           left: [], //"infobar" - show number of images and current index
-          middle: ["download"],
-          right: ["toggle1to1", "fullscreen", "thumbs", "close"],
+          middle: [],
+          right: ["download", "toggle1to1", "fullscreen", "thumbs", "close"],
         },
       },
     });
@@ -53,13 +35,13 @@ const Gallery = ({ images }) => {
             href={image.fullRes}
             key={`key=${image.title}`}
             data-fancybox="gallery"
-            data-caption={`${image.title} ${image.description}`}
+            data-caption={`${image.title}`}
           >
             <div className="relative aspect-square w-full">
               <Image
                 src={image.thumb}
                 alt={image.title}
-                layout="fill"
+                fill={true}
                 sizes="(max-width: 640px) 200px, (max-width: 768px) 350px, (max-width: 1024px) 400px, (max-width: 1280px) 500px"
                 style={{
                   borderRadius: "3px",

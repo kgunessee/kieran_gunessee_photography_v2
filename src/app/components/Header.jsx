@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function Header() {
   const [isMobileScreen, setIsMobileScreen] = useState(true);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleIsDarkModeToggle = () => {
@@ -46,7 +46,7 @@ export default function Header() {
 
   return (
     <header
-      className={`dark:bg-blueBlack bg-almostBlack px-mobileXPadding relative flex items-center justify-between border-b-[1px] border-white/10 py-2 transition-colors`}
+      className={`relative flex items-center justify-between border-b-[1px] border-white/10 bg-almostBlack px-mobileXPadding py-2 transition-colors dark:bg-blueBlack`}
     >
       <h1 className={`text-2xl font-semibold text-white`}>
         {isMobileScreen ? "KG" : "Kieran Gunessee Photography"}
@@ -87,17 +87,17 @@ export default function Header() {
         </button>
         <button onClick={handleMobileMenuToggle} className={`relative z-10`}>
           <span
-            className={`bg-almostWhite block h-0.5 w-6 transition-all duration-300 ease-in-out ${
+            className={`block h-0.5 w-6 bg-almostWhite transition-all duration-300 ease-in-out ${
               isMobileMenuOpen ? "translate-y-1 rotate-45" : "-translate-y-0.5"
             }`}
           ></span>
           <span
-            className={`bg-almostWhite my-0.5 block h-0.5 w-6 transition-all duration-300 ease-in-out ${
+            className={`my-0.5 block h-0.5 w-6 bg-almostWhite transition-all duration-300 ease-in-out ${
               isMobileMenuOpen ? "opacity-0" : "opacity-100"
             }`}
           ></span>
           <span
-            className={`bg-almostWhite block h-0.5 w-6 transition-all duration-300 ease-in-out ${
+            className={`block h-0.5 w-6 bg-almostWhite transition-all duration-300 ease-in-out ${
               isMobileMenuOpen ? "-translate-y-1 -rotate-45" : "translate-y-0.5"
             }`}
           ></span>
