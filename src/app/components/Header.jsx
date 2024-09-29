@@ -57,12 +57,8 @@ export default function Header() {
   useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = "hidden";
-      // document.body.style.height = "100dvh";
-      console.log(true);
     } else {
       document.body.style.overflow = "unset";
-      // document.body.style.height = "unset";
-      console.log(false);
     }
   }, [isMobileMenuOpen]);
 

@@ -311,8 +311,23 @@ export const astroImageInfo = [
       software: "Affinity & Pixinsight",
       imageDate: "11/25/2023",
     },
-    description:
-      "<div><h3 className='my-2 text-xl text-headerText'>Description</h3><p className='text-contentText'>First light with my new ZWO ASI 533MM Pro camera, and my first mono image! <br /><br /> I've finally jumped on to the mono bandwagon and I can see what all the fuss is about now. It's more work sure, but the extra detail and contrast is instantly noticeable in the image.<br /><br /> The Heart Nebula (IC 1805) was also one of the first images I took with the 533MC Pro when I first got it, and it's crazy to see the difference in image quality and processing skills compared to that!</p></div>",
+    description: (
+      <div>
+        <h3 className="text-headerText my-2 text-xl">Description</h3>
+        <p className="text-contentText">
+          First light with my new ZWO ASI 533MM Pro camera, and my first mono
+          image! <br />
+          <br /> I&apos;ve finally jumped on to the mono bandwagon and I can see
+          what all the fuss is about now. It&apos;s more work sure, but the
+          extra detail and contrast is instantly noticeable in the image.
+          <br />
+          <br /> The Heart Nebula (IC 1805) was also one of the first images I
+          took with the 533MC Pro when I first got it, and it&apos;s crazy to
+          see the difference in image quality and processing skills compared to
+          that!
+        </p>
+      </div>
+    ),
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_AndromedaGalaxy.webp",

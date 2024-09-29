@@ -27,11 +27,15 @@
 }
 
 .fancybox__slide {
-  padding: 0 !important;
+  padding: 0.5rem 0 0 0 !important;
 }
 
-.fancybox__slide.has-caption {
-  flex-direction: row !important;
+/*.fancybox__slide.has-caption {*/
+/*  flex-direction: row !important;*/
+/*}*/
+
+.fancybox__caption {
+  min-width: 400px;
 }
 
 .fancybox__backdrop {
@@ -40,4 +44,18 @@
 
 body.dark .fancybox__backdrop {
   background: #101010 !important;
+}
+
+.fancybox__footer,
+.f-button {
+  background: rgba(0, 0, 0, 0) !important;
+}
+.f-button,
+.fancybox__caption {
+  color: #101010 !important;
+}
+
+body.dark .f-button,
+body.dark .fancybox__caption {
+  color: #eeeeee !important;
 }
