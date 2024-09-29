@@ -2,6 +2,13 @@
 
 //Hooks & plugins
 import { useEffect, useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import Link from "next/link";
+
+//Components
+import { ThemeButton } from "@/app/components/ThemeButton";
+import { HamburgerMenu } from "@/app/components/HamburgerMenu";
+import { MobileMenu } from "@/app/components/MobileMenu";
 
 export default function Header() {
   const [isMobileScreen, setIsMobileScreen] = useState(true);
@@ -15,6 +22,8 @@ export default function Header() {
   const handleMobileMenuToggle = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  // Disable scroll when menu is open
 
   // Toggle between light & dark mode by adding 'dark' class to body (Tailwind CSS dark mode).
   useEffect(() => {
@@ -44,65 +53,43 @@ export default function Header() {
     };
   }, []);
 
+  // This runs whenever the mobile menu is opened or closed. If the menu is open, it prevents scrolling. If closed, it allows scrolling.
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+      // document.body.style.height = "100dvh";
+      console.log(true);
+    } else {
+      document.body.style.overflow = "unset";
+      // document.body.style.height = "unset";
+      console.log(false);
+    }
+  }, [isMobileMenuOpen]);
+
   return (
     <header
       className={`relative flex items-center justify-between border-b-[1px] border-white/10 bg-almostBlack px-mobileXPadding py-2 transition-colors dark:bg-blueBlack`}
     >
-      <h1 className={`text-2xl font-semibold text-white`}>
-        {isMobileScreen ? "KG" : "Kieran Gunessee Photography"}
-      </h1>
+      <Link href={"/"}>
+        <h1 className={`text-2xl font-semibold text-white`}>
+          {isMobileScreen ? "KG" : "Kieran Gunessee Photography"}
+        </h1>
+      </Link>
       <div className={`flex items-center gap-4`}>
-        <button
-          onClick={handleIsDarkModeToggle}
-          className={`relative grid h-7 w-8 place-items-center overflow-hidden text-white`}
-        >
-          <svg
-            className={`absolute top-0 h-6 w-6 ${
-              isDarkMode ? "animate-themeButtonSet" : "animate-themeButtonRise"
-            }`}
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="rgb(253, 224, 71"
-            viewBox="0 -960 960 960"
-          >
-            <path d="M480-28L346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28zm0-252q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280zm0 140l100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100z"></path>
-          </svg>
-          <svg
-            className={`absolute top-0 h-5 w-5 ${
-              isDarkMode ? "animate-themeButtonRise" : "animate-themeButtonSet"
-            }`}
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="#e8eaed"
-            viewBox="0 -960 960 960"
-          >
-            <path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80z"></path>
-          </svg>
-
-          <div
-            className={`absolute bottom-0 h-[2px] w-full rounded-full bg-white/50`}
-          ></div>
-        </button>
-        <button onClick={handleMobileMenuToggle} className={`relative z-10`}>
-          <span
-            className={`block h-0.5 w-6 bg-almostWhite transition-all duration-300 ease-in-out ${
-              isMobileMenuOpen ? "translate-y-1 rotate-45" : "-translate-y-0.5"
-            }`}
-          ></span>
-          <span
-            className={`my-0.5 block h-0.5 w-6 bg-almostWhite transition-all duration-300 ease-in-out ${
-              isMobileMenuOpen ? "opacity-0" : "opacity-100"
-            }`}
-          ></span>
-          <span
-            className={`block h-0.5 w-6 bg-almostWhite transition-all duration-300 ease-in-out ${
-              isMobileMenuOpen ? "-translate-y-1 -rotate-45" : "translate-y-0.5"
-            }`}
-          ></span>
-        </button>
+        <ThemeButton
+          handleIsDarkModeToggle={handleIsDarkModeToggle}
+          isDarkMode={isDarkMode}
+        ></ThemeButton>
+        <HamburgerMenu
+          handleMobileMenuToggle={handleMobileMenuToggle}
+          isMobileMenuOpen={isMobileMenuOpen}
+        ></HamburgerMenu>
       </div>
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <MobileMenu isMobileMenuOpen={isMobileMenuOpen}></MobileMenu>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

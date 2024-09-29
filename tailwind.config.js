@@ -33,9 +33,9 @@ module.exports = {
       },
       animation: {
         themeButtonSet:
-          "themeButtonSet 300ms cubic-bezier(0.68, -0.6, 0.32, 1.6) both",
+          "themeButtonSet 300ms cubic-bezier(0.68, -0.6, 0.32, 1.2) both",
         themeButtonRise:
-          "themeButtonRise 300ms cubic-bezier(0.68, -0.6, 0.32, 1.6) both 350ms",
+          "themeButtonRise 300ms cubic-bezier(0.68, -0.6, 0.32, 1.2) both 350ms",
       },
     },
   },

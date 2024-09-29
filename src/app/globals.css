@@ -35,5 +35,9 @@
 }
 
 .fancybox__backdrop {
-  background: #21252d !important;
+  background: #eeeeee !important;
+}
+
+body.dark .fancybox__backdrop {
+  background: #101010 !important;
 }

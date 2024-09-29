@@ -866,7 +866,9 @@ export const astroImageInfo = [
 
   {
     thumb:
-      "/images/thumbnails/astrophotogthumb_raphy/NorthAmericaAndPelicanNebula.webp",
+      "/images/thumbnails/astrophotography/thumb_NorthAmericaAndPelicanNebula.webp",
+    fullRes:
+      "/images/full_res/astrophotography/fs_NorthAmericaAndPelicanNebula.webp",
     title: "The North America & Pelican Nebula",
     catalogue: "NGC 7000 / IC 5070",
     captureDetails: {
@@ -903,6 +905,7 @@ export const astroImageInfo = [
   }, //11/08/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_LionNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_LionNebula.webp",
     title: "The Lion Nebula",
     catalogue: "SH2-132",
     captureDetails: {
@@ -935,6 +938,7 @@ export const astroImageInfo = [
   }, //13/08/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_EasternVeilNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_EasternVeilNebula.webp",
     title: "The Eastern Veil Nebula",
     catalogue: "NGC 6992",
     captureDetails: {
@@ -965,7 +969,7 @@ export const astroImageInfo = [
   }, //17/09/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_PacmanNebulaNatural.webp",
-
+    fullRes: "/images/full_res/astrophotography/fs_PacmanNebulaNatural.webp",
     title: "The Pacman Nebula",
     catalogue: "NGC 281",
     captureDetails: {
@@ -999,6 +1003,7 @@ export const astroImageInfo = [
   }, //20/08/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_TheTulipNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_TheTulipNebula.webp",
     title: "The Tulip Nebula",
     catalogue: "SH2-101",
     captureDetails: {
@@ -1019,34 +1024,34 @@ export const astroImageInfo = [
     },
     description: "",
   }, //12/07/2022
-  {
-    thumb:
-      "/images/thumbnails/astrophotography/thumb_ElephantsTrunkNebula.webp",
-
-    title: "The Elephants Trunk Nebula",
-    catalogue: "IC 1396",
-    captureDetails: {
-      exposureTime: "300s",
-      integration: "5.5hrs",
-      darks: "60",
-      flats: "60",
-      darkFlats: "60",
-      scope: astroEquipmentInfo.scope.GT71ii.name,
-      mount: astroEquipmentInfo.mount.name,
-      camera: astroEquipmentInfo.camera["533MCPRO"].name,
-      filters: astroEquipmentInfo.filters.lExtreme.name,
-      imagingCapture: astroEquipmentInfo.imagingCapture.name,
-      guidescope: astroEquipmentInfo.guidescope.name,
-      guideCamera: astroEquipmentInfo.guideCamera["220mmMini"].name,
-      software: `${astroEquipmentInfo.software.affinity.name} & ${astroEquipmentInfo.software.pixinsight.name}`,
-      imageDate: "01/09/2022",
-    },
-    description: "",
-  }, //01/09/2022
+  // {
+  //   thumb:
+  //     "/images/thumbnails/astrophotography/thumb_ElephantsTrunkNebula.webp",
+  //   fullRes: "/images/full_res/astrophotography/fs_ElephantsTrunkNebula.webp",
+  //   title: "The Elephants Trunk Nebula",
+  //   catalogue: "IC 1396",
+  //   captureDetails: {
+  //     exposureTime: "300s",
+  //     integration: "5.5hrs",
+  //     darks: "60",
+  //     flats: "60",
+  //     darkFlats: "60",
+  //     scope: astroEquipmentInfo.scope.GT71ii.name,
+  //     mount: astroEquipmentInfo.mount.name,
+  //     camera: astroEquipmentInfo.camera["533MCPRO"].name,
+  //     filters: astroEquipmentInfo.filters.lExtreme.name,
+  //     imagingCapture: astroEquipmentInfo.imagingCapture.name,
+  //     guidescope: astroEquipmentInfo.guidescope.name,
+  //     guideCamera: astroEquipmentInfo.guideCamera["220mmMini"].name,
+  //     software: `${astroEquipmentInfo.software.affinity.name} & ${astroEquipmentInfo.software.pixinsight.name}`,
+  //     imageDate: "01/09/2022",
+  //   },
+  //   description: "",
+  // }, //01/09/2022
 
   {
     thumb: "/images/thumbnails/astrophotography/thumb_SmallClusterNebula.webp",
-
+    fullRes: "/images/full_res/astrophotography/fs_SmallClusterNebula.webp",
     title: "The Small Cluster Nebula",
     catalogue: "NGC 7129",
     captureDetails: {
@@ -1069,6 +1074,7 @@ export const astroImageInfo = [
   }, //25/09/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_CaveNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_CaveNebula.webp",
     title: "The Cave Nebula",
     catalogue: "SH2-155",
     captureDetails: {
@@ -1093,7 +1099,7 @@ export const astroImageInfo = [
   {
     thumb:
       "/images/thumbnails/astrophotography/thumb_ChristmasTreeCluster.webp",
-
+    fullRes: "/images/full_res/astrophotography/fs_ChristmasTreeCluster.webp",
     title: "The Christmas Tree Cluster",
     catalogue: "NGC 2264",
     captureDetails: {
@@ -1117,8 +1123,9 @@ export const astroImageInfo = [
 
   {
     thumb:
-      "/images/thumbnails/astrophotogthumb_raphy/CasperTheFriendlyGhostNebula.webp",
-
+      "/images/thumbnails/astrophotography/thumb_CasperTheFriendlyGhostNebula.webp",
+    fullRes:
+      "/images/full_res/astrophotography/fs_CasperTheFriendlyGhostNebula.webp",
     title: "Casper the Friendly Ghost Nebula",
     catalogue: "M78",
     captureDetails: {
@@ -1153,6 +1160,7 @@ export const astroImageInfo = [
   }, //14/01/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_JellyfishNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_JellyfishNebula.webp",
     title: "The Jellyfish Nebula",
     catalogue: "IC 443",
     captureDetails: {
@@ -1189,6 +1197,7 @@ export const astroImageInfo = [
   }, //22/01/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_CometZTF.webp",
+    fullRes: "/images/full_res/astrophotography/fs_CometZTF.webp",
     title: "Comet E3 2022 ZTF",
     catalogue: "E3 2022 ZTF",
     captureDetails: {
@@ -1231,6 +1240,8 @@ export const astroImageInfo = [
   {
     thumb:
       "/images/thumbnails/astrophotography/thumb_PinwheelGalaxySupernova.webp",
+    fullRes:
+      "/images/full_res/astrophotography/fs_PinwheelGalaxySupernova.webp",
     title: "SN2023IXF Supernova in the Pinwheel Galaxy",
     catalogue: "M101",
     captureDetails: {
@@ -1270,6 +1281,7 @@ export const astroImageInfo = [
 
   {
     thumb: "/images/thumbnails/astrophotography/thumb_PropellerNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_PropellerNebula.webp",
     title: "The Propeller Nebula",
     catalogue: "DWB 111/119",
     captureDetails: {
@@ -1292,6 +1304,7 @@ export const astroImageInfo = [
   }, //18/06/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_SoulNebula.webp",
+    fullRes: "/images/full_res/astrophotography/fs_SoulNebula.webp",
     title: "The Soul Nebula",
     catalogue: "IC 1848",
     captureDetails: {
