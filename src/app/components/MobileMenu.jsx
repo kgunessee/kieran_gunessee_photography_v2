@@ -29,10 +29,10 @@ const liVariants = {
 export function MobileMenu({ isMobileMenuOpen }) {
   return (
     <motion.div
-      initial={{ y: "100%", opacity: 0 }}
+      initial={{ y: "20%", opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      exit={{ y: "100%", opacity: 0 }}
-      transition={{ type: "tween", duration: 0.2 }} // Stop spring, use linear/tween
+      exit={{ y: "20%", opacity: 0 }}
+      transition={{ type: "tween", duration: 0.3 }}
       className={`absolute left-0 top-0 z-10 h-screen w-screen bg-blueBlack`}
     >
       <motion.nav

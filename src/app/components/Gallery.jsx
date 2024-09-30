@@ -4,6 +4,7 @@
 import { useEffect, useState } from "react";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import { AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 //Components
@@ -126,13 +127,15 @@ const Gallery = ({ images, isAstroImage }) => {
           </a>
         );
       })}
-      {isInfoPanelOpen && (
-        <ImageInfoPanel
-          imageInfo={images[imgIndex]}
-          setIsInfoPanelOpen={setIsInfoPanelOpen}
-          isAstroImage={isAstroImage}
-        />
-      )}
+      <AnimatePresence>
+        {isInfoPanelOpen && (
+          <ImageInfoPanel
+            imageInfo={images[imgIndex]}
+            setIsInfoPanelOpen={setIsInfoPanelOpen}
+            isAstroImage={isAstroImage}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 };

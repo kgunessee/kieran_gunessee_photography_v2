@@ -1,4 +1,4 @@
-export function CloseButton() {
+export function CloseButton({ setIsInfoPanelOpen }) {
   return (
     <button
       className={`relative grid h-5 w-5 place-items-center`}
