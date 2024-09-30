@@ -38,7 +38,7 @@ const Gallery = ({ images, isAstroImage }) => {
     };
 
     // Add the resize event listener when the component is mounted
-    window.addEventListener("resize", handleScreenSizeChange);
+    // window.addEventListener("resize", handleScreenSizeChange);
 
     // Call on load to set the initial screen size state
     handleScreenSizeChange();
@@ -94,7 +94,7 @@ const Gallery = ({ images, isAstroImage }) => {
 
     return () => {
       Fancybox.destroy();
-      window.removeEventListener("resize", handleScreenSizeChange);
+      // window.removeEventListener("resize", handleScreenSizeChange);
     };
   }, [isMobileScreen]);
 
