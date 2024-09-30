@@ -6,11 +6,11 @@ export default function astrophotography() {
   return (
     <section>
       <h2
-        className={`px-mobileXPadding text-blueBlack dark:text-almostWhite my-2 text-2xl font-semibold`}
+        className={`my-2 px-mobileXPadding text-2xl font-semibold text-blueBlack dark:text-almostWhite`}
       >
         WATER
       </h2>
-      <Gallery images={waterImageInfo} />
+      <Gallery images={waterImageInfo} isAstroImage={false} />
     </section>
   );
 }

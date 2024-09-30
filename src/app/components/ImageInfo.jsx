@@ -313,7 +313,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className="text-headerText my-2 text-xl">Description</h3>
         <p className="text-contentText">
           First light with my new ZWO ASI 533MM Pro camera, and my first mono
           image! <br />
@@ -352,7 +351,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
         <p className={`text-contentText`}>
           This image was taken over a few nights across a few weeks. <br />
           <br />
@@ -408,8 +406,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
-
         <p className={`text-contentText`}>
           This is IC63, or more commonly known as the Ghost of Cassiopeia. This
           is quite a challenging target from my location as it&apos;s quite
@@ -445,8 +441,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
-
         <p className={`text-contentText`}>
           This is my latest image of the Rosette Nebula & star cluster within
           (NGC2244). I&apos;ve been waiting all year to image this and got my
@@ -481,8 +475,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
-
         <p className={`text-contentText`}>
           What you&apos;re looking at is my very own star, purchased by my
           lovely wife for Christmas through nameastar.
@@ -544,8 +536,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
-
         <p className={`text-contentText`}>
           After what felt like forever I finally had a run of clear nights this
           week so made the most of it.
@@ -607,8 +597,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
-
         <p className={`text-contentText`}>
           This is the Tadpoles Nebula in the constellation Auriga (IC410). I
           started to capture data on this nebula back in December, in between
@@ -647,8 +635,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
-
         <p className={`text-contentText`}>
           This is this year&apos;s capture of the Orion and Running Man Nebula
           (M42). It&apos;ll probably become an annual thing!
@@ -689,7 +675,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
         <p className={`text-contentText`}>
           This is a blend of old and new data, taken with the 72ED and 130PDS.
         </p>
@@ -719,7 +704,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
         <p className={`text-contentText`}>
           This image was taken over a few nights across a few weeks. <br />
           <br />
@@ -752,7 +736,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
         <p className={`text-contentText`}>
           This image was taken over a few nights across a few weeks. <br />
           <br />
@@ -808,7 +791,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
         <p className={`text-contentText`}>
           This image was taken over a number of nights when we had a rare week
           of clear skies! <br /> <br />
@@ -843,8 +825,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
-
         <p className={`text-contentText`}>
           This is a 4-panel mosaic of the Cygnus Loop, contaning the Eastern &
           Western Veil Nebula, Pickerings Triangle and more. It was captured
@@ -904,8 +884,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
-
         <p className={`text-contentText`}>
           This is the North America and Pelican nebula in the constellation
           Cygnus. The North America nebula was the first nebula I ever took a
@@ -941,7 +919,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
         <p className={`text-contentText`}>
           This image was taken over 3 consecutive nights. <br />
           <br />
@@ -974,7 +951,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
         <p className={`text-contentText`}>
           This image was taken in a single night in September, and was first
           light for my Skywatcher 130PDS telescope.
@@ -1005,8 +981,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
-
         <p className={`text-contentText`}>
           I initially captured this back in Jan &apos;22, but only had around
           2hrs worth of data to work with. I&apos;ve combined this with 4 more
@@ -1161,8 +1135,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
-
         <p className={`text-contentText`}>
           This is M78 in the constellation Orion. <br />
           <br />I planned to get a lot of data on this target but only managed
@@ -1196,8 +1168,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
-
         <p className={`text-contentText`}>
           This is the Jellyfish Nebula (IC443). I have been wanting to capture
           this for a while so I took the opportunity this week while we had a
@@ -1233,8 +1203,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
-
         <p className={`text-contentText`}>
           This comet has been doing the rounds recently so I thought I&apos;d
           have a pop at it myself!
@@ -1277,8 +1245,6 @@ export const astroImageInfo = [
     },
     description: (
       <div>
-        <h3 className={`text-headerText my-2 text-xl`}>Description</h3>
-
         <p className={`text-contentText`}>
           21 million lightyears ago, a star went supernova and exploded in M101,
           the Pinwheel Galaxy.

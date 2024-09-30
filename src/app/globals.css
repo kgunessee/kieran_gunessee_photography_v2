@@ -48,8 +48,18 @@ body.dark .fancybox__backdrop {
 
 .fancybox__footer,
 .f-button {
+  background: rgba(238, 238, 238, 0.6) !important;
+}
+
+.f-button:first-child {
+  border-radius: 0 0 0 3px !important;
+}
+
+body.dark .fancybox__footer,
+body.dark .f-button {
   background: rgba(0, 0, 0, 0) !important;
 }
+
 .f-button,
 .fancybox__caption {
   color: #101010 !important;
@@ -58,4 +68,12 @@ body.dark .fancybox__backdrop {
 body.dark .f-button,
 body.dark .fancybox__caption {
   color: #eeeeee !important;
+}
+
+.modal-close-btn {
+  fill: #101010 !important;
+}
+
+body.dark .modal-close-btn {
+  fill: #eeeeee !important;
 }

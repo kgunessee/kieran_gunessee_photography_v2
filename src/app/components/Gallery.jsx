@@ -9,7 +9,7 @@ import Image from "next/image";
 //Components
 import { ImageInfoPanel } from "@/app/components/ImageInfoPanel";
 
-const Gallery = ({ images }) => {
+const Gallery = ({ images, isAstroImage }) => {
   const [isMobileScreen, setIsMobileScreen] = useState(null);
   const [isInfoPanelOpen, setIsInfoPanelOpen] = useState(false);
   const [imgIndex, setImgIndex] = useState(0);
@@ -127,12 +127,11 @@ const Gallery = ({ images }) => {
         );
       })}
       {isInfoPanelOpen && (
-        <div
-          className={`absolute left-0 top-0 z-[9999] h-full w-full bg-blueBlack`}
-        >
-          <button onClick={() => setIsInfoPanelOpen(false)}>Close</button>
-          <div className={`text-white`}>{images[imgIndex].description}</div>
-        </div>
+        <ImageInfoPanel
+          imageInfo={images[imgIndex]}
+          setIsInfoPanelOpen={setIsInfoPanelOpen}
+          isAstroImage={isAstroImage}
+        />
       )}
     </div>
   );

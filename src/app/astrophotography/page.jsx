@@ -10,7 +10,7 @@ export default function astrophotography() {
       >
         ASTROPHOTOGRAPHY
       </h2>
-      <Gallery images={astroImageInfo} />
+      <Gallery images={astroImageInfo} isAstroImage={true} />
     </section>
   );
 }
