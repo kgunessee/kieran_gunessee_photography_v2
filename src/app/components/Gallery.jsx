@@ -15,14 +15,17 @@ const Gallery = ({ images, isAstroImage }) => {
   const [isInfoPanelOpen, setIsInfoPanelOpen] = useState(false);
   const [imgIndex, setImgIndex] = useState(0);
 
-  const openCustomModal = (i) => {
-    // Your custom modal logic
+  const openInfoPanel = (i) => {
     setImgIndex(i);
     setIsInfoPanelOpen(true);
   };
 
   useEffect(() => {
-    console.log(isInfoPanelOpen);
+    if (isInfoPanelOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
   }, [isInfoPanelOpen]);
 
   useEffect(() => {
@@ -52,7 +55,7 @@ const Gallery = ({ images, isAstroImage }) => {
               e.stopPropagation(); //Doesn't hide icons when clicked
 
               // console.log(images[currentIndex]?.description);
-              openCustomModal(currentIndex);
+              openInfoPanel(currentIndex);
             };
           }
         },

@@ -23,7 +23,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.className} dark overflow-x-hidden bg-almostWhite antialiased transition-colors dark:bg-almostBlack`}
       >
-        <Header />
         {children}
       </body>
     </html>

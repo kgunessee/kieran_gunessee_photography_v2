@@ -23,8 +23,6 @@ export default function Header() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // Disable scroll when menu is open
-
   // Toggle between light & dark mode by adding 'dark' class to body (Tailwind CSS dark mode).
   useEffect(() => {
     const body = document.querySelector("body");
@@ -64,7 +62,7 @@ export default function Header() {
 
   return (
     <header
-      className={`relative flex items-center justify-between border-b-[1px] border-white/10 bg-almostBlack px-mobileXPadding py-2 transition-colors dark:bg-blueBlack`}
+      className={`relative flex items-center justify-between border-b-[1px] border-white/10 bg-almostBlack px-mobileXPadding py-4 transition-colors dark:bg-blueBlack`}
     >
       <Link href={"/"}>
         <h1 className={`text-2xl font-semibold text-white`}>

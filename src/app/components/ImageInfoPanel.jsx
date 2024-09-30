@@ -26,48 +26,97 @@ export function ImageInfoPanel({
         exit={{ scale: 0.9, opacity: 0 }}
         transition={{ type: "spring", duration: 0.3, bounce: 0.125 }}
         onClick={(e) => e.stopPropagation()}
-        className={`h-[95%] w-[95%] overflow-y-auto rounded-xl bg-almostWhite p-4 text-almostBlack lg:h-3/4 lg:w-3/4 dark:bg-almostBlack dark:text-almostWhite`}
+        className={`h-[95%] w-[95%] overflow-y-auto rounded-xl bg-almostWhite p-4 text-almostBlack lg:h-3/4 lg:w-3/4 dark:bg-blueBlack dark:text-almostWhite`}
       >
-        <div className={`flex justify-between`}>
-          <h2>{imageInfo.title}</h2>
+        <div className={`flex items-start justify-between`}>
+          <h2 className={`mr-4 text-2xl font-semibold`}>{imageInfo.title}</h2>
           <CloseButton setIsInfoPanelOpen={setIsInfoPanelOpen} />
         </div>
-        {isAstroImage && (
-          <div className={``}>
-            <h4>{imageInfo.catalogue}</h4>
-            <h3>Image Details</h3>
-            <ul className={`list-inside list-disc`}>
-              <li>
-                Sub Exposure Time: {imageInfo.captureDetails.exposureTime}
-              </li>
-              <li>
-                Total Integration Time: {imageInfo.captureDetails.integration}
-              </li>
-            </ul>
-            <h3>Equipment</h3>
-            <ul className={`list-inside list-disc`}>
-              <li>Scope: {imageInfo.captureDetails.scope}</li>
-              <li>Mount: {imageInfo.captureDetails.mount}</li>
-              <li>Camera: {imageInfo.captureDetails.camera}</li>
-              <li>Filters: {imageInfo.captureDetails.filters}</li>
-              <li>Image Capture: {imageInfo.captureDetails.imagingCapture}</li>
-              <li>Guidescope: {imageInfo.captureDetails.guidescope}</li>
-              <li>Guide Camera: {imageInfo.captureDetails.guideCamera}</li>
-              <li>Software: {imageInfo.captureDetails.software}</li>
-            </ul>
+        <div className={`relative flex flex-col`}>
+          {isAstroImage && (
+            <div className={`lg:w-full`}>
+              <h4 className={`text-blueBlack dark:text-greyBlue`}>
+                {imageInfo.catalogue} | {imageInfo.imageDate}
+              </h4>
+              <h3 className={`my-4 text-xl font-semibold`}>Image Details</h3>
+              <ul className={`flex list-inside list-disc flex-col gap-1`}>
+                <li>
+                  <strong>Sub Exposure Time:</strong>{" "}
+                  {imageInfo.captureDetails.exposureTime}
+                </li>
+                <li>
+                  <strong>Total Integration Time:</strong>{" "}
+                  {imageInfo.captureDetails.integration}
+                </li>
+              </ul>
+              <h3 className={`my-4 text-xl font-semibold`}>Equipment</h3>
+              <ul className={`flex list-inside list-disc flex-col gap-1`}>
+                <li>
+                  <strong>Scope: </strong>
+                  {imageInfo.captureDetails.scope}
+                </li>
+                <li>
+                  <strong>Mount: </strong>
+                  {imageInfo.captureDetails.mount}
+                </li>
+                <li>
+                  <strong>Camera:</strong> {imageInfo.captureDetails.camera}
+                </li>
+                <li>
+                  <strong>Filters: </strong>
+                  {imageInfo.captureDetails.filters}
+                </li>
+                <li>
+                  <strong>Image Capture:</strong>{" "}
+                  {imageInfo.captureDetails.imagingCapture}
+                </li>
+                <li>
+                  <strong>Guidescope: </strong>
+                  {imageInfo.captureDetails.guidescope}
+                </li>
+                <li>
+                  <strong>Guide Camera:</strong>{" "}
+                  {imageInfo.captureDetails.guideCamera}
+                </li>
+                <li>
+                  <strong>Software:</strong> {imageInfo.captureDetails.software}
+                </li>
+              </ul>
+            </div>
+          )}
+          {!isAstroImage && (
+            <div className={`lg:w-full`}>
+              <h4 className={`text-blueBlack dark:text-greyBlue`}>
+                {imageInfo.imageDate} | {imageInfo.location}
+              </h4>
+              <h3 className={`my-4 text-xl font-semibold`}>Image Details</h3>
+              <ul className={`flex list-inside list-disc flex-col gap-1`}>
+                <li>
+                  <strong>Shutter Speed:</strong>{" "}
+                </li>
+                <li>
+                  <strong>Aperture:</strong>{" "}
+                </li>
+              </ul>
+              <h3 className={`my-4 text-xl font-semibold`}>Equipment</h3>
+              <ul className={`flex list-inside list-disc flex-col gap-1`}>
+                <li>
+                  <strong>Camera: </strong>
+                  {imageInfo.camera}
+                </li>
+                <li>
+                  <strong>Lens: </strong>
+                  {imageInfo.lens}
+                </li>
+              </ul>
+            </div>
+          )}
+          <hr
+            className={`my-8 h-[1px] border-none bg-greyBlue dark:bg-white/30`}
+          />
+          <div className={`text-almostBlack dark:text-almostWhite`}>
+            {imageInfo.description}
           </div>
-        )}
-        {!isAstroImage && (
-          <div>
-            <ul>
-              <li>NORMAL IMAGE!</li>
-            </ul>
-            <h3>Equipment</h3>
-            <ul></ul>
-          </div>
-        )}
-        <div className={`text-almostBlack dark:text-almostWhite`}>
-          {imageInfo.description}
         </div>
       </motion.div>
     </motion.div>

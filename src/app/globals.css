@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  /*--background: #ffffff;*/
-  /*--foreground: #171717;*/
+  --almost-white: #dedede;
+  --almost-black: #101010;
 }
 
 /*@media (prefers-color-scheme: dark) {*/
@@ -39,19 +39,23 @@
 }
 
 .fancybox__backdrop {
-  background: #eeeeee !important;
+  background: var(--almost-white) !important;
 }
 
 body.dark .fancybox__backdrop {
-  background: #101010 !important;
+  background: var(--almost-black) !important;
 }
 
 .fancybox__footer,
 .f-button {
-  background: rgba(238, 238, 238, 0.6) !important;
+  background: transparent !important;
 }
 
-.f-button:first-child {
+.is-next {
+  background: rgba(0, 0, 0, 0);
+}
+
+.info-button {
   border-radius: 0 0 0 3px !important;
 }
 
@@ -62,18 +66,18 @@ body.dark .f-button {
 
 .f-button,
 .fancybox__caption {
-  color: #101010 !important;
+  color: var(--almost-black) !important;
 }
 
 body.dark .f-button,
 body.dark .fancybox__caption {
-  color: #eeeeee !important;
+  color: var(--almost-white) !important;
 }
 
 .modal-close-btn {
-  fill: #101010 !important;
+  fill: var(--almost-black) !important;
 }
 
 body.dark .modal-close-btn {
-  fill: #eeeeee !important;
+  fill: var(--almost-white) !important;
 }
