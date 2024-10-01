@@ -1,9 +1,11 @@
+//Hooks & Plugins
+import Link from "next/link";
+import Image from "next/image";
+
 //Components
-import Gallery from "@/app/components/Gallery";
-import { waterImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 
-export default function water() {
+export default function galleryMenu() {
   return (
     <>
       <Header />
@@ -11,9 +13,12 @@ export default function water() {
         <h2
           className={`my-2 px-mobileXPadding text-2xl font-semibold text-blueBlack dark:text-almostWhite`}
         >
-          WATER
+          GALLERY
         </h2>
-        <Gallery images={waterImageInfo} isAstroImage={false} />
+        <Link href={"/astrophotography"}>
+          <Image src={"#"} alt={"#"}></Image>
+          <h3>ASTROPHOTOGRAPHY</h3>
+        </Link>
       </main>
     </>
   );

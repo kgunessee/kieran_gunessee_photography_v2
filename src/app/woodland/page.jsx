@@ -3,7 +3,7 @@ import Gallery from "@/app/components/Gallery";
 import { woodlandImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 
-export default function astrophotography() {
+export default function woodland() {
   return (
     <>
       <Header />

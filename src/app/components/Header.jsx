@@ -9,6 +9,7 @@ import Link from "next/link";
 import { ThemeButton } from "@/app/components/ThemeButton";
 import { HamburgerMenu } from "@/app/components/HamburgerMenu";
 import { MobileMenu } from "@/app/components/MobileMenu";
+import { DesktopNav } from "@/app/components/DesktopNav";
 
 export default function Header() {
   const [isMobileScreen, setIsMobileScreen] = useState(true);
@@ -36,6 +37,7 @@ export default function Header() {
         setIsMobileScreen(true);
       } else {
         setIsMobileScreen(false);
+        setIsMobileMenuOpen(false);
       }
     };
 
@@ -62,7 +64,7 @@ export default function Header() {
 
   return (
     <header
-      className={`relative flex items-center justify-between border-b-[1px] border-white/10 bg-almostBlack px-mobileXPadding py-4 transition-colors dark:bg-blueBlack`}
+      className={`lg:px-desktopXPadding relative mx-auto flex items-center justify-between border-b-[1px] border-white/10 bg-almostBlack px-mobileXPadding py-4 transition-colors dark:bg-blueBlack`}
     >
       <Link href={"/"}>
         <h1 className={`text-2xl font-semibold text-white`}>
@@ -74,10 +76,13 @@ export default function Header() {
           handleIsDarkModeToggle={handleIsDarkModeToggle}
           isDarkMode={isDarkMode}
         ></ThemeButton>
-        <HamburgerMenu
-          handleMobileMenuToggle={handleMobileMenuToggle}
-          isMobileMenuOpen={isMobileMenuOpen}
-        ></HamburgerMenu>
+        {isMobileScreen && (
+          <HamburgerMenu
+            handleMobileMenuToggle={handleMobileMenuToggle}
+            isMobileMenuOpen={isMobileMenuOpen}
+          ></HamburgerMenu>
+        )}
+        {!isMobileScreen && <DesktopNav />}
       </div>
       <AnimatePresence>
         {isMobileMenuOpen && (

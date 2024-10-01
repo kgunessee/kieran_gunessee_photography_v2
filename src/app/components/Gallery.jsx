@@ -99,7 +99,7 @@ const Gallery = ({ images, isAstroImage }) => {
   }, [isMobileScreen]);
 
   return (
-    <div className="gallery grid grid-cols-3 gap-1 px-mobileXPadding sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+    <div className="gallery lg:px-desktopXPadding grid grid-cols-3 gap-1 px-mobileXPadding sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
       {images.map((image) => {
         return (
           <a

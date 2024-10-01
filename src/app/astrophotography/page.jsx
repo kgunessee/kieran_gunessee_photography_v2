@@ -9,7 +9,7 @@ export default function astrophotography() {
       <Header />
       <main>
         <h2
-          className={`my-2 px-mobileXPadding text-2xl font-semibold text-blueBlack dark:text-almostWhite`}
+          className={`lg:px-desktopXPadding my-2 px-mobileXPadding text-2xl font-semibold text-blueBlack dark:text-almostWhite`}
         >
           ASTROPHOTOGRAPHY
         </h2>

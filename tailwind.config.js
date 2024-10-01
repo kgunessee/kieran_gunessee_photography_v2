@@ -20,6 +20,7 @@ module.exports = {
       },
       padding: {
         mobileXPadding: "0.5rem",
+        desktopXPadding: "10%",
       },
       keyframes: {
         themeButtonSet: {

@@ -39,12 +39,12 @@ export function MobileMenu({ isMobileMenuOpen }) {
         initial="hidden"
         animate="show"
         variants={navVariants}
-        className={`absolute bottom-10 right-0 flex flex-col gap-4 p-6 text-right text-2xl text-almostWhite`}
+        className={`absolute bottom-20 right-0 flex flex-col gap-4 p-6 text-right text-2xl text-almostWhite`}
       >
         <ul>
           <motion.li
             variants={liVariants}
-            className={`mb-2 mt-4 list-none text-3xl font-semibold`}
+            className={`mb-2 mt-4 list-none text-3xl`}
           >
             <Link href={"/gallery"}>Gallery</Link>
           </motion.li>
@@ -53,7 +53,7 @@ export function MobileMenu({ isMobileMenuOpen }) {
               <motion.li
                 key={item.name}
                 variants={liVariants}
-                className={`list-none`}
+                className={`mb-2 list-none font-light`}
               >
                 <Link href={item.url}>{item.name}</Link>
               </motion.li>
@@ -61,7 +61,7 @@ export function MobileMenu({ isMobileMenuOpen }) {
           })}
           <motion.li
             variants={liVariants}
-            className={`mb-2 mt-4 list-none text-3xl font-semibold`}
+            className={`mb-2 mt-2 list-none text-3xl`}
           >
             <Link href={"/equipment"}>Equipment</Link>
           </motion.li>

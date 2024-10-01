@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} dark bg-almostWhite antialiased transition-colors dark:bg-almostBlack`}
+        className={`${poppins.className} dark bg-almostWhite pb-4 antialiased transition-colors dark:bg-almostBlack`}
       >
         {children}
       </body>

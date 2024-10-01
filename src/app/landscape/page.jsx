@@ -3,7 +3,7 @@ import Gallery from "@/app/components/Gallery";
 import { landscapeImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 
-export default function astrophotography() {
+export default function landscape() {
   return (
     <>
       <Header />
