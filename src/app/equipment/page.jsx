@@ -16,7 +16,7 @@ export default function equipment() {
           GALLERY
         </h2>
         <Link href={"/astrophotography"}>
-          <Image src={"#"} alt={"#"}></Image>
+          {/*<Image src={"#"} alt={"#"}></Image>*/}
           <h3>ASTROPHOTOGRAPHY</h3>
         </Link>
       </main>
