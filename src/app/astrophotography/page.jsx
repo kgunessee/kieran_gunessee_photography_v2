@@ -8,7 +8,7 @@ import { astroImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
 
-export default function astrophotography() {
+export default function Astrophotography() {
   const [searchText, setSearchText] = useState("");
 
   const handleSearchTerm = (e) => {

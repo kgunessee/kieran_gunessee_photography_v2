@@ -4,7 +4,7 @@ import { waterImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
 
-export default function water() {
+export default function Water() {
   const pageText =
     "Waterfalls, rivers and oceans - the flow of water in every form.";
   return (

@@ -3,7 +3,7 @@ import { woodlandImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
 
-export default function woodland() {
+export default function Woodland() {
   const pageText =
     "Trees, leaves, orange and green - the chaos and calm of the woods.";
   return (
