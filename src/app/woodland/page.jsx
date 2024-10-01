@@ -1,20 +1,23 @@
 //Components
-import Gallery from "@/app/components/Gallery";
 import { woodlandImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
+import { PageTemplate } from "@/app/components/PageTemplate";
 
 export default function woodland() {
+  const pageText =
+    "Trees, leaves, orange and green - the chaos and calm of the woods.";
   return (
     <>
       <Header />
-      <main>
-        <h2
-          className={`my-2 px-mobileXPadding text-2xl font-semibold text-blueBlack dark:text-almostWhite`}
-        >
-          WOODLAND
-        </h2>
-        <Gallery images={woodlandImageInfo} isAstroImage={false} />
-      </main>
+      <PageTemplate
+        pageTitle={"WOODLAND"}
+        pageText={pageText}
+        handleSearchTerm={null}
+        images={woodlandImageInfo}
+        isAstroImage={false}
+        bgColourDark={"dark:bg-emerald-700/10"}
+        bgColourLight={"bg-emerald-700/20"}
+      />
     </>
   );
 }

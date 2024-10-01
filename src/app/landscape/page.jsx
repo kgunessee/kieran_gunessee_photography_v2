@@ -1,20 +1,23 @@
 //Components
-import Gallery from "@/app/components/Gallery";
 import { landscapeImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
+import { PageTemplate } from "@/app/components/PageTemplate";
 
 export default function landscape() {
+  const pageText =
+    "Hills, mountains, sweeping vistas and interesting landmarks. Exploring nature's landscapes from every angle.";
   return (
     <>
       <Header />
-      <main>
-        <h2
-          className={`my-2 px-mobileXPadding text-2xl font-semibold text-blueBlack dark:text-almostWhite`}
-        >
-          LANDSCAPE
-        </h2>
-        <Gallery images={landscapeImageInfo} isAstroImage={false} />
-      </main>
+      <PageTemplate
+        pageTitle={"LANDSCAPE"}
+        pageText={pageText}
+        handleSearchTerm={null}
+        images={landscapeImageInfo}
+        isAstroImage={false}
+        bgColourDark={"dark:bg-orange-300/5"}
+        bgColourLight={"bg-orange-300/20"}
+      />
     </>
   );
 }

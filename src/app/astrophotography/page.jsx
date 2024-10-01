@@ -1,20 +1,46 @@
+"use client";
+
+//Hooks & Plugins
+import { useState } from "react";
+
 //Components
-import Gallery from "@/app/components/Gallery";
 import { astroImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
+import { PageTemplate } from "@/app/components/PageTemplate";
 
 export default function astrophotography() {
+  const [searchText, setSearchText] = useState("");
+
+  const handleSearchTerm = (e) => {
+    const searchTerm = e.target.value;
+    setSearchText(searchTerm);
+  };
+
+  const filteredImages = astroImageInfo.filter((image) => {
+    return (
+      image.title.toLowerCase().includes(searchText.toLowerCase()) ||
+      image.catalogue
+        .replaceAll(" ", "")
+        .toLowerCase()
+        .includes(searchText.toLowerCase()) ||
+      image.catalogue.toLowerCase().includes(searchText.toLowerCase())
+    );
+  });
+
+  const pageText =
+    "Galaxies, nebulae, comets and stars - the endless beauty of the universe.";
   return (
     <>
       <Header />
-      <main>
-        <h2
-          className={`lg:px-desktopXPadding my-2 px-mobileXPadding text-2xl font-semibold text-blueBlack dark:text-almostWhite`}
-        >
-          ASTROPHOTOGRAPHY
-        </h2>
-        <Gallery images={astroImageInfo} isAstroImage={true} />
-      </main>
+      <PageTemplate
+        pageTitle={"ASTROPHOTOGRAPHY"}
+        pageText={pageText}
+        handleSearchTerm={handleSearchTerm}
+        images={filteredImages}
+        isAstroImage={true}
+        bgColourDark={"dark:bg-sky-600/5"}
+        bgColourLight={"bg-sky-600/10"}
+      />
     </>
   );
 }

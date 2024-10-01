@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --almost-white: #dedede;
+  --almost-white: #e1e1e1;
   --almost-black: #101010;
 }
 
@@ -36,6 +36,7 @@
 
 .fancybox__caption {
   min-width: 400px;
+  text-align: center;
 }
 
 .fancybox__backdrop {

@@ -1,20 +1,24 @@
 //Components
-import Gallery from "@/app/components/Gallery";
+
 import { waterImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
+import { PageTemplate } from "@/app/components/PageTemplate";
 
 export default function water() {
+  const pageText =
+    "Waterfalls, rivers and oceans - the flow of water in every form.";
   return (
     <>
       <Header />
-      <main>
-        <h2
-          className={`my-2 px-mobileXPadding text-2xl font-semibold text-blueBlack dark:text-almostWhite`}
-        >
-          WATER
-        </h2>
-        <Gallery images={waterImageInfo} isAstroImage={false} />
-      </main>
+      <PageTemplate
+        pageTitle={"WATER"}
+        pageText={pageText}
+        handleSearchTerm={null}
+        images={waterImageInfo}
+        isAstroImage={false}
+        bgColourDark={"dark:bg-blue-600/5"}
+        bgColourLight={"bg-blue-600/10"}
+      />
     </>
   );
 }
