@@ -10,7 +10,7 @@ export function PageTemplate({
   pageTitle,
 }) {
   return (
-    <main className={`relative overflow-hidden pb-4`}>
+    <main className={`overflow-hidden pb-4`}>
       <div
         className={`absolute -right-1/3 top-[-10%] -z-10 aspect-square w-full rounded-full blur-3xl backdrop-filter ${bgColourDark} ${bgColourLight}`}
       ></div>

@@ -94,7 +94,6 @@ const Gallery = ({ images, isAstroImage }) => {
 
     return () => {
       Fancybox.destroy();
-      // window.removeEventListener("resize", handleScreenSizeChange);
     };
   }, [isMobileScreen]);
 
