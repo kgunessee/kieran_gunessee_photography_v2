@@ -1,6 +1,6 @@
 //Hooks & Plugins
 import Link from "next/link";
-import { motion, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 
 //Components
 import { NavbarItems } from "@/app/components/NavbarItems";
@@ -26,7 +26,7 @@ const liVariants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.2 } },
 };
 
-export function MobileMenu({ isMobileMenuOpen }) {
+export function MobileMenu() {
   return (
     <motion.div
       initial={{ y: "20%", opacity: 0 }}

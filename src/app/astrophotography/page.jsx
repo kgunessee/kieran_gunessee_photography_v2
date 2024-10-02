@@ -32,14 +32,15 @@ export default function Astrophotography() {
   return (
     <>
       <Header />
+
       <PageTemplate
         pageTitle={"ASTROPHOTOGRAPHY"}
         pageText={pageText}
         handleSearchTerm={handleSearchTerm}
         images={filteredImages}
         isAstroImage={true}
-        bgColourDark={"dark:bg-sky-600/5"}
-        bgColourLight={"bg-sky-600/10"}
+        bgColourDark={"dark:to-indigo-500/5"}
+        bgColourLight={"to-indigo-500/20"}
       />
     </>
   );

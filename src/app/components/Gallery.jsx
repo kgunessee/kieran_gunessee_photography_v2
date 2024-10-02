@@ -10,16 +10,18 @@ import Image from "next/image";
 //Components
 import { ImageInfoPanel } from "@/app/components/ImageInfoPanel";
 
-const Gallery = ({ images, isAstroImage }) => {
-  const [isMobileScreen, setIsMobileScreen] = useState(null);
-  const [isInfoPanelOpen, setIsInfoPanelOpen] = useState(false);
-  const [imgIndex, setImgIndex] = useState(0);
+export default function Gallery({ images, isAstroImage }) {
+  const [isMobileScreen, setIsMobileScreen] = useState(null); //Boolean to state whether the screen size is mobile (< 768px)
+  const [isInfoPanelOpen, setIsInfoPanelOpen] = useState(false); //Boolean to state whether the info panel is open on an image (Fancybox)
+  const [imgIndex, setImgIndex] = useState(0); //The current opened Fancybox image
 
-  const openInfoPanel = (i) => {
-    setImgIndex(i);
+  //Sets the image index in order to open the correct info panel
+  const openInfoPanel = (index) => {
+    setImgIndex(index);
     setIsInfoPanelOpen(true);
   };
 
+  //Disable scroll when info panel is open
   useEffect(() => {
     if (isInfoPanelOpen) {
       document.body.style.overflow = "hidden";
@@ -29,6 +31,7 @@ const Gallery = ({ images, isAstroImage }) => {
   }, [isInfoPanelOpen]);
 
   useEffect(() => {
+    //Sets this state based on screen size in order to do things like change the logo or show/hide the mobile menu
     const handleScreenSizeChange = () => {
       if (window.innerWidth < 768) {
         setIsMobileScreen(true);
@@ -37,12 +40,10 @@ const Gallery = ({ images, isAstroImage }) => {
       }
     };
 
-    // Add the resize event listener when the component is mounted
-    // window.addEventListener("resize", handleScreenSizeChange);
-
     // Call on load to set the initial screen size state
     handleScreenSizeChange();
 
+    //Fancybox initialisation and options
     Fancybox.bind("[data-fancybox]", {
       on: {
         "Carousel.ready Carousel.change": (fancybox) => {
@@ -52,9 +53,7 @@ const Gallery = ({ images, isAstroImage }) => {
           );
           if (infoPanelButton) {
             infoPanelButton.onclick = (e) => {
-              e.stopPropagation(); //Doesn't hide icons when clicked
-
-              // console.log(images[currentIndex]?.description);
+              e.stopPropagation(); //Doesn't hide FB icons when clicked
               openInfoPanel(currentIndex);
             };
           }
@@ -88,7 +87,7 @@ const Gallery = ({ images, isAstroImage }) => {
         },
       },
       Thumbs: {
-        showOnStart: !isMobileScreen,
+        showOnStart: !isMobileScreen, //Only show thumbnails on start on desktop
       },
     });
 
@@ -98,48 +97,50 @@ const Gallery = ({ images, isAstroImage }) => {
   }, [isMobileScreen]);
 
   return (
-    <div className="gallery grid grid-cols-3 gap-1 px-mobileXPadding sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:px-desktopXPadding">
-      {images.map((image) => {
-        return (
-          <a
-            href={image.fullRes}
-            key={`key=${image.title}`}
-            data-fancybox="gallery"
-            data-caption={`${image.title} | ${image.catalogue}`}
-          >
-            <div className="relative aspect-square w-full">
-              <Image
-                src={image.thumb}
-                alt={image.title}
-                fill={true}
-                sizes="(max-width: 640px) 200px, (max-width: 768px) 350px, (max-width: 1024px) 400px, (max-width: 1280px) 500px"
-                style={{
-                  borderRadius: "3px",
-                  objectFit: "cover",
-                }}
-              />
-              <div
-                className={`absolute top-0 grid h-full w-full place-items-center bg-almostBlack/90 opacity-0 transition-opacity duration-150 hover:opacity-100`}
-              >
-                <p className={`text-wrap text-center text-xs text-almostWhite`}>
-                  {image.title}
-                </p>
+    <>
+      <div className="gallery grid grid-cols-3 gap-1 px-mobileXPadding sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:px-desktopXPadding">
+        {images.map((image) => {
+          return (
+            <a
+              href={image.fullRes}
+              key={`key=${image.title}`}
+              data-fancybox="gallery"
+              data-caption={`${image.title} | ${image.catalogue}`}
+            >
+              <div className="relative aspect-square w-full">
+                <Image
+                  src={image.thumb}
+                  alt={image.title}
+                  fill={true}
+                  sizes="(max-width: 640px) 200px, (max-width: 768px) 350px, (max-width: 1024px) 400px, (max-width: 1280px) 500px"
+                  style={{
+                    borderRadius: "3px",
+                    objectFit: "cover",
+                  }}
+                />
+                <div
+                  className={`absolute top-0 grid h-full w-full place-items-center bg-almostBlack/90 opacity-0 transition-opacity duration-150 hover:opacity-100`}
+                >
+                  <p
+                    className={`text-wrap text-center text-xs text-almostWhite`}
+                  >
+                    {image.title}
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
-        );
-      })}
-      <AnimatePresence>
-        {isInfoPanelOpen && (
-          <ImageInfoPanel
-            imageInfo={images[imgIndex]}
-            setIsInfoPanelOpen={setIsInfoPanelOpen}
-            isAstroImage={isAstroImage}
-          />
-        )}
-      </AnimatePresence>
-    </div>
+            </a>
+          );
+        })}
+        <AnimatePresence>
+          {isInfoPanelOpen && (
+            <ImageInfoPanel
+              imageInfo={images[imgIndex]}
+              setIsInfoPanelOpen={setIsInfoPanelOpen}
+              isAstroImage={isAstroImage}
+            />
+          )}
+        </AnimatePresence>
+      </div>
+    </>
   );
-};
-
-export default Gallery;
+}

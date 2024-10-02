@@ -1,3 +1,6 @@
+//This is the template for the image pages
+
+//Components
 import Gallery from "@/app/components/Gallery";
 
 export function PageTemplate({
@@ -10,11 +13,10 @@ export function PageTemplate({
   pageTitle,
 }) {
   return (
-    <main className={`overflow-hidden pb-4`}>
-      <div
-        className={`absolute -right-1/3 top-[-10%] -z-10 aspect-square w-full rounded-full blur-3xl backdrop-filter ${bgColourDark} ${bgColourLight}`}
-      ></div>
-      <div className={`px-mobileXPadding lg:px-desktopXPadding`}>
+    <main
+      className={`overflow-hidden bg-gradient-to-tr from-transparent from-50% ${bgColourDark} ${bgColourLight} pb-4`}
+    >
+      <section className={`px-mobileXPadding lg:px-desktopXPadding`}>
         <h2
           className={`mt-2 text-2xl font-semibold text-blueBlack dark:text-almostWhite`}
         >
@@ -30,7 +32,7 @@ export function PageTemplate({
             onChange={handleSearchTerm}
           ></input>
         )}
-      </div>
+      </section>
       <Gallery images={images} isAstroImage={isAstroImage} />
     </main>
   );

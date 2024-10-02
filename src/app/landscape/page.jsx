@@ -15,8 +15,8 @@ export default function Landscape() {
         handleSearchTerm={null}
         images={landscapeImageInfo}
         isAstroImage={false}
-        bgColourDark={"dark:bg-orange-300/5"}
-        bgColourLight={"bg-orange-300/20"}
+        bgColourDark={"dark:to-orange-300/5"}
+        bgColourLight={"to-orange-300/20"}
       />
     </>
   );

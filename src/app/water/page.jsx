@@ -16,8 +16,8 @@ export default function Water() {
         handleSearchTerm={null}
         images={waterImageInfo}
         isAstroImage={false}
-        bgColourDark={"dark:bg-blue-600/5"}
-        bgColourLight={"bg-blue-600/10"}
+        bgColourDark={"dark:to-blue-500/5"}
+        bgColourLight={"to-blue-500/15"}
       />
     </>
   );

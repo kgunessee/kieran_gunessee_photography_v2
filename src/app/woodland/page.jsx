@@ -15,8 +15,8 @@ export default function Woodland() {
         handleSearchTerm={null}
         images={woodlandImageInfo}
         isAstroImage={false}
-        bgColourDark={"dark:bg-emerald-700/10"}
-        bgColourLight={"bg-emerald-700/20"}
+        bgColourDark={"dark:to-emerald-700/10"}
+        bgColourLight={"to-emerald-700/20"}
       />
     </>
   );

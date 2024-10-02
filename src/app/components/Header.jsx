@@ -12,9 +12,9 @@ import { MobileMenu } from "@/app/components/MobileMenu";
 import { DesktopNav } from "@/app/components/DesktopNav";
 
 export default function Header({ headerRef = null }) {
-  const [isMobileScreen, setIsMobileScreen] = useState(true);
-  const [isDarkMode, setIsDarkMode] = useState(true);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileScreen, setIsMobileScreen] = useState(true); //Boolean to state whether the screen size is mobile (< 768px)
+  const [isDarkMode, setIsDarkMode] = useState(true); //Boolean to set the theme
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); //Boolean to state whether the mobile menu is open
 
   // Handle dark mode toggle and persist in localStorage
   const handleIsDarkModeToggle = () => {
