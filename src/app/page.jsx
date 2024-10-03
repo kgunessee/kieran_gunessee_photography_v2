@@ -29,27 +29,23 @@ export default function Home() {
     <>
       <Header headerRef={headerRef} />
       <main
-        style={{ height: `calc(100vh - ${headerHeight}px )` }}
-        className="relative row-start-2 flex w-screen flex-col items-center gap-8 overflow-y-hidden sm:items-start"
+        style={{
+          height: `calc(100vh - ${headerHeight}px )`,
+          backgroundImage: `url(${astroImageInfo[bgImage].fullRes})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+        }}
+        className="relative grid w-screen place-items-center gap-8 overflow-y-hidden"
       >
-        <Image
-          src={astroImageInfo[bgImage].fullRes}
-          // width={100}
-          // height={100}
-          fill={true}
-          alt={astroImageInfo[bgImage].title}
-          style={{ objectFit: "cover" }}
-        ></Image>
-        <div
-          className={`absolute left-0 top-0 h-full w-full bg-black/60 backdrop-blur`}
-        ></div>
-        {/*{astroImageInfo.map((image) => {*/}
-        {/*  return (*/}
-        {/*    <div key={image.title}>*/}
-        {/*      <Image src={image[bgImage].thumb} alt={"dd"}></Image>*/}
-        {/*    </div>*/}
-        {/*  );*/}
-        {/*})}*/}
+        <div className={`absolute left-0 top-0 h-full w-full bg-black/60`}>
+          <p className={`text-center text-almostWhite`}>
+            Hi, my name is Kieran and I&apos;m a landscape, nature &
+            astrophotographer based in the UK.
+          </p>
+          <button className={`rounded border-2 border-almostWhite p-2`}>
+            <Link href={"/gallery-overview"}>Gallery</Link>
+          </button>
+        </div>
       </main>
     </>
   );

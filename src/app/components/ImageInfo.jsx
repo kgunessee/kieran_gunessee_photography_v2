@@ -1429,8 +1429,8 @@ export const waterImageInfo = [
 
 export const landscapeImageInfo = [
   {
-    thumb: "/images/thumbnails/landscape/thumb_Tenerife_01.webp",
-    fullRes: "/images/full_res/landscape/fs_Tenerife_01.webp",
+    thumb: "/images/thumbnails/landscape/thumb_Tenerife_01.png",
+    fullRes: "/images/full_res/landscape/fs_Tenerife_01.png",
     title: "Rock formation in the Tenerife Desert",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
