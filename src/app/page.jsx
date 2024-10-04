@@ -6,46 +6,52 @@ import { useState, useEffect, useRef } from "react";
 
 //Components
 import { GalleryCategories } from "@/app/components/GalleryCategories";
-import { astroImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
+
+const homepageImages = [
+  "/images/homepage/hp_Road_To_The_Mountain.webp",
+  "/images/homepage/hp_TriangulumGalaxy.webp",
+  "/images/homepage/hp_Down_to_the_River.webp",
+  "/images/homepage/hp_ElephantsTrunkNebulaHOO.webp",
+  "/images/homepage/hp_Fall in suspense.webp",
+  "/images/homepage/hp_GhostOfCassiopeia.webp",
+  "/images/homepage/hp_HorseheadAndFlameNebula.webp",
+  "/images/homepage/hp_Iceland_5.webp",
+  "/images/homepage/hp_Iceland_12.webp",
+];
 
 export default function Home() {
   const [bgImage, setbgImage] = useState(0);
-  const [headerHeight, setHeaderHeight] = useState(0);
-  const headerRef = useRef(null); // Create a ref for the header
+
+  const gallerySectionRef = useRef(null);
+
+  const handleScrollToGallery = () => {
+    if (gallerySectionRef.current) {
+      gallerySectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setbgImage((prevIndex) => (prevIndex + 1) % astroImageInfo.length);
-    }, 5000);
+      setbgImage((prevIndex) => (prevIndex + 1) % homepageImages.length);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    if (headerRef.current) {
-      setHeaderHeight(headerRef.current.getBoundingClientRect().height);
-    }
-  }, [headerRef]);
-
   return (
     <>
-      <Header headerRef={headerRef} />
+      <Header isHomepage={true} />
       <main className={`w-screen overflow-y-hidden bg-black`}>
-        <section
-          style={{
-            height: `calc(100vh - ${headerHeight}px )`,
-          }}
-          className="relative grid place-items-center gap-8"
-        >
+        <section className="relative grid h-dvh place-items-center gap-8">
           <div className="absolute inset-0 z-0">
-            {astroImageInfo.map((image, index) => (
+            {homepageImages.map((image, index) => (
               <div
                 key={index}
                 className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
                   bgImage === index ? "opacity-100" : "opacity-0"
                 }`}
-                style={{ backgroundImage: `url(${image.fullRes})` }}
+                style={{ backgroundImage: `url(${image})` }}
               ></div>
             ))}
           </div>
@@ -57,13 +63,15 @@ export default function Home() {
               astrophotographer based in the UK.
             </p>
             <button
+              onClick={handleScrollToGallery}
               className={`rounded border-2 border-almostWhite p-4 text-almostWhite backdrop-blur-md transition-colors hover:bg-white/20`}
             >
-              <Link href={"#"}>View my Gallery</Link>
+              View my Gallery
             </button>
           </div>
         </section>
-        <GalleryCategories />
+
+        <GalleryCategories galleryRef={gallerySectionRef} />
       </main>
     </>
   );

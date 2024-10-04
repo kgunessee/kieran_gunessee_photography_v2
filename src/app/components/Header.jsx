@@ -11,7 +11,7 @@ import { HamburgerMenu } from "@/app/components/HamburgerMenu";
 import { MobileMenu } from "@/app/components/MobileMenu";
 import { DesktopNav } from "@/app/components/DesktopNav";
 
-export default function Header({ headerRef = null }) {
+export default function Header({ isHomepage = false }) {
   const [isMobileScreen, setIsMobileScreen] = useState(true); //Boolean to state whether the screen size is mobile (< 768px)
   const [isDarkMode, setIsDarkMode] = useState(true); //Boolean to set the theme
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); //Boolean to state whether the mobile menu is open
@@ -72,8 +72,11 @@ export default function Header({ headerRef = null }) {
 
   return (
     <header
-      ref={headerRef}
-      className={`relative mx-auto flex items-center justify-between border-b-[1px] border-white/10 bg-almostBlack px-mobileXPadding py-4 transition-colors lg:px-desktopXPadding dark:bg-blueBlack`}
+      className={`${
+        isHomepage
+          ? "absolute left-0 top-0 z-10 w-screen border-b-0 bg-transparent dark:bg-transparent"
+          : "relative"
+      } mx-auto flex items-center justify-between border-b-[1px] border-white/10 bg-almostBlack px-mobileXPadding py-4 transition-colors lg:px-desktopXPadding dark:bg-blueBlack`}
     >
       <Link href={"/"}>
         <h1 className={`text-2xl font-semibold text-white`}>

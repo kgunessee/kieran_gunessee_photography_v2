@@ -5,12 +5,19 @@ import Image from "next/image";
 //Components
 import { GalleryCategoryCard } from "@/app/components/GalleryCategoryCard";
 
-export function GalleryCategories() {
+export function GalleryCategories({ galleryRef }) {
   return (
-    <>
-      <section
-        className={`flex h-[200vh] flex-col gap-2 bg-almostWhite px-mobileXPadding py-4 dark:bg-blueBlack`}
+    <section
+      ref={galleryRef}
+      id={"gallery-section"}
+      className={`bg-almostWhite px-mobileXPadding py-4 dark:bg-blueBlack`}
+    >
+      <h2
+        className={`mb-4 text-2xl font-semibold text-almostBlack dark:text-almostWhite`}
       >
+        GALLERY
+      </h2>
+      <div className={`grid grid-cols-2 gap-2`}>
         <GalleryCategoryCard
           category={"/astrophotography"}
           title={"ASTROPHOTOGRAPHY"}
@@ -45,7 +52,7 @@ export function GalleryCategories() {
         {/*  imageUrl={"/images/thumbnails/water/thumb_Iceland_5.webp"}*/}
         {/*  alt={"Macro category image"}*/}
         {/*/>*/}
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
