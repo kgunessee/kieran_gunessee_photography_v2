@@ -33,7 +33,6 @@ export default function Landscape() {
         pageText={pageText}
         handleSearchTerm={handleSearchTerm}
         images={filteredImages}
-        isAstroImage={false}
         bgColourDark={"dark:to-orange-300/5"}
         bgColourLight={"to-orange-300/20"}
       />

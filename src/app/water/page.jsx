@@ -33,7 +33,6 @@ export default function Water() {
         pageText={pageText}
         handleSearchTerm={handleSearchTerm}
         images={filteredImages}
-        isAstroImage={false}
         bgColourDark={"dark:to-blue-500/5"}
         bgColourLight={"to-blue-500/15"}
       />

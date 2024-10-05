@@ -1,7 +1,5 @@
 "use client";
 //Plugins
-import Link from "next/link";
-import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 
 //Components
@@ -58,7 +56,7 @@ export default function Home() {
           <div
             className={`absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-4 bg-black/60 px-4`}
           >
-            <p className={`text-center text-almostWhite`}>
+            <p className={`text-center text-xl text-almostWhite`}>
               Hi, my name is Kieran and I&apos;m a landscape, nature &
               astrophotographer based in the UK.
             </p>

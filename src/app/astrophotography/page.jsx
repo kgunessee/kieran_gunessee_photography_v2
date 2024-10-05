@@ -7,6 +7,7 @@ import { useState } from "react";
 import { astroImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
+import { Footer } from "@/app/components/Footer";
 
 export default function Astrophotography() {
   const [searchText, setSearchText] = useState("");

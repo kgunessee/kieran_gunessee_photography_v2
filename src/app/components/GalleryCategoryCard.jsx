@@ -23,7 +23,7 @@ export function GalleryCategoryCard({ category, title, imageUrl, alt }) {
               alt={alt}
             ></Image>
           </div>
-          <div className="absolute inset-x-0 bottom-0 rounded-b bg-almostBlack px-2 py-1 text-almostWhite">
+          <div className="absolute inset-x-0 bottom-0 rounded-b bg-blueBlack px-2 py-1 text-almostWhite">
             <h3 className={`text-sm`}>{title}</h3>
           </div>
         </div>

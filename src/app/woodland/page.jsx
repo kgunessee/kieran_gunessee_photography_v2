@@ -27,12 +27,12 @@ export default function Woodland() {
   return (
     <>
       <Header />
+
       <PageTemplate
         pageTitle={"WOODLAND"}
         pageText={pageText}
         handleSearchTerm={handleSearchTerm}
         images={filteredImages}
-        isAstroImage={false}
         bgColourDark={"dark:to-emerald-700/10"}
         bgColourLight={"to-emerald-700/20"}
       />

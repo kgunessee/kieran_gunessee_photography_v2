@@ -2,19 +2,22 @@
 
 //Components
 import Gallery from "@/app/components/Gallery";
+import { Footer } from "@/app/components/Footer";
 
 export function PageTemplate({
   images,
   bgColourLight,
   bgColourDark,
-  isAstroImage,
+  isAstroImage = false,
+  isLocationCategory = false,
   handleSearchTerm,
   pageText,
   pageTitle,
 }) {
   return (
     <main
-      className={`overflow-hidden bg-gradient-to-tr from-transparent from-50% ${bgColourDark} ${bgColourLight} pb-4`}
+      // style={{ minHeight: `calc(100vh - ${headerHeight}px)` }}
+      className={`flex min-h-[calc(100dvh-65px)] flex-col justify-between overflow-hidden border-t-[1px] border-white/20 bg-gradient-to-tr from-transparent from-50% lg:min-h-[calc(100dvh-80px)] ${bgColourDark} ${bgColourLight}`}
     >
       <section className={`px-mobileXPadding lg:px-desktopXPadding`}>
         <h2
@@ -26,17 +29,20 @@ export function PageTemplate({
           {pageText}
         </p>
 
-        <input
-          placeholder={`${
-            isAstroImage
-              ? "Search by name or catalogue ID"
-              : "Search by name or location"
-          }`}
-          className={`mb-4 h-8 w-full rounded bg-black/10 px-2 dark:bg-white/10 dark:text-almostWhite`}
-          onChange={handleSearchTerm}
-        ></input>
+        {!isLocationCategory && (
+          <input
+            placeholder={`${
+              isAstroImage
+                ? "Search by name or catalogue ID"
+                : "Search by name or location"
+            }`}
+            className={`mb-4 h-8 w-full rounded bg-black/10 px-2 dark:bg-white/10 dark:text-almostWhite`}
+            onChange={handleSearchTerm}
+          ></input>
+        )}
+        <Gallery images={images} isAstroImage={isAstroImage} />
       </section>
-      <Gallery images={images} isAstroImage={isAstroImage} />
+      <Footer />
     </main>
   );
 }

@@ -10,7 +10,7 @@ export function GalleryCategories({ galleryRef }) {
     <section
       ref={galleryRef}
       id={"gallery-section"}
-      className={`bg-almostWhite px-mobileXPadding py-4 dark:bg-blueBlack`}
+      className={`bg-almostWhite px-mobileXPadding py-4 dark:bg-almostBlack`}
     >
       <h2
         className={`mb-4 text-2xl font-semibold text-almostBlack dark:text-almostWhite`}

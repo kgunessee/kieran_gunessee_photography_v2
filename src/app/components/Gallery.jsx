@@ -84,7 +84,7 @@ export default function Gallery({ images, isAstroImage }) {
 
   return (
     <>
-      <div className="gallery grid grid-cols-3 gap-1 px-mobileXPadding sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:px-desktopXPadding">
+      <div className="gallery grid grid-cols-3 gap-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {images.map((image) => {
           return (
             <a
