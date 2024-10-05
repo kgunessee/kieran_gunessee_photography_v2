@@ -74,7 +74,7 @@ export default function Header({ isHomepage = false }) {
     <header
       className={`${
         isHomepage
-          ? "absolute left-0 top-0 z-10 w-screen border-b-0 bg-transparent dark:bg-transparent"
+          ? "absolute left-0 top-0 z-10 w-screen border-b-0 border-transparent bg-transparent dark:bg-transparent"
           : "relative"
       } mx-auto flex items-center justify-between border-b-[1px] border-white/10 bg-almostBlack px-mobileXPadding py-4 transition-colors lg:px-desktopXPadding dark:bg-blueBlack`}
     >

@@ -1,6 +1,5 @@
 //Hooks & Plugins
-import Link from "next/link";
-import Image from "next/image";
+import { GalleryCategories } from "@/app/components/GalleryCategories";
 
 //Components
 import Header from "@/app/components/Header";
@@ -9,16 +8,8 @@ export default function galleryMenu() {
   return (
     <>
       <Header />
-      <main>
-        <h2
-          className={`my-2 px-mobileXPadding text-2xl font-semibold text-blueBlack dark:text-almostWhite`}
-        >
-          GALLERY
-        </h2>
-        <Link href={"/astrophotography"}>
-          <Image src={"#"} alt={"#"}></Image>
-          <h3>ASTROPHOTOGRAPHY</h3>
-        </Link>
+      <main className={`h-dvh bg-almostWhite dark:bg-blueBlack`}>
+        <GalleryCategories></GalleryCategories>
       </main>
     </>
   );

@@ -42,18 +42,18 @@ export function MobileMenu() {
         className={`absolute bottom-20 right-0 flex flex-col gap-4 p-6 text-right text-2xl text-almostWhite`}
       >
         <ul>
-          <motion.li
-            variants={liVariants}
-            className={`mb-2 mt-4 list-none text-3xl`}
-          >
-            <Link href={"/gallery"}>Gallery</Link>
-          </motion.li>
+          {/*<motion.li*/}
+          {/*  variants={liVariants}*/}
+          {/*  className={`mb-2 mt-4 list-none text-3xl`}*/}
+          {/*>*/}
+          {/*  <h3>Gallery</h3>*/}
+          {/*</motion.li>*/}
           {NavbarItems.map((item) => {
             return (
               <motion.li
                 key={item.name}
                 variants={liVariants}
-                className={`mb-2 list-none font-light`}
+                className={`mb-3 list-none transition-colors hover:text-greyBlue`}
               >
                 <Link href={item.url}>{item.name}</Link>
               </motion.li>
@@ -61,7 +61,7 @@ export function MobileMenu() {
           })}
           <motion.li
             variants={liVariants}
-            className={`mb-2 mt-2 list-none text-3xl`}
+            className={`mb-2 list-none transition-colors hover:text-greyBlue`}
           >
             <Link href={"/equipment"}>Equipment</Link>
           </motion.li>

@@ -25,13 +25,16 @@ export function PageTemplate({
         <p className={`mb-4 text-almostBlack dark:text-almostWhite`}>
           {pageText}
         </p>
-        {isAstroImage && (
-          <input
-            placeholder={"Search by name or catalogue ID"}
-            className={`mb-4 h-8 w-full rounded bg-black/10 px-2 dark:bg-white/10 dark:text-almostWhite`}
-            onChange={handleSearchTerm}
-          ></input>
-        )}
+
+        <input
+          placeholder={`${
+            isAstroImage
+              ? "Search by name or catalogue ID"
+              : "Search by name or location"
+          }`}
+          className={`mb-4 h-8 w-full rounded bg-black/10 px-2 dark:bg-white/10 dark:text-almostWhite`}
+          onChange={handleSearchTerm}
+        ></input>
       </section>
       <Gallery images={images} isAstroImage={isAstroImage} />
     </main>

@@ -36,7 +36,7 @@ export function ImageInfoPanel({
           {isAstroImage && (
             <div className={`lg:w-full`}>
               <h4 className={`text-blueBlack dark:text-greyBlue`}>
-                {imageInfo.catalogue} | {imageInfo.captureDetails.imageDate}
+                {`${imageInfo.catalogue} // ${imageInfo.captureDetails.imageDate}`}
               </h4>
               <h3 className={`my-4 text-xl font-semibold`}>Image Details</h3>
               <ul className={`flex list-inside list-disc flex-col gap-1`}>
@@ -87,7 +87,7 @@ export function ImageInfoPanel({
           {!isAstroImage && (
             <div className={`lg:w-full`}>
               <h4 className={`text-blueBlack dark:text-greyBlue`}>
-                {imageInfo.imageDate} | {imageInfo.location}
+                {`${imageInfo.imageDate} // ${imageInfo.location}`}
               </h4>
               <h3 className={`my-4 text-xl font-semibold`}>Image Details</h3>
               <ul className={`flex list-inside list-disc flex-col gap-1`}>

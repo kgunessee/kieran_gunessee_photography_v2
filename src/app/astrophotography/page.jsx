@@ -17,13 +17,11 @@ export default function Astrophotography() {
   };
 
   const filteredImages = astroImageInfo.filter((image) => {
+    const searchTerm = searchText.toLowerCase();
     return (
-      image.title.toLowerCase().includes(searchText.toLowerCase()) ||
-      image.catalogue
-        .replaceAll(" ", "")
-        .toLowerCase()
-        .includes(searchText.toLowerCase()) ||
-      image.catalogue.toLowerCase().includes(searchText.toLowerCase())
+      image.title.toLowerCase().includes(searchTerm) ||
+      image.catalogue.replaceAll(" ", "").toLowerCase().includes(searchTerm) ||
+      image.catalogue.toLowerCase().includes(searchTerm)
     );
   });
 

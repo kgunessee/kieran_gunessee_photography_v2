@@ -1429,7 +1429,7 @@ export const waterImageInfo = [
 
 export const landscapeImageInfo = [
   {
-    thumb: "/images/thumbnails/landscape/thumb_Tenerife_01.png",
+    thumb: "/images/thumbnails/landscape/thumb_Tenerife_01.webp",
     fullRes: "/images/full_res/landscape/fs_Tenerife_01.png",
     title: "Rock formation in the Tenerife Desert",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
@@ -1449,7 +1449,7 @@ export const landscapeImageInfo = [
   {
     thumb: "/images/thumbnails/landscape/thumb_Iceland_15.webp",
     fullRes: "/images/full_res/landscape/fs_Iceland_15.webp",
-    title: "Kirkjufell",
+    title: "Kirkjufell & River",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
     imageDate: "04/11/2023",
@@ -1458,7 +1458,7 @@ export const landscapeImageInfo = [
   {
     thumb: "/images/thumbnails/landscape/thumb_Iceland_11.webp",
     fullRes: "/images/full_res/landscape/fs_Iceland_11.webp",
-    title: "Kirkjufell",
+    title: "Kirkjufell Across the Sea",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
     imageDate: "04/11/2023",

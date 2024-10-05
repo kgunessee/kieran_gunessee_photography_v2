@@ -63,27 +63,13 @@ export default function Gallery({ images, isAstroImage }) {
       Toolbar: {
         items: {
           infoPanel: {
-            tpl: `<button class="f-button info-button"> <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="32"
-      viewBox="0 0 32 32"
-    >
-      <path d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13 13-5.832 13-13S23.168 3 16 3zm0 2c6.086 0 11 4.914 11 11s-4.914 11-11 11S5 22.086 5 16 9.914 5 16 5zm-1 5v2h2v-2zm0 4v8h2v-8z"></path>
-    </svg></button>`,
+            tpl: `<button class="f-button info-button">Image Info</button>`,
           },
         },
         display: {
           left: [], //"infobar" - show number of images and current index
           middle: [],
-          right: [
-            "infoPanel",
-            "download",
-            "toggle1to1",
-            "fullscreen",
-            "thumbs",
-            "close",
-          ],
+          right: ["infoPanel", "download", "fullscreen", "thumbs", "close"],
         },
       },
       Thumbs: {
@@ -105,7 +91,11 @@ export default function Gallery({ images, isAstroImage }) {
               href={image.fullRes}
               key={`key=${image.title}`}
               data-fancybox="gallery"
-              data-caption={`${image.title} | ${image.catalogue}`}
+              data-caption={`${
+                image.title
+              } <span class="dark:text-lightBlue text-blueBlack">//</span> ${
+                isAstroImage ? image.catalogue : image.location
+              }`}
             >
               <div className="relative aspect-square w-full">
                 <Image
