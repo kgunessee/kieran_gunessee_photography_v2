@@ -158,6 +158,31 @@ export const daytimeEquipmentInfo = {
 export const astroImageInfo = [
   {
     thumb:
+      "/images/thumbnails/astrophotography/thumb_Elephants Trunk Nebula SHO.webp",
+    fullRes:
+      "/images/full_res/astrophotography/fs_Elephants Trunk Nebula SHO.webp",
+    title: "The Elephants Trunk Nebula in SHO",
+    catalogue: "IC 1396",
+    captureDetails: {
+      exposureTime: "180s",
+      integration: "30hrs",
+      darks: "20",
+      flats: "20",
+      darkFlats: "20",
+      scope: astroEquipmentInfo.Scope.GT71ii.name,
+      mount: astroEquipmentInfo.Mount.heq5pro.name,
+      camera: astroEquipmentInfo.Camera["533MMPRO"].name,
+      filters: astroEquipmentInfo.Filters.antliaEdge.name,
+      imagingCapture: astroEquipmentInfo["Image Capture"].asiairplus.name,
+      guidescope: astroEquipmentInfo["Guide Scope"].svbony60mm.name,
+      guideCamera: astroEquipmentInfo["Guide Camera"]["220mmMini"].name,
+      software: `${astroEquipmentInfo.Software.affinity.name} & ${astroEquipmentInfo.Software.pixinsight.name}`,
+      imageDate: "04/10/2024",
+    },
+    description: "",
+  },
+  {
+    thumb:
       "/images/thumbnails/astrophotography/thumb_ElephantsTrunkNebulaHOO.webp",
     fullRes:
       "/images/full_res/astrophotography/fs_ElephantsTrunkNebulaHOO.webp",
