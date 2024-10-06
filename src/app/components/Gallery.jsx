@@ -63,7 +63,21 @@ export default function Gallery({ images, isAstroImage }) {
       Toolbar: {
         items: {
           infoPanel: {
-            tpl: `<button class="f-button info-button">Image Info</button>`,
+            tpl: `<div class="f-button info-button"> <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 11.5v5M12 7.51l.01-.011M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"
+      ></path>
+    </svg></div>`,
           },
         },
         display: {
@@ -112,7 +126,7 @@ export default function Gallery({ images, isAstroImage }) {
                   className={`absolute top-0 grid h-full w-full place-items-center bg-almostBlack/90 opacity-0 transition-opacity duration-150 hover:opacity-100`}
                 >
                   <p
-                    className={`text-wrap text-center text-xs text-almostWhite`}
+                    className={`text-wrap text-center text-xs text-almostWhite lg:text-base`}
                   >
                     {image.title}
                   </p>

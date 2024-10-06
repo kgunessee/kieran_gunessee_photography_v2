@@ -21,7 +21,7 @@ export function PageTemplate({
     >
       <section className={`px-mobileXPadding lg:px-desktopXPadding`}>
         <h2
-          className={`mt-2 text-2xl font-semibold text-blueBlack dark:text-almostWhite`}
+          className={`mt-2 text-2xl font-semibold text-blueBlack xl:text-3xl dark:text-almostWhite`}
         >
           {pageTitle}
         </h2>
@@ -36,7 +36,7 @@ export function PageTemplate({
                 ? "Search by name or catalogue ID"
                 : "Search by name or location"
             }`}
-            className={`mb-4 h-8 w-full rounded bg-black/10 px-2 dark:bg-white/10 dark:text-almostWhite`}
+            className={`mb-4 h-8 w-full rounded bg-black/10 px-2 xl:h-10 xl:text-xl dark:bg-white/10 dark:text-almostWhite`}
             onChange={handleSearchTerm}
           ></input>
         )}

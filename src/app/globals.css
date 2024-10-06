@@ -14,12 +14,12 @@
 }
 
 .fancybox__slide {
-  padding: 0.5rem 0 0 0 !important;
+  padding: 0.5rem 0 !important;
 }
 
 .fancybox__caption {
-  min-width: 400px;
   text-align: center;
+  text-wrap: wrap;
 }
 
 .fancybox__backdrop {
@@ -34,13 +34,19 @@ body.dark .fancybox__backdrop {
   align-items: center !important;
 }
 
-.fancybox__footer,
-.f-button {
+.fancybox__footer {
   background: transparent !important;
 }
 
-body.dark .fancybox__footer,
+.f-button {
+  background: var(--almost-white) !important;
+}
+
 body.dark .f-button {
+  background: var(--almost-black) !important;
+}
+
+body.dark .fancybox__footer {
   background: rgba(0, 0, 0, 0) !important;
 }
 
@@ -54,21 +60,26 @@ body.dark .fancybox__caption {
   color: var(--almost-white) !important;
 }
 
-.is-next {
-  background: rgba(0, 0, 0, 0);
+.is-next,
+.is-prev {
+  background: rgba(0, 0, 0, 0) !important;
+  color: var(--almost-white) !important;
+}
+
+body.dark .is-next,
+body.dark .is-prev {
+  background: rgba(0, 0, 0, 0) !important;
+  color: var(--almost-white) !important;
 }
 
 .info-button {
-  border-radius: 3px !important;
-  border: 2px solid rgba(0, 0, 0, 0.6) !important;
-  width: 5rem !important;
-  padding: 0.25rem !important;
+  border-radius: 0 0 0 3px !important;
   font-size: 0.75rem !important;
-  height: fit-content !important;
+  height: 100% !important;
 }
 
-body.dark .info-button {
-  border: 2px solid rgba(255, 255, 255, 0.8) !important;
+.info-button-text {
+  border: 2px solid rgba(0, 0, 0, 0.6) !important;
 }
 
 .modal-close-btn {
@@ -77,4 +88,8 @@ body.dark .info-button {
 
 body.dark .modal-close-btn {
   fill: var(--almost-white) !important;
+}
+
+.fullscreen-style {
+  width: 2rem !important;
 }

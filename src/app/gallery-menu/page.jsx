@@ -4,24 +4,18 @@ import { GalleryCategoryCard } from "@/app/components/GalleryCategoryCard";
 
 //Components
 import Header from "@/app/components/Header";
+import { Footer } from "@/app/components/Footer";
 
 export default function galleryMenu() {
   return (
     <>
       <Header />
       <main
-        className={`h-dvh border-t-[1px] border-white/20 bg-almostWhite dark:bg-blueBlack`}
+        className={`flex min-h-[calc(100dvh-65px)] flex-col justify-between border-t-[1px] border-white/20 bg-almostWhite lg:min-h-[calc(100dvh-80px)] dark:bg-almostBlack`}
       >
         <GalleryCategories />
 
-        <section className={`grid grid-cols-2 gap-2 px-mobileXPadding`}>
-          <GalleryCategoryCard
-            category={"/iceland"}
-            title={"ICELAND"}
-            imageUrl={"/images/thumbnails/landscape/thumb_Iceland_11.webp"}
-            alt={"Iceland category image"}
-          />
-        </section>
+        <Footer />
       </main>
     </>
   );

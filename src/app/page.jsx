@@ -11,7 +11,6 @@ const homepageImages = [
   "/images/homepage/hp_TriangulumGalaxy.webp",
   "/images/homepage/hp_Down_to_the_River.webp",
   "/images/homepage/hp_ElephantsTrunkNebulaHOO.webp",
-  "/images/homepage/hp_Fall in suspense.webp",
   "/images/homepage/hp_GhostOfCassiopeia.webp",
   "/images/homepage/hp_HorseheadAndFlameNebula.webp",
   "/images/homepage/hp_Iceland_5.webp",
@@ -56,13 +55,13 @@ export default function Home() {
           <div
             className={`absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-4 bg-black/60 px-4`}
           >
-            <p className={`text-center text-xl text-almostWhite`}>
+            <p className={`text-center text-xl text-almostWhite lg:text-2xl`}>
               Hi, my name is Kieran and I&apos;m a landscape, nature &
               astrophotographer based in the UK.
             </p>
             <button
               onClick={handleScrollToGallery}
-              className={`rounded border-2 border-almostWhite p-4 text-almostWhite backdrop-blur-md transition-colors hover:bg-white/20`}
+              className={`rounded border-2 border-almostWhite p-4 text-almostWhite backdrop-blur-md transition-colors hover:bg-white/20 lg:text-2xl`}
             >
               View my Gallery
             </button>

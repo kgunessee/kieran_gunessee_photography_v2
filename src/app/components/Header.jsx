@@ -45,7 +45,7 @@ export default function Header({ isHomepage = false, headerRef }) {
   // Change logo from full name to initials on mobile screen
   useEffect(() => {
     const handleScreenSizeChange = () => {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 1024) {
         setIsMobileScreen(true);
       } else {
         setIsMobileScreen(false);

@@ -10,14 +10,14 @@ export function GalleryCategories({ galleryRef }) {
     <section
       ref={galleryRef}
       id={"gallery-section"}
-      className={`bg-almostWhite px-mobileXPadding py-4 dark:bg-almostBlack`}
+      className={`bg-almostWhite px-mobileXPadding py-4 lg:px-desktopXPadding dark:bg-almostBlack`}
     >
       <h2
         className={`mb-4 text-2xl font-semibold text-almostBlack dark:text-almostWhite`}
       >
         GALLERY
       </h2>
-      <div className={`grid grid-cols-2 gap-2`}>
+      <div className={`grid grid-cols-2 gap-2 md:grid-cols-3`}>
         <GalleryCategoryCard
           category={"/astrophotography"}
           title={"ASTROPHOTOGRAPHY"}
@@ -52,6 +52,12 @@ export function GalleryCategories({ galleryRef }) {
         {/*  imageUrl={"/images/thumbnails/water/thumb_Iceland_5.webp"}*/}
         {/*  alt={"Macro category image"}*/}
         {/*/>*/}
+        <GalleryCategoryCard
+          category={"/iceland"}
+          title={"ICELAND"}
+          imageUrl={"/images/thumbnails/landscape/thumb_Iceland_11.webp"}
+          alt={"Iceland category image"}
+        />
       </div>
     </section>
   );
