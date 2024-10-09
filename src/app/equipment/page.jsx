@@ -12,7 +12,6 @@ import {
 } from "@/app/components/ImageInfo";
 import { EquipmentCategory } from "@/app/components/EquipmentCategory";
 import { Footer } from "@/app/components/Footer";
-import { HeadComponent } from "@/app/components/HeadComponent";
 
 export default function Equipment() {
   const [isAstroOpen, setIsAstroOpen] = useState(true);
@@ -23,11 +22,6 @@ export default function Equipment() {
 
   return (
     <main>
-      <HeadComponent
-        title={"Equipment - Kieran Gunessee Astrophotography"}
-        description={"A list of my photography equipment."}
-        keywords={"photography, equipment, astrophotography, astro photography"}
-      />
       <Header />
       <section className={`flex flex-col justify-between`}>
         <section

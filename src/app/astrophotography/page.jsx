@@ -1,49 +1,33 @@
-"use client";
-
-//Hooks & Plugins
-import { useState } from "react";
-
 //Components
 import { astroImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
-import { Footer } from "@/app/components/Footer";
-import { HeadComponent } from "@/app/components/HeadComponent";
+
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "Astrophotography - Kieran Gunessee Photography",
+  description: "Images of galaxies, nebulae, stars and the universe.",
+  keywords: [
+    "photography",
+    "astrophotography",
+    "astro photography",
+    "galaxy",
+    "nebula",
+    "nebulae",
+    "stars",
+  ],
+};
 
 export default function Astrophotography() {
-  const [searchText, setSearchText] = useState("");
-
-  const handleSearchTerm = (e) => {
-    const searchTerm = e.target.value;
-    setSearchText(searchTerm);
-  };
-
-  const filteredImages = astroImageInfo.filter((image) => {
-    const searchTerm = searchText.toLowerCase();
-    return (
-      image.title.toLowerCase().includes(searchTerm) ||
-      image.catalogue.replaceAll(" ", "").toLowerCase().includes(searchTerm) ||
-      image.catalogue.toLowerCase().includes(searchTerm)
-    );
-  });
-
   const pageText =
     "Galaxies, nebulae, comets and stars - the endless beauty of the universe.";
   return (
     <main>
-      <HeadComponent
-        title={"Astrophotography - Kieran Gunessee Astrophotography"}
-        description={"Images of galaxies, nebulae, stars and the universe."}
-        keywords={
-          "photography, astro, astrophotography, astro photography, galaxy,nebula, stars"
-        }
-      />
       <Header />
       <PageTemplate
         pageTitle={"ASTROPHOTOGRAPHY"}
         pageText={pageText}
-        handleSearchTerm={handleSearchTerm}
-        images={filteredImages}
+        images={astroImageInfo}
         isAstroImage={true}
         bgColourDark={"dark:to-indigo-500/5"}
         bgColourLight={"to-indigo-500/20"}

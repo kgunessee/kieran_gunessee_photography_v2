@@ -9,8 +9,17 @@ const poppins = Poppins({
 //Styles
 import "./globals.css";
 
-//Components
-import Head from "next/head";
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "Kieran Gunessee Photography",
+  keywords: [
+    "photography, kieran gunessee, landscape, astrophotography, fine art photography",
+  ],
+  description:
+    "Astro, Landscape, Nature & Macro Photographer based in the Midlands, UK.",
+  author: "Kieran Gunessee",
+  robots: "index, follow",
+};
 
 export default function RootLayout({ children }) {
   return (

@@ -59,7 +59,6 @@ export default function Gallery({ images, isAstroImage }) {
           }
         },
       },
-
       Toolbar: {
         items: {
           infoPanel: {
@@ -88,6 +87,11 @@ export default function Gallery({ images, isAstroImage }) {
       },
       Thumbs: {
         showOnStart: !isMobileScreen, //Only show thumbnails on start on desktop
+      },
+      transitionEffect: "fade",
+      transitionDuration: 300, // Customize the duration in milliseconds
+      Carousel: {
+        transition: "fade",
       },
     });
 

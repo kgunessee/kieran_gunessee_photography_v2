@@ -1,8 +1,11 @@
 //This is the template for the image pages
 
+"use client";
 //Components
 import Gallery from "@/app/components/Gallery";
 import { Footer } from "@/app/components/Footer";
+import { useState } from "react";
+import { landscapeImageInfo } from "@/app/components/ImageInfo";
 
 export function PageTemplate({
   images,
@@ -10,10 +13,25 @@ export function PageTemplate({
   bgColourDark,
   isAstroImage = false,
   isLocationCategory = false,
-  handleSearchTerm,
   pageText,
   pageTitle,
 }) {
+  const [searchText, setSearchText] = useState("");
+
+  const handleSearchTerm = (e) => {
+    const searchTerm = e.target.value;
+    setSearchText(searchTerm);
+  };
+
+  const filteredImages = images.filter((image) => {
+    const searchTerm = searchText.toLowerCase();
+    return (
+      image.title.toLowerCase().includes(searchTerm) ||
+      image.location.replaceAll(" ", "").toLowerCase().includes(searchTerm) ||
+      image.location.toLowerCase().includes(searchTerm)
+    );
+  });
+
   return (
     <section
       // style={{ minHeight: `calc(100vh - ${headerHeight}px)` }}
@@ -40,7 +58,7 @@ export function PageTemplate({
             onChange={handleSearchTerm}
           ></input>
         )}
-        <Gallery images={images} isAstroImage={isAstroImage} />
+        <Gallery images={filteredImages} isAstroImage={isAstroImage} />
       </section>
       <Footer />
     </section>
