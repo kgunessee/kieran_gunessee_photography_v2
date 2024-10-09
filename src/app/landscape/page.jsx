@@ -5,6 +5,7 @@ import { landscapeImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
 import { useState } from "react";
+import { HeadComponent } from "@/app/components/HeadComponent";
 
 export default function Landscape() {
   const [searchText, setSearchText] = useState("");
@@ -26,7 +27,16 @@ export default function Landscape() {
   const pageText =
     "Hills, mountains, sweeping vistas and interesting landmarks. Exploring nature's landscapes from every angle.";
   return (
-    <>
+    <main>
+      <HeadComponent
+        title={"Landscape - Kieran Gunessee Astrophotography"}
+        description={
+          "Hills, mountains, vistas and interesting landmarks from every form."
+        }
+        keywords={
+          "photography, landscape, landscape photography, mountains, hills"
+        }
+      />
       <Header />
       <PageTemplate
         pageTitle={"LANDSCAPE"}
@@ -36,6 +46,6 @@ export default function Landscape() {
         bgColourDark={"dark:to-orange-300/5"}
         bgColourLight={"to-orange-300/20"}
       />
-    </>
+    </main>
   );
 }

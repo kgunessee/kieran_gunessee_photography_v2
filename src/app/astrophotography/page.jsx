@@ -8,6 +8,7 @@ import { astroImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
 import { Footer } from "@/app/components/Footer";
+import { HeadComponent } from "@/app/components/HeadComponent";
 
 export default function Astrophotography() {
   const [searchText, setSearchText] = useState("");
@@ -29,9 +30,15 @@ export default function Astrophotography() {
   const pageText =
     "Galaxies, nebulae, comets and stars - the endless beauty of the universe.";
   return (
-    <>
+    <main>
+      <HeadComponent
+        title={"Astrophotography - Kieran Gunessee Astrophotography"}
+        description={"Images of galaxies, nebulae, stars and the universe."}
+        keywords={
+          "photography, astro, astrophotography, astro photography, galaxy,nebula, stars"
+        }
+      />
       <Header />
-
       <PageTemplate
         pageTitle={"ASTROPHOTOGRAPHY"}
         pageText={pageText}
@@ -41,6 +48,6 @@ export default function Astrophotography() {
         bgColourDark={"dark:to-indigo-500/5"}
         bgColourLight={"to-indigo-500/20"}
       />
-    </>
+    </main>
   );
 }

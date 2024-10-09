@@ -12,6 +12,7 @@ import {
 } from "@/app/components/ImageInfo";
 import { EquipmentCategory } from "@/app/components/EquipmentCategory";
 import { Footer } from "@/app/components/Footer";
+import { HeadComponent } from "@/app/components/HeadComponent";
 
 export default function Equipment() {
   const [isAstroOpen, setIsAstroOpen] = useState(true);
@@ -21,9 +22,14 @@ export default function Equipment() {
   const dayEquipmentLength = Object.keys(daytimeEquipmentInfo);
 
   return (
-    <>
+    <main>
+      <HeadComponent
+        title={"Equipment - Kieran Gunessee Astrophotography"}
+        description={"A list of my photography equipment."}
+        keywords={"photography, equipment, astrophotography, astro photography"}
+      />
       <Header />
-      <main className={`flex flex-col justify-between`}>
+      <section className={`flex flex-col justify-between`}>
         <section
           className={`my-2 px-mobileXPadding text-blueBlack lg:px-desktopXPadding dark:text-almostWhite`}
         >
@@ -111,7 +117,7 @@ export default function Equipment() {
           </section>
         </section>
         <Footer />
-      </main>
-    </>
+      </section>
+    </main>
   );
 }

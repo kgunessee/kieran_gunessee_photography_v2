@@ -5,6 +5,7 @@ import { waterImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
 import { useState } from "react";
+import { HeadComponent } from "@/app/components/HeadComponent";
 
 export default function Water() {
   const [searchText, setSearchText] = useState("");
@@ -26,14 +27,16 @@ export default function Water() {
   const pageText =
     "Waterfalls, rivers and oceans - the flow of water in every form.";
   return (
-    <>
-      <Head>
-        <title>Water - Kieran Gunessee Astrophotography</title>
-        <meta
-          name="description"
-          content="Images of waterfalls, rivers, lakes, and everything related to water."
-        />
-      </Head>
+    <main>
+      <HeadComponent
+        title={"Water - Kieran Gunessee Astrophotography"}
+        description={
+          "Images of waterfalls, rivers, lakes, and everything related to water."
+        }
+        keywords={
+          "photography, water, water photography, waterfalls, rivers, sea, ocean"
+        }
+      />
       <Header />
       <PageTemplate
         pageTitle={"WATER"}
@@ -43,6 +46,6 @@ export default function Water() {
         bgColourDark={"dark:to-blue-500/5"}
         bgColourLight={"to-blue-500/15"}
       />
-    </>
+    </main>
   );
 }

@@ -4,6 +4,7 @@ import { woodlandImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
 import { useState } from "react";
+import { HeadComponent } from "@/app/components/HeadComponent";
 
 export default function Woodland() {
   const [searchText, setSearchText] = useState("");
@@ -25,7 +26,12 @@ export default function Woodland() {
   const pageText =
     "Trees, leaves, orange and green - the chaos and calm of the woods.";
   return (
-    <>
+    <main>
+      <HeadComponent
+        title={"Woodland - Kieran Gunessee Astrophotography"}
+        description={"Images of woodland, forests and trees."}
+        keywords={"photography, woodland, woodland photography, trees, autumn"}
+      />
       <Header />
 
       <PageTemplate
@@ -36,6 +42,6 @@ export default function Woodland() {
         bgColourDark={"dark:to-emerald-700/10"}
         bgColourLight={"to-emerald-700/20"}
       />
-    </>
+    </main>
   );
 }

@@ -15,7 +15,7 @@ export function PageTemplate({
   pageTitle,
 }) {
   return (
-    <main
+    <section
       // style={{ minHeight: `calc(100vh - ${headerHeight}px)` }}
       className={`flex min-h-[calc(100dvh-65px)] flex-col justify-between overflow-hidden border-t-[1px] border-white/20 bg-gradient-to-tr from-transparent from-50% lg:min-h-[calc(100dvh-80px)] ${bgColourDark} ${bgColourLight}`}
     >
@@ -43,6 +43,6 @@ export function PageTemplate({
         <Gallery images={images} isAstroImage={isAstroImage} />
       </section>
       <Footer />
-    </main>
+    </section>
   );
 }

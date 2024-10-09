@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 //Components
 import { GalleryCategories } from "@/app/components/GalleryCategories";
 import Header from "@/app/components/Header";
-
+import { HeadComponent } from "@/app/components/HeadComponent";
 const homepageImages = [
   "/images/homepage/hp_Road_To_The_Mountain.webp",
   "/images/homepage/hp_TriangulumGalaxy.webp",
@@ -37,9 +37,18 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <main>
+      <HeadComponent
+        title={"Kieran Gunessee Photography"}
+        keywords={
+          "photography, kieran gunessee, landscape, astrophotography, fine art photography"
+        }
+        description={
+          "Astro, Landscape, Nature & Macro Photographer based in the Midlands, UK."
+        }
+      />
       <Header isHomepage={true} />
-      <main className={`w-screen overflow-y-hidden bg-black`}>
+      <section className={`w-screen overflow-y-hidden bg-black`}>
         <section className="relative grid h-dvh place-items-center gap-8">
           <div className="absolute inset-0 z-0">
             {homepageImages.map((image, index) => (
@@ -69,7 +78,7 @@ export default function Home() {
         </section>
 
         <GalleryCategories galleryRef={gallerySectionRef} />
-      </main>
-    </>
+      </section>
+    </main>
   );
 }
