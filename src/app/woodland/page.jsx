@@ -2,6 +2,7 @@
 //Components
 import { woodlandImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
+import Head from "next/head";
 import { PageTemplate } from "@/app/components/PageTemplate";
 import { useState } from "react";
 import { HeadComponent } from "@/app/components/HeadComponent";
@@ -27,11 +28,18 @@ export default function Woodland() {
     "Trees, leaves, orange and green - the chaos and calm of the woods.";
   return (
     <main>
-      <HeadComponent
-        title={"Woodland - Kieran Gunessee Astrophotography"}
-        description={"Images of woodland, forests and trees."}
-        keywords={"photography, woodland, woodland photography, trees, autumn"}
-      />
+      <Head>
+        <title>Woodland - Kieran Gunessee Astrophotography</title>
+        <meta
+          name="description"
+          content="Images of woodland, forests and trees"
+        />
+      </Head>
+      {/*<HeadComponent*/}
+      {/*  title={"Woodland - Kieran Gunessee Astrophotography"}*/}
+      {/*  description={"Images of woodland, forests and trees."}*/}
+      {/*  keywords={"photography, woodland, woodland photography, trees, autumn"}*/}
+      {/*/>*/}
       <Header />
 
       <PageTemplate
