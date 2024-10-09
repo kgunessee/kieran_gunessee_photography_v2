@@ -10,7 +10,9 @@ export function Footer() {
       <footer
         className={`mt-4 flex h-20 items-center justify-between border-t-[1px] border-black/20 bg-transparent px-mobileXPadding lg:px-desktopXPadding dark:border-white/20`}
       >
-        <p className={`text-almostBlack/70 dark:text-almostWhite/70`}>
+        <p
+          className={`text-sm text-almostBlack/70 lg:text-base dark:text-almostWhite/70`}
+        >
           © Kieran Gunessee {year}. Website designed and developed by me.
         </p>
         <div

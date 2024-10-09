@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
           content="Photography, Landscape, Astrophotography, Photographer, Fine art"
         />
         <meta name="author" content="Kieran Gunessee" />
+        <link rel="icon" href="/public/images/icons/favicon.svg" />
       </Head>
       <body
         className={`${poppins.className} dark overflow-x-hidden bg-almostWhite antialiased transition-colors duration-200 dark:bg-almostBlack`}

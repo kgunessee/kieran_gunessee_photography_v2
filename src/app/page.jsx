@@ -53,15 +53,15 @@ export default function Home() {
             ))}
           </div>
           <div
-            className={`absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-4 bg-black/60 px-4`}
+            className={`absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-4 bg-black/60 px-4 lg:gap-8`}
           >
-            <p className={`text-center text-xl text-almostWhite lg:text-2xl`}>
+            <p className={`text-center text-xl text-almostWhite`}>
               Hi, my name is Kieran and I&apos;m a landscape, nature &
               astrophotographer based in the UK.
             </p>
             <button
               onClick={handleScrollToGallery}
-              className={`rounded border-2 border-almostWhite p-4 text-almostWhite backdrop-blur-md transition-colors hover:bg-white/20 lg:text-2xl`}
+              className={`rounded border-2 border-almostWhite p-4 text-almostWhite backdrop-blur-md transition-colors hover:bg-white/20 lg:text-xl`}
             >
               View my Gallery
             </button>

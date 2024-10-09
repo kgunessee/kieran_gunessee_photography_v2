@@ -11,10 +11,45 @@ import { HamburgerMenu } from "@/app/components/HamburgerMenu";
 import { MobileMenu } from "@/app/components/MobileMenu";
 import { DesktopNav } from "@/app/components/DesktopNav";
 
-export default function Header({ isHomepage = false, headerRef }) {
+export default function Header({ isHomepage = false }) {
   const [isMobileScreen, setIsMobileScreen] = useState(true); //Boolean to state whether the screen size is mobile (< 768px)
   const [isDarkMode, setIsDarkMode] = useState(true); //Boolean to set the theme
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); //Boolean to state whether the mobile menu is open
+
+  const mobileLogo = (
+    <svg
+      className={`h-8 w-8`}
+      xmlns="http://www.w3.org/2000/svg"
+      fillRule="evenodd"
+      strokeLinejoin="round"
+      strokeMiterlimit="2"
+      clipRule="evenodd"
+      viewBox="0 0 24 24"
+    >
+      <text
+        x="7.36"
+        y="21.159"
+        fill="#ebebeb"
+        fillOpacity="0.6"
+        fontFamily="'Lato-Bold', 'Lato'"
+        fontSize="25.456"
+        fontWeight="700"
+        transform="matrix(.98594 0 0 1 -.085 0)"
+      >
+        G
+      </text>
+      <text
+        x="-1.986"
+        y="21.276"
+        fill="#e1e1e1"
+        fontFamily="'Lato-Bold', 'Lato'"
+        fontSize="25.636"
+        fontWeight="700"
+      >
+        K
+      </text>
+    </svg>
+  );
 
   // Handle dark mode toggle and persist in localStorage
   const handleIsDarkModeToggle = () => {
@@ -80,7 +115,7 @@ export default function Header({ isHomepage = false, headerRef }) {
     >
       <Link href={"/"}>
         <h1 className={`text-2xl font-semibold text-white`}>
-          {isMobileScreen ? "KG" : "Kieran Gunessee Photography"}
+          {isMobileScreen ? mobileLogo : "Kieran Gunessee Photography"}
         </h1>
       </Link>
       <div className={`flex items-center gap-4`}>
