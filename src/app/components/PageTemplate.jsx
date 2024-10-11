@@ -5,7 +5,6 @@
 import Gallery from "@/app/components/Gallery";
 import { Footer } from "@/app/components/Footer";
 import { useState } from "react";
-import { landscapeImageInfo } from "@/app/components/ImageInfo";
 
 export function PageTemplate({
   images,
@@ -25,11 +24,22 @@ export function PageTemplate({
 
   const filteredImages = images.filter((image) => {
     const searchTerm = searchText.toLowerCase();
-    return (
-      image.title.toLowerCase().includes(searchTerm) ||
-      image.location.replaceAll(" ", "").toLowerCase().includes(searchTerm) ||
-      image.location.toLowerCase().includes(searchTerm)
-    );
+    if (isAstroImage) {
+      return (
+        image.title.toLowerCase().includes(searchTerm) ||
+        image.catalogue
+          .replaceAll(" ", "")
+          .toLowerCase()
+          .includes(searchTerm) ||
+        image.catalogue.toLowerCase().includes(searchTerm)
+      );
+    } else {
+      return (
+        image.title.toLowerCase().includes(searchTerm) ||
+        image.location.replaceAll(" ", "").toLowerCase().includes(searchTerm) ||
+        image.location.toLowerCase().includes(searchTerm)
+      );
+    }
   });
 
   return (

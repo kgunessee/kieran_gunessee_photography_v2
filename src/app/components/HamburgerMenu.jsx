@@ -1,6 +1,10 @@
 export function HamburgerMenu({ isMobileMenuOpen, handleMobileMenuToggle }) {
   return (
-    <button onClick={handleMobileMenuToggle} className={`relative z-20`}>
+    <button
+      aria-label={"Open menu"}
+      onClick={handleMobileMenuToggle}
+      className={`relative z-20`}
+    >
       <span
         className={`block h-0.5 w-6 bg-almostWhite transition-all duration-300 ease-in-out ${
           isMobileMenuOpen ? "translate-y-1 rotate-45" : "-translate-y-0.5"

@@ -18,7 +18,7 @@ export function ImageInfoPanel({
       exit={{ opacity: 0 }}
       transition={{ type: "tween", duration: 0.3 }}
       onClick={handleCloseModal}
-      className={`absolute left-0 top-0 z-[9999] grid h-full w-full place-items-center bg-black/70 backdrop-blur`}
+      className={`fixed left-0 top-0 z-[9999] grid h-full w-full place-items-center bg-black/70 backdrop-blur`}
     >
       <motion.div
         initial={{ scale: 0.9, opacity: 0.7 }}
