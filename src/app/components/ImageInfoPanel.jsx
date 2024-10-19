@@ -92,12 +92,13 @@ export function ImageInfoPanel({
                   {`${imageInfo.imageDate} // ${imageInfo.location}`}
                 </h4>
                 <Link
+                  title={"View Location on Google Maps"}
                   href={imageInfo.mapLocation}
                   target={"_blank"}
                   aria-label={`Link to Map location for ${imageInfo.title}`}
                 >
                   <svg
-                    className={`location-button hover:opacity-90`}
+                    className={`location-button -mr-[2px] hover:opacity-90`}
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -112,11 +113,10 @@ export function ImageInfoPanel({
               <ul className={`flex list-inside list-disc flex-col gap-1`}>
                 <li>
                   <strong>Shutter Speed: </strong>
-                  {imageInfo.shutterSpeed}
+                  {imageInfo.shutterSpeed}s
                 </li>
                 <li>
-                  <strong>Aperture: </strong>
-                  {imageInfo.aperture}
+                  <strong>Aperture: </strong>ƒ/{imageInfo.aperture}
                 </li>
                 <li>
                   <strong>ISO: </strong>

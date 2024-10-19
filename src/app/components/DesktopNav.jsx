@@ -18,6 +18,13 @@ export function DesktopNav() {
     <nav
       className={`flex items-center gap-4 text-almostBlack dark:text-almostWhite`}
     >
+      <div
+        className={`cursor-pointer rounded px-2 py-1 text-almostWhite transition-all hover:bg-white/10`}
+      >
+        <Link style={{ color: "#e1e1e1" }} href={"/equipment"}>
+          Equipment
+        </Link>
+      </div>
       <div className="relative">
         <button
           onClick={handleToggleMenu}
@@ -26,7 +33,7 @@ export function DesktopNav() {
           Gallery
           <span
             className={`transition-transform ${
-              isMenuOpen ? "rotate-180" : "rotate-0"
+              isMenuOpen ? "rotate-0" : "-rotate-90"
             }`}
           >
             <svg
@@ -48,7 +55,7 @@ export function DesktopNav() {
           {NavbarItems.map((item) => {
             return (
               <li
-                className={`group flex items-center text-almostWhite transition-colors hover:text-greyBlue`}
+                className={`group flex items-center rounded px-2 py-1 text-almostWhite transition-colors hover:bg-white/10`}
                 key={item.name}
               >
                 <Link href={item.url}>{item.name}</Link>
@@ -69,10 +76,6 @@ export function DesktopNav() {
           })}
         </ul>
       </div>
-
-      <Link style={{ color: "#e1e1e1" }} href={"/equipment"}>
-        Equipment
-      </Link>
     </nav>
   );
 }

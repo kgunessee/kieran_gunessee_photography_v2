@@ -127,18 +127,18 @@ export default function Header({ isHomepage = false }) {
           {isMobileScreen ? mobileLogo : "Kieran Gunessee Photography"}
         </h1>
       </Link>
-      <div className={`flex items-center gap-4`}>
-        <div
-          title={"Apply image border"}
-          className={`h-7 w-7 cursor-pointer transition-all ${
-            imageBorder ? "border-2" : "border-4"
-          } rounded border-almostBlack dark:border-almostWhite`}
-          onClick={() => setImageBorder(!imageBorder)}
-        ></div>
+      <div className={`flex items-center gap-4 lg:gap-2`}>
         <ThemeButton
           handleIsDarkModeToggle={handleIsDarkModeToggle}
           isDarkMode={isDarkMode}
         />
+        <div
+          title={"Apply image border"}
+          className={`cursor-pointer rounded border-[1px] border-white/40 px-2 py-1 text-sm text-almostWhite transition-all hover:bg-white/10 lg:border-none lg:text-base`}
+          onClick={() => setImageBorder(!imageBorder)}
+        >
+          <p>Border {imageBorder ? "Off" : "On"}</p>
+        </div>
         {isMobileScreen && (
           <HamburgerMenu
             handleMobileMenuToggle={handleMobileMenuToggle}
