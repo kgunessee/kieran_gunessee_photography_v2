@@ -115,7 +115,7 @@ export default function Gallery({ images, isAstroImage }) {
                 isAstroImage ? image.catalogue : image.location
               }`}
             >
-              <div className="relative aspect-square w-full">
+              <div className="thumbnail relative aspect-square w-full">
                 <Image
                   src={image.thumb}
                   alt={image.title}

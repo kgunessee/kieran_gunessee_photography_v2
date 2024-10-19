@@ -17,7 +17,7 @@ export function GalleryCategories({ galleryRef }) {
       >
         GALLERY
       </h2>
-      <div className={`grid grid-cols-2 gap-2 md:grid-cols-3`}>
+      <div className={`grid grid-cols-2 gap-2 md:grid-cols-3 2xl:grid-cols-3`}>
         <GalleryCategoryCard
           category={"/astrophotography"}
           title={"ASTROPHOTOGRAPHY"}
@@ -46,12 +46,12 @@ export function GalleryCategories({ galleryRef }) {
           imageUrl={"/images/thumbnails/woodland/thumb_Down_to_the_River.webp"}
           alt={"Woodland category image"}
         />
-        {/*<GalleryCategoryCard*/}
-        {/*  category={"/macro"}*/}
-        {/*  title={"MACRO"}*/}
-        {/*  imageUrl={"/images/thumbnails/water/thumb_Iceland_5.webp"}*/}
-        {/*  alt={"Macro category image"}*/}
-        {/*/>*/}
+        <GalleryCategoryCard
+          category={"/macro"}
+          title={"MACRO"}
+          imageUrl={"/images/thumbnails/water/thumb_Iceland_5.webp"}
+          alt={"Macro category image"}
+        />
         <GalleryCategoryCard
           category={"/iceland"}
           title={"ICELAND"}

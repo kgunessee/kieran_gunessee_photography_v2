@@ -6,7 +6,7 @@ export function GalleryCategoryCard({ category, title, imageUrl, alt }) {
     <>
       <Link href={category}>
         <div
-          className={`group relative h-32 w-full overflow-hidden md:h-40 2xl:h-[100%]`}
+          className={`group relative h-32 w-full overflow-hidden md:h-40 2xl:h-52`}
         >
           <div
             className={`transition-transform duration-300 group-hover:scale-110`}

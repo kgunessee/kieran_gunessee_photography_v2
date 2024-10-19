@@ -15,6 +15,7 @@ export default function Header({ isHomepage = false }) {
   const [isMobileScreen, setIsMobileScreen] = useState(true); //Boolean to state whether the screen size is mobile (< 768px)
   const [isDarkMode, setIsDarkMode] = useState(true); //Boolean to set the theme
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); //Boolean to state whether the mobile menu is open
+  const [imageBorder, setImageBorder] = useState(false);
 
   const mobileLogo = (
     <svg
@@ -77,6 +78,14 @@ export default function Header({ isHomepage = false }) {
     isDarkMode ? body.classList.add("dark") : body.classList.remove("dark");
   }, [isDarkMode]);
 
+  // Apply class to body when imageBorder changes. This enables css in the globals.css file for the fancybox image.
+  useEffect(() => {
+    const body = document.querySelector("body");
+    imageBorder
+      ? body.classList.add("image-has-border")
+      : body.classList.remove("image-has-border");
+  }, [imageBorder]);
+
   // Change logo from full name to initials on mobile screen
   useEffect(() => {
     const handleScreenSizeChange = () => {
@@ -119,6 +128,13 @@ export default function Header({ isHomepage = false }) {
         </h1>
       </Link>
       <div className={`flex items-center gap-4`}>
+        <div
+          title={"Apply image border"}
+          className={`h-7 w-7 cursor-pointer transition-all ${
+            imageBorder ? "border-2" : "border-4"
+          } rounded border-almostBlack dark:border-almostWhite`}
+          onClick={() => setImageBorder(!imageBorder)}
+        ></div>
         <ThemeButton
           handleIsDarkModeToggle={handleIsDarkModeToggle}
           isDarkMode={isDarkMode}

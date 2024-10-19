@@ -1,6 +1,7 @@
 export function HamburgerMenu({ isMobileMenuOpen, handleMobileMenuToggle }) {
   return (
     <button
+      title={"Open menu"}
       aria-label={"Open menu"}
       onClick={handleMobileMenuToggle}
       className={`relative z-20`}

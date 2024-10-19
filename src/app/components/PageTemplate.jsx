@@ -1,10 +1,9 @@
 //This is the template for the image pages
-
 "use client";
 //Components
 import Gallery from "@/app/components/Gallery";
 import { Footer } from "@/app/components/Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function PageTemplate({
   images,
