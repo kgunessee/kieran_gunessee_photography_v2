@@ -1,4 +1,4 @@
-//The keys in the equipment objects are capitalised because they are used to display the category header on the equipment page.
+0; //The keys in the equipment objects are capitalised because they are used to display the category header on the equipment page.
 
 export const astroEquipmentInfo = {
   Scope: {
@@ -1571,7 +1571,7 @@ export const landscapeImageInfo = [
   {
     thumb: "/images/thumbnails/landscape/thumb_House Opposite Kirkjufell.webp",
     fullRes: "/images/full_res/landscape/fs_House Opposite Kirkjufell.webp",
-    title: "Kirkjufell & River",
+    title: "A House Opposite Kirkjufell",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
     imageDate: "04/11/2023",

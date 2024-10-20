@@ -39,17 +39,31 @@ body.dark .fancybox__backdrop {
 }
 
 body.image-has-border .fancybox-image {
-  border: 1rem solid white !important;
+  border: 1rem solid #eeeeee !important;
   width: auto !important;
   height: auto !important;
 }
 .thumbnail {
   border: 0 !important;
-  transition: all 150ms ease;
 }
 
 body.image-has-border .thumbnail {
-  border: 0.25rem solid white !important;
+  border: 0.25rem solid #eeeeee !important;
+}
+
+@media (min-width: 1024px) {
+  body.image-has-border .fancybox-image {
+    border: 2rem solid #eeeeee !important;
+    width: auto !important;
+    height: auto !important;
+  }
+  .thumbnail {
+    border: 0 !important;
+  }
+
+  body.image-has-border .thumbnail {
+    border: 0.75rem solid #eeeeee !important;
+  }
 }
 
 .f-button {

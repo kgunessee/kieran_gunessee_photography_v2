@@ -90,6 +90,7 @@ export default function Gallery({ images, isAstroImage }) {
       },
       transitionEffect: "fade",
       transitionDuration: 300, // Customize the duration in milliseconds
+      backdropClick: false,
       Carousel: {
         transition: "fade",
       },
