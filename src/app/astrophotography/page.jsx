@@ -31,6 +31,17 @@ export default function Astrophotography() {
         isAstroImage={true}
         bgColourDark={"dark:to-indigo-500/5"}
         bgColourLight={"to-indigo-500/20"}
+        astroObjectType={["Nebula", "Galaxy", "Stars & Clusters", "Comets"]}
+        astroCameraType={["Mono", "OSC"]}
+        astroPalette={[
+          "SHO",
+          "HOO",
+          "LRGB",
+          "HaRGB",
+          "Narrowband",
+          "Broadband",
+        ]}
+        astroFocalLength={["100mm - 400mm", "400mm - 700mm"]}
       />
     </main>
   );

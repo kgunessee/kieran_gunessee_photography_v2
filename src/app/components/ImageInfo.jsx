@@ -180,6 +180,7 @@ export const astroImageInfo = [
       imageDate: "04/10/2024",
     },
     description: "",
+    keywords: ["nebula", "sho", "hargb", "narrowband", "100mm - 400mm", "mono"],
   },
   {
     thumb:
@@ -205,6 +206,7 @@ export const astroImageInfo = [
       imageDate: "28/09/2024",
     },
     description: "",
+    keywords: ["nebula", "hoo", "narrowband", "100mm - 400mm", "mono"],
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_PelicanNebula.webp",
@@ -228,6 +230,7 @@ export const astroImageInfo = [
       imageDate: "13/08/2024",
     },
     description: "",
+    keywords: ["nebula", "sho", "narrowband", "100mm - 400mm", "mono"],
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_WR134.webp",
@@ -251,6 +254,7 @@ export const astroImageInfo = [
       imageDate: "06/17/2024",
     },
     description: "",
+    keywords: ["nebula", "hoo", "hargb", "narrowband", "100mm - 400mm", "mono"],
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_ComaGalaxyCluster.webp",
@@ -274,6 +278,14 @@ export const astroImageInfo = [
       imageDate: "22/05/2024",
     },
     description: "",
+    keywords: [
+      "galaxy",
+      "stars & clusters",
+      "lrgb",
+      "broadband",
+      "400mm - 700mm",
+      "mono",
+    ],
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_M101May2024.webp",
@@ -288,7 +300,7 @@ export const astroImageInfo = [
       darkFlats: "60",
       scope: astroEquipmentInfo.Scope.explorer130PDS.name,
       mount: astroEquipmentInfo.Mount.heq5pro.name,
-      camera: astroEquipmentInfo.Camera["533MCPRO"].name,
+      camera: astroEquipmentInfo.Camera["533MMPRO"].name,
       filters: astroEquipmentInfo.Filters.optolongLRGB.name,
       imagingCapture: astroEquipmentInfo.Filters.antliaEdge.name,
       guidescope: astroEquipmentInfo["Guide Scope"].svbony60mm.name,
@@ -297,6 +309,7 @@ export const astroImageInfo = [
       imageDate: "23/05/2024",
     },
     description: "",
+    keywords: ["galaxy", "lrgb ", "broadband", "400mm - 700mm", "mono"],
   },
   {
     thumb:
@@ -322,6 +335,7 @@ export const astroImageInfo = [
       imageDate: "20/01/2024",
     },
     description: "",
+    keywords: ["nebula", "hargb", "narrowband", "100mm - 400mm", "mono"],
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_HeartNebula.webp",
@@ -360,6 +374,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["nebula", "sho", "narrowband", "100mm - 400mm", "mono"],
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_AndromedaGalaxy.webp",
@@ -392,6 +407,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["galaxy", "broadband", "100mm - 400mm", "osc"],
   }, //10/01/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_ThePleiades.webp",
@@ -415,6 +431,7 @@ export const astroImageInfo = [
       imageDate: "03/12/2021",
     },
     description: "",
+    keywords: ["nebula", "broadband", "100mm - 400mm", "osc"],
   }, //03/12/2021
   {
     thumb: "/images/thumbnails/astrophotography/thumb_GhostOfCassiopeia.webp",
@@ -450,6 +467,14 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: [
+      "nebula",
+      "broadband",
+      "narrowband",
+      "hargb",
+      "400mm - 700mm",
+      "osc",
+    ],
   }, //02/10/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_RosetteNebula.webp",
@@ -484,6 +509,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["nebula", "narrowband", "100mm - 400mm", "osc"],
   }, //16/12/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_LouiesStar.webp",
@@ -522,6 +548,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["stars & clusters", "broadband", "400mm - 700mm", "osc"],
   }, //27/12/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_CrescentNebula.webp",
@@ -545,6 +572,7 @@ export const astroImageInfo = [
       imageDate: "04/06/2023",
     },
     description: "",
+    keywords: ["nebula", "narrowband", "400mm - 700mm", "osc"],
   }, //04/06/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_BodesAndCigarGalaxy.webp",
@@ -583,6 +611,14 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: [
+      "galaxy",
+      "broadband",
+      "narrowband",
+      "hargb",
+      "400mm - 700mm",
+      "osc",
+    ],
   }, //05/04/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_MTheWhirlpoolGalaxy.webp",
@@ -606,6 +642,7 @@ export const astroImageInfo = [
       imageDate: "08/04/2023",
     },
     description: "",
+    keywords: ["galaxy", "broadband", "400mm - 700mm", "osc"],
   }, //08/04/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_TadpolesNebula.webp",
@@ -644,6 +681,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["nebula", "narrowband", "100mm - 400mm", "osc"],
   }, //14/02/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_OrionNebula.webp",
@@ -684,6 +722,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["nebula", "narrowband", "100mm - 400mm", "osc"],
   }, //27/01/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_TriangulumGalaxy.webp",
@@ -713,6 +752,14 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: [
+      "galaxy",
+      "broadband",
+      "narrowband",
+      "hargb",
+      "400mm - 700mm",
+      "osc",
+    ],
   }, //10/01/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_IrisNebula.webp",
@@ -745,6 +792,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["nebula", "broadband", "400mm - 700mm", "osc"],
   }, //11/12/2021
   {
     thumb: "/images/thumbnails/astrophotography/thumb_HerculesCluster.webp",
@@ -777,29 +825,8 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["stars & clusters", "broadband", "400mm - 700mm", "osc"],
   }, //10/05/2022
-  // {
-  //   thumb: "/images/thumbnails/astrophotography/thumb_FlamingStarNebula.webp",
-  //   title: "The Flaming Star Nebula",
-  //   catalogue: "IC 405",
-  //   captureDetails: {
-  //     exposureTime: "300s",
-  //     integration: "10hrs",
-  //     darks: "100",
-  //     flats: "100",
-  //     darkFlats: "100",
-  //     scope: astroEquipmentInfo.scope.evostar72ED.name,
-  //     mount: astroEquipmentInfo.mount.heq5pro.name,
-  //     camera: astroEquipmentInfo.camera["533MCPRO"].name,
-  //     filters: astroEquipmentInfo.filters.lPro.name,
-  //     imagingCapture: astroEquipmentInfo["Image Capture"].asiairplus.name,
-  //     guidescope: astroEquipmentInfo["Guide Scope"].svbony60mm.name,
-  //     guideCamera: astroEquipmentInfo["Guide Camera"]["120mmMini"].name,
-  //     software: `${astroEquipmentInfo.software.affinity.name} & ${astroEquipmentInfo.software.pixinsight.name}`,
-  //     imageDate: "22/01/2022",
-  //   },
-  //   description: "",
-  // }, //22/01/2022
 
   {
     thumb: "/images/thumbnails/astrophotography/thumb_QuestionMarkNebula.webp",
@@ -834,6 +861,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["nebula", "narrowband", "100mm - 400mm", "osc"],
   }, //19/03/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_VeilNebulaMosaic.webp",
@@ -866,6 +894,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["nebula", "narrowband", "100mm - 400mm", "osc"],
   }, //June 2022
   {
     thumb:
@@ -890,6 +919,7 @@ export const astroImageInfo = [
       imageDate: "09/06/2022",
     },
     description: "",
+    keywords: ["nebula", "narrowband", "100mm - 400mm", "osc"],
   }, //09/06/2022
 
   {
@@ -928,6 +958,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["nebula", "narrowband", "100mm - 400mm", "osc"],
   }, //11/08/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_LionNebula.webp",
@@ -960,6 +991,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["nebula", "narrowband", "100mm - 400mm", "osc"],
   }, //13/08/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_EasternVeilNebula.webp",
@@ -990,6 +1022,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["nebula", "narrowband", "400mm - 700mm", "osc"],
   }, //17/09/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_PacmanNebulaNatural.webp",
@@ -1022,6 +1055,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["nebula", "narrowband", "100mm - 400mm", "osc"],
   }, //20/08/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_TheTulipNebula.webp",
@@ -1045,31 +1079,8 @@ export const astroImageInfo = [
       imageDate: "12/07/2022",
     },
     description: "",
+    keywords: ["nebula", "narrowband", "100mm - 400mm", "osc"],
   }, //12/07/2022
-  // {
-  //   thumb:
-  //     "/images/thumbnails/astrophotography/thumb_ElephantsTrunkNebula.webp",
-  //   fullRes: "/images/full_res/astrophotography/fs_ElephantsTrunkNebula.webp",
-  //   title: "The Elephants Trunk Nebula",
-  //   catalogue: "IC 1396",
-  //   captureDetails: {
-  //     exposureTime: "300s",
-  //     integration: "5.5hrs",
-  //     darks: "60",
-  //     flats: "60",
-  //     darkFlats: "60",
-  //     scope: astroEquipmentInfo.scope.GT71ii.name,
-  //     mount: astroEquipmentInfo.mount.heq5pro.name,
-  //     camera: astroEquipmentInfo.camera["533MCPRO"].name,
-  //     filters: astroEquipmentInfo.filters.lExtreme.name,
-  //     imagingCapture: astroEquipmentInfo["Image Capture"].asiairplus.name,
-  //     guidescope: astroEquipmentInfo["Guide Scope"].svbony60mm.name,
-  //     guideCamera: astroEquipmentInfo["Guide Camera"]["220mmMini"].name,
-  //     software: `${astroEquipmentInfo.software.affinity.name} & ${astroEquipmentInfo.software.pixinsight.name}`,
-  //     imageDate: "01/09/2022",
-  //   },
-  //   description: "",
-  // }, //01/09/2022
 
   {
     thumb: "/images/thumbnails/astrophotography/thumb_SmallClusterNebula.webp",
@@ -1093,6 +1104,13 @@ export const astroImageInfo = [
       imageDate: "25/09/2022",
     },
     description: "",
+    keywords: [
+      "nebula",
+      "stars & clusters",
+      "broadband",
+      "400mm - 700mm",
+      "osc",
+    ],
   }, //25/09/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_CaveNebula.webp",
@@ -1116,6 +1134,7 @@ export const astroImageInfo = [
       imageDate: "08/10/2022",
     },
     description: "",
+    keywords: ["nebula", "narrowband", "400mm - 700mm", "osc"],
   }, //08/10/2022
 
   {
@@ -1141,6 +1160,7 @@ export const astroImageInfo = [
       imageDate: "25/12/2022",
     },
     description: "",
+    keywords: ["nebula", "narrowband", "100mm - 400mm", "osc"],
   }, //25/12/2022
 
   {
@@ -1177,6 +1197,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["nebula", "broadband", "400mm - 700mm", "osc"],
   }, //14/01/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_JellyfishNebula.webp",
@@ -1212,6 +1233,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["nebula", "narrowband", "100mm - 400mm", "osc"],
   }, //22/01/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_CometZTF.webp",
@@ -1251,6 +1273,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["comets", "broadband", "400mm - 700mm", "osc"],
   }, //25/01/2023
 
   {
@@ -1291,6 +1314,7 @@ export const astroImageInfo = [
         </p>
       </div>
     ),
+    keywords: ["galaxy", "broadband", "400mm - 700mm", "osc"],
   }, //22/05/2023
 
   {
@@ -1315,6 +1339,7 @@ export const astroImageInfo = [
       imageDate: "18/06/2023",
     },
     description: "",
+    keywords: ["nebula", "narrowband", "100mm - 400mm", "osc"],
   }, //18/06/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_SoulNebula.webp",
@@ -1338,6 +1363,7 @@ export const astroImageInfo = [
       imageDate: "09/03/2022",
     },
     description: "",
+    keywords: ["nebula", "narrowband", "100mm - 400mm", "osc"],
   }, //09/03/2022
 ];
 
@@ -1355,7 +1381,7 @@ export const waterImageInfo = [
     shutterSpeed: "2.5",
     mapLocation: "https://maps.app.goo.gl/sSEebE2urW5AaWrp7",
     // keyWords: "iceland, waterfall, river, wide angle,",
-    keyWords: ["iceland", "waterfall", "river", "wide angle"],
+    keywords: ["iceland", "waterfall", "river", "wide angle"],
   },
 
   {
@@ -1370,7 +1396,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1.6",
     mapLocation: "https://maps.app.goo.gl/sSEebE2urW5AaWrp7",
-    keyWords: "iceland, waterfall, river, wide angle",
+    keywords: ["iceland", "waterfall", "river", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_6.webp",
@@ -1384,7 +1410,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "3.0",
     mapLocation: "https://maps.app.goo.gl/sSEebE2urW5AaWrp7",
-    keyWords: "iceland, waterfall, river, wide angle",
+    keywords: ["iceland", "waterfall", "river", "wide angle"],
   },
 
   {
@@ -1399,7 +1425,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1/3",
     mapLocation: "https://maps.app.goo.gl/yKpovwmnafsVFspX7",
-    keyWords: "iceland, waterfall, wide angle",
+    keywords: ["iceland", "waterfall", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_18.webp",
@@ -1413,7 +1439,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "2.5",
     mapLocation: "https://maps.app.goo.gl/WEHRmtvAJFA5mvbT9",
-    keyWords: "iceland, waterfall, river, wide angle",
+    keywords: ["iceland", "waterfall", "river", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_13.webp",
@@ -1427,7 +1453,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "0.5",
     mapLocation: "https://maps.app.goo.gl/AYb3pdHziwoqsNJz5",
-    keyWords: "iceland, waterfall, wide angle",
+    keywords: ["iceland", "waterfall", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_12.webp",
@@ -1441,7 +1467,7 @@ export const waterImageInfo = [
     aperture: "11.0",
     shutterSpeed: "0.3",
     mapLocation: "https://maps.app.goo.gl/kahiXFeGEczY8CwQ8",
-    keyWords: "iceland, waterfall, mountain, wide angle",
+    keywords: ["iceland", "waterfall", "mountain", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_10.webp",
@@ -1455,7 +1481,7 @@ export const waterImageInfo = [
     aperture: "11.0",
     shutterSpeed: "0.3",
     mapLocation: "https://maps.app.goo.gl/kahiXFeGEczY8CwQ8",
-    keyWords: "iceland, waterfall",
+    keywords: ["iceland", "waterfall"],
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_9.webp",
@@ -1469,7 +1495,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "0.5",
     mapLocation: "https://maps.app.goo.gl/kahiXFeGEczY8CwQ8",
-    keyWords: "iceland, waterfall, wide angle",
+    keywords: ["iceland", "waterfall", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_8.webp",
@@ -1483,7 +1509,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "0.5",
     mapLocation: "https://maps.app.goo.gl/kahiXFeGEczY8CwQ8",
-    keyWords: "iceland, waterfall, wide angle",
+    keywords: ["iceland", "waterfall", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/water/thumb_Kerlingarfoss & River.webp",
@@ -1497,7 +1523,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "3.0",
     mapLocation: "https://maps.app.goo.gl/kahiXFeGEczY8CwQ8",
-    keyWords: "iceland, waterfall, wide angle",
+    keywords: ["iceland", "waterfall", "wide angle"],
   },
 
   {
@@ -1512,7 +1538,7 @@ export const waterImageInfo = [
     aperture: "10.0",
     shutterSpeed: "1/6",
     mapLocation: "https://maps.app.goo.gl/88rLSAy9HjvWKv2b7",
-    keyWords: "dartmoor, waterfall, river, wide angle",
+    keywords: ["devon", "uk", "waterfall", "river", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/water/thumb_Looking_Upstream.webp",
@@ -1526,7 +1552,7 @@ export const waterImageInfo = [
     aperture: "10.0",
     shutterSpeed: "1/6",
     mapLocation: "https://maps.app.goo.gl/88rLSAy9HjvWKv2b7",
-    keyWords: "dartmoor, waterfall, river, wide angle",
+    keywords: ["devon", "uk", "waterfall", "river", "wide angle"],
   },
 ];
 
@@ -1543,6 +1569,7 @@ export const landscapeImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1/60",
     mapLocation: "https://maps.app.goo.gl/yenzTTbf5gUmWFbz8",
+    keywords: ["uk", "midlands", "minimalist", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/landscape/thumb_A Tree in Fog.webp",
@@ -1556,6 +1583,7 @@ export const landscapeImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1/30",
     mapLocation: "https://maps.app.goo.gl/762oPAseXEBG4a1z7",
+    keywords: ["uk", "midlands", "atmospheric", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/landscape/thumb_Iceland_17.webp",
@@ -1569,6 +1597,7 @@ export const landscapeImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1/13",
     mapLocation: "https://maps.app.goo.gl/AYb3pdHziwoqsNJz5",
+    keywords: ["iceland", "mountains", "hills", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/landscape/thumb_Iceland_15.webp",
@@ -1582,6 +1611,7 @@ export const landscapeImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1/200",
     mapLocation: "https://maps.app.goo.gl/AYb3pdHziwoqsNJz5",
+    keywords: ["iceland", "mountains", "hills", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/landscape/thumb_House Opposite Kirkjufell.webp",
@@ -1595,6 +1625,7 @@ export const landscapeImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1/200",
     mapLocation: "https://maps.app.goo.gl/KPZmmTDEJwmsd6CJA",
+    keywords: ["iceland", "mountains", "hills", "atmospheric", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/landscape/thumb_Iceland_11.webp",
@@ -1608,6 +1639,7 @@ export const landscapeImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1/6",
     mapLocation: "https://maps.app.goo.gl/KPZmmTDEJwmsd6CJA",
+    keywords: ["iceland", "mountains", "hills", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/landscape/thumb_Iceland_3.webp",
@@ -1621,6 +1653,7 @@ export const landscapeImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1/125",
     mapLocation: "https://maps.app.goo.gl/dFug6g8FoofHRXXR6",
+    keywords: ["iceland", "mountains", "hills", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/landscape/thumb_The_Misty_Mountain.webp",
@@ -1634,6 +1667,7 @@ export const landscapeImageInfo = [
     aperture: "9.0",
     shutterSpeed: "1/250",
     mapLocation: "https://maps.app.goo.gl/qmnd5eXBHvMCsGps6",
+    keywords: ["iceland", "mountains", "hills", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/landscape/thumb_Road_To_The_Mountain.webp",
@@ -1647,6 +1681,7 @@ export const landscapeImageInfo = [
     aperture: "9.0",
     shutterSpeed: "1/250",
     mapLocation: "https://maps.app.goo.gl/MpxydhG2NKj4J3Dd8",
+    keywords: ["iceland", "mountains", "hills", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/landscape/thumb_Iceland_2.webp",
@@ -1660,6 +1695,7 @@ export const landscapeImageInfo = [
     aperture: "9.0",
     shutterSpeed: "1/250",
     mapLocation: "https://maps.app.goo.gl/qJHbcCZEAUf4Jyw4A",
+    keywords: ["iceland", "black & white"],
   },
   {
     thumb: "/images/thumbnails/landscape/thumb_Tenerife_01.webp",
@@ -1673,6 +1709,7 @@ export const landscapeImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1/2500",
     mapLocation: "https://maps.app.goo.gl/HiBxvcLMmABLHmN88",
+    keywords: ["lanzarote"],
   },
 ];
 
@@ -1689,6 +1726,7 @@ export const woodlandImageInfo = [
     aperture: "10.0",
     shutterSpeed: "1/6",
     mapLocation: "https://maps.app.goo.gl/MBUnwMSeTUVSpCxK8",
+    keywords: ["uk", "peak district", "summer", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/woodland/thumb_The_Log_Walk.webp",
@@ -1702,6 +1740,7 @@ export const woodlandImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1/60",
     mapLocation: "https://maps.app.goo.gl/rwr6LKXbPyfCpSkg9",
+    keywords: ["uk", "devon", "summer", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/woodland/thumb_Down_to_the_River.webp",
@@ -1715,6 +1754,7 @@ export const woodlandImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1/15",
     mapLocation: "https://maps.app.goo.gl/rwr6LKXbPyfCpSkg9",
+    keywords: ["uk", "devon", "summer", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/woodland/thumb_Teardrop.webp",
@@ -1728,6 +1768,7 @@ export const woodlandImageInfo = [
     aperture: "5.0",
     shutterSpeed: "1/80",
     mapLocation: "https://maps.app.goo.gl/S5hQgSA1id3EP8AE8",
+    keywords: ["uk", "midlands", "focused subject", "summer", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/woodland/thumb_Support.webp",
@@ -1741,6 +1782,7 @@ export const woodlandImageInfo = [
     aperture: "9.0",
     shutterSpeed: "1/160",
     mapLocation: "https://maps.app.goo.gl/9NWj47k8phr9f8n78",
+    keywords: ["uk", "midlands", "summer", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/woodland/thumb_Standing in the Sun.webp",
@@ -1754,6 +1796,7 @@ export const woodlandImageInfo = [
     aperture: "16.0",
     shutterSpeed: "1/50",
     mapLocation: "https://maps.app.goo.gl/w2cPEVrQWjnGd1Vc7",
+    keywords: ["uk", "midlands", "summer", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/woodland/thumb_Fall in suspense.webp",
@@ -1767,6 +1810,7 @@ export const woodlandImageInfo = [
     aperture: "2.8",
     shutterSpeed: "1/200",
     mapLocation: "https://maps.app.goo.gl/bZuBfZXhnLFFK4DM8",
+    keywords: ["uk", "midlands", "focused subject", "summer"],
   },
   {
     thumb: "/images/thumbnails/woodland/thumb_Entwined.webp",
@@ -1780,5 +1824,6 @@ export const woodlandImageInfo = [
     aperture: "4.0",
     shutterSpeed: "1/200",
     mapLocation: "https://maps.app.goo.gl/bZuBfZXhnLFFK4DM8",
+    keywords: ["uk", "midlands", "focused subject", "summer"],
   },
 ];

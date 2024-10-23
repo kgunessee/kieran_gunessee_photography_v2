@@ -28,7 +28,7 @@ export function DesktopNav() {
       <div className="relative">
         <button
           onClick={handleToggleMenu}
-          className={`flex cursor-pointer items-center rounded border-[1px] border-white/40 py-1 pl-2 pr-0 text-almostWhite transition-colors hover:bg-white/10`}
+          className={`flex cursor-pointer items-center rounded border-[1px] border-white/40 py-1 pl-2 pr-0 text-almostWhite transition-colors hover:bg-white/10 active:bg-white/0`}
         >
           Gallery
           <span
@@ -50,7 +50,7 @@ export function DesktopNav() {
         <ul
           className={`absolute ${
             isMenuOpen ? "visible" : "invisible"
-          } right-0 top-full z-10 mt-2 flex flex-col items-start gap-2 rounded border-[1px] border-white/40 bg-almostBlack p-2 transition-opacity duration-200 dark:bg-blueBlack`}
+          } right-0 top-full z-10 mt-2 flex flex-col items-start rounded border-[1px] border-white/40 bg-almostBlack p-2 transition-opacity duration-200 dark:bg-blueBlack`}
         >
           {NavbarItems.map((item) => {
             return (

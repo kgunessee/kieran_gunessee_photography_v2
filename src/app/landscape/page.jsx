@@ -30,6 +30,15 @@ export default function Landscape() {
         images={landscapeImageInfo}
         bgColourDark={"dark:to-orange-300/5"}
         bgColourLight={"to-orange-300/20"}
+        locations={["Iceland", "UK", "Lanzarote", "Midlands", "Devon"]}
+        nonAstroKeywords={[
+          "Wide angle",
+          "Minimalist",
+          "Mountains",
+          "Hills",
+          "Atmospheric",
+          "Black & white",
+        ]}
       />
     </main>
   );
