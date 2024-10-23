@@ -31,6 +31,8 @@ export default function Water() {
         images={waterImageInfo}
         bgColourDark={"dark:to-blue-500/5"}
         bgColourLight={"to-blue-500/15"}
+        locations={["Iceland", "Dartmoor"]}
+        nonAstroKeywords={["Waterfall", "River", "Wide angle", "Mountain"]}
       />
     </main>
   );

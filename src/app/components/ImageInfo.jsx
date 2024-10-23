@@ -1,4 +1,4 @@
-0; //The keys in the equipment objects are capitalised because they are used to display the category header on the equipment page.
+//The keys in the equipment objects are capitalised because they are used to display the category header on the equipment page.
 
 export const astroEquipmentInfo = {
   Scope: {
@@ -1354,7 +1354,10 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "2.5",
     mapLocation: "https://maps.app.goo.gl/sSEebE2urW5AaWrp7",
+    // keyWords: "iceland, waterfall, river, wide angle,",
+    keyWords: ["iceland", "waterfall", "river", "wide angle"],
   },
+
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_7.webp",
     fullRes: "/images/full_res/water/fs_Iceland_7.webp",
@@ -1367,6 +1370,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1.6",
     mapLocation: "https://maps.app.goo.gl/sSEebE2urW5AaWrp7",
+    keyWords: "iceland, waterfall, river, wide angle",
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_6.webp",
@@ -1380,6 +1384,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "3.0",
     mapLocation: "https://maps.app.goo.gl/sSEebE2urW5AaWrp7",
+    keyWords: "iceland, waterfall, river, wide angle",
   },
 
   {
@@ -1394,6 +1399,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1/3",
     mapLocation: "https://maps.app.goo.gl/yKpovwmnafsVFspX7",
+    keyWords: "iceland, waterfall, wide angle",
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_18.webp",
@@ -1407,6 +1413,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "2.5",
     mapLocation: "https://maps.app.goo.gl/WEHRmtvAJFA5mvbT9",
+    keyWords: "iceland, waterfall, river, wide angle",
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_13.webp",
@@ -1420,6 +1427,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "0.5",
     mapLocation: "https://maps.app.goo.gl/AYb3pdHziwoqsNJz5",
+    keyWords: "iceland, waterfall, wide angle",
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_12.webp",
@@ -1433,6 +1441,7 @@ export const waterImageInfo = [
     aperture: "11.0",
     shutterSpeed: "0.3",
     mapLocation: "https://maps.app.goo.gl/kahiXFeGEczY8CwQ8",
+    keyWords: "iceland, waterfall, mountain, wide angle",
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_10.webp",
@@ -1446,6 +1455,7 @@ export const waterImageInfo = [
     aperture: "11.0",
     shutterSpeed: "0.3",
     mapLocation: "https://maps.app.goo.gl/kahiXFeGEczY8CwQ8",
+    keyWords: "iceland, waterfall",
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_9.webp",
@@ -1459,6 +1469,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "0.5",
     mapLocation: "https://maps.app.goo.gl/kahiXFeGEczY8CwQ8",
+    keyWords: "iceland, waterfall, wide angle",
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_8.webp",
@@ -1472,6 +1483,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "0.5",
     mapLocation: "https://maps.app.goo.gl/kahiXFeGEczY8CwQ8",
+    keyWords: "iceland, waterfall, wide angle",
   },
   {
     thumb: "/images/thumbnails/water/thumb_Kerlingarfoss & River.webp",
@@ -1485,6 +1497,7 @@ export const waterImageInfo = [
     aperture: "8.0",
     shutterSpeed: "3.0",
     mapLocation: "https://maps.app.goo.gl/kahiXFeGEczY8CwQ8",
+    keyWords: "iceland, waterfall, wide angle",
   },
 
   {
@@ -1499,6 +1512,7 @@ export const waterImageInfo = [
     aperture: "10.0",
     shutterSpeed: "1/6",
     mapLocation: "https://maps.app.goo.gl/88rLSAy9HjvWKv2b7",
+    keyWords: "dartmoor, waterfall, river, wide angle",
   },
   {
     thumb: "/images/thumbnails/water/thumb_Looking_Upstream.webp",
@@ -1512,6 +1526,7 @@ export const waterImageInfo = [
     aperture: "10.0",
     shutterSpeed: "1/6",
     mapLocation: "https://maps.app.goo.gl/88rLSAy9HjvWKv2b7",
+    keyWords: "dartmoor, waterfall, river, wide angle",
   },
 ];
 
