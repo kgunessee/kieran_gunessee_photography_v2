@@ -5,8 +5,7 @@ import { useEffect, useState } from "react";
 //Components
 import Gallery from "@/app/components/Gallery";
 import { Footer } from "@/app/components/Footer";
-import { CloseButton } from "@/app/components/CloseButton";
-
+import { FilterTagButton } from "@/app/components/FilterTagButton";
 export function PageTemplate({
   images,
   bgColourLight,
@@ -203,82 +202,42 @@ export function PageTemplate({
                     <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
                       Object Type
                     </h4>
-                    <div className={`flex flex-wrap gap-2`}>
-                      {astroObjectType.map((item) => (
-                        <button
-                          key={item}
-                          onClick={() => handleFilterClick(item)}
-                          className={`rounded px-2 py-1 text-sm transition-colors ${
-                            selectedFilters.includes(item)
-                              ? "bg-sky-700 text-white dark:text-almostWhite"
-                              : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
-                          }`}
-                        >
-                          {item}
-                        </button>
-                      ))}
-                    </div>
+                    <FilterTagButton
+                      filterCategory={astroObjectType}
+                      handleFilterClick={handleFilterClick}
+                      selectedFilters={selectedFilters}
+                    />
                   </div>
                   <div>
                     <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
                       Colour Palette
                     </h4>
-                    <div className={`flex flex-wrap gap-2`}>
-                      {astroPalette.map((item) => (
-                        <button
-                          key={item}
-                          onClick={() => handleFilterClick(item)}
-                          className={`rounded px-2 py-1 text-sm transition-colors ${
-                            selectedFilters.includes(item)
-                              ? "bg-sky-700 text-white dark:text-almostWhite"
-                              : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
-                          }`}
-                        >
-                          {item}
-                        </button>
-                      ))}
-                    </div>
+                    <FilterTagButton
+                      filterCategory={astroPalette}
+                      handleFilterClick={handleFilterClick}
+                      selectedFilters={selectedFilters}
+                    />
                   </div>
                   <div>
                     <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
                       Camera Type{" "}
                     </h4>
-                    <div className={`flex flex-wrap gap-2`}>
-                      {astroCameraType.map((item) => (
-                        <button
-                          key={item}
-                          onClick={() => handleFilterClick(item)}
-                          className={`rounded px-2 py-1 text-sm transition-colors ${
-                            selectedFilters.includes(item)
-                              ? "bg-sky-700 text-white dark:text-almostWhite"
-                              : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
-                          }`}
-                        >
-                          {item}
-                        </button>
-                      ))}
-                    </div>
+                    <FilterTagButton
+                      filterCategory={astroCameraType}
+                      handleFilterClick={handleFilterClick}
+                      selectedFilters={selectedFilters}
+                    />
                   </div>
 
                   <div>
                     <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
                       Focal Length
                     </h4>
-                    <div className={`flex flex-wrap gap-2`}>
-                      {astroFocalLength.map((item) => (
-                        <button
-                          key={item}
-                          onClick={() => handleFilterClick(item)}
-                          className={`rounded px-2 py-1 text-sm transition-colors ${
-                            selectedFilters.includes(item)
-                              ? "bg-sky-700 text-white dark:text-almostWhite"
-                              : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
-                          }`}
-                        >
-                          {item}
-                        </button>
-                      ))}
-                    </div>
+                    <FilterTagButton
+                      filterCategory={astroFocalLength}
+                      handleFilterClick={handleFilterClick}
+                      selectedFilters={selectedFilters}
+                    />
                   </div>
                 </fieldset>
               )}
@@ -296,41 +255,21 @@ export function PageTemplate({
                     <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
                       Object Type
                     </h4>
-                    <div className={`flex flex-wrap gap-2`}>
-                      {nonAstroKeywords.map((item) => (
-                        <button
-                          key={item}
-                          onClick={() => handleFilterClick(item)}
-                          className={`rounded px-2 py-1 text-sm transition-colors ${
-                            selectedFilters.includes(item)
-                              ? "bg-sky-700 text-white dark:text-almostWhite"
-                              : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
-                          }`}
-                        >
-                          {item}
-                        </button>
-                      ))}
-                    </div>
+                    <FilterTagButton
+                      filterCategory={nonAstroKeywords}
+                      handleFilterClick={handleFilterClick}
+                      selectedFilters={selectedFilters}
+                    />
                   </div>
                   <div>
                     <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
                       Colour Palette
                     </h4>
-                    <div className={`flex flex-wrap gap-2`}>
-                      {locations.map((item) => (
-                        <button
-                          key={item}
-                          onClick={() => handleFilterClick(item)}
-                          className={`rounded px-2 py-1 text-sm transition-colors ${
-                            selectedFilters.includes(item)
-                              ? "bg-sky-700 text-white dark:text-almostWhite"
-                              : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
-                          }`}
-                        >
-                          {item}
-                        </button>
-                      ))}
-                    </div>
+                    <FilterTagButton
+                      filterCategory={locations}
+                      handleFilterClick={handleFilterClick}
+                      selectedFilters={selectedFilters}
+                    />
                   </div>
                 </fieldset>
               )}
