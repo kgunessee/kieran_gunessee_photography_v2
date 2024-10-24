@@ -81,7 +81,7 @@ export const astroEquipmentInfo = {
   "Image Capture": {
     asiairplus: {
       name: "ZWO ASI Air Plus",
-      image: "/images/equipment/asiair.webp",
+      image: "/images/equipment/ZWO ASI AIR Plus.webp",
     },
   },
   Software: {
@@ -180,7 +180,7 @@ export const astroImageInfo = [
       imageDate: "04/10/2024",
     },
     description: "",
-    keywords: ["nebula", "sho", "hargb", "narrowband", "100mm - 400mm", "mono"],
+    keywords: ["nebula", "sho", "narrowband", "100mm - 400mm", "mono"],
   },
   {
     thumb:
@@ -254,7 +254,7 @@ export const astroImageInfo = [
       imageDate: "06/17/2024",
     },
     description: "",
-    keywords: ["nebula", "hoo", "hargb", "narrowband", "100mm - 400mm", "mono"],
+    keywords: ["nebula", "hoo", "narrowband", "100mm - 400mm", "mono"],
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_ComaGalaxyCluster.webp",
@@ -309,7 +309,7 @@ export const astroImageInfo = [
       imageDate: "23/05/2024",
     },
     description: "",
-    keywords: ["galaxy", "lrgb ", "broadband", "400mm - 700mm", "mono"],
+    keywords: ["galaxy", "lrgb", "broadband", "400mm - 700mm", "mono"],
   },
   {
     thumb:
@@ -1363,7 +1363,7 @@ export const astroImageInfo = [
       imageDate: "09/03/2022",
     },
     description: "",
-    keywords: ["nebula", "narrowband", "100mm - 400mm", "osc"],
+    keywords: ["nebula", "sho", "narrowband", "100mm - 400mm", "osc"],
   }, //09/03/2022
 ];
 

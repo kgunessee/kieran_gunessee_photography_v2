@@ -25,6 +25,7 @@ export function PageTemplate({
   const [searchText, setSearchText] = useState("");
   const [selectedFilters, setSelectedFilters] = useState([]);
   const [showFilterMenu, setShowFilterMenu] = useState(false);
+  const [filterLogic, setFilterLogic] = useState(true);
 
   const handleSearchTerm = (e) => {
     const searchTerm = e.target.value;
@@ -42,6 +43,14 @@ export function PageTemplate({
     );
   };
 
+  const handleFilterLogic = (bool) => {
+    setFilterLogic(bool);
+  };
+
+  const handleClearSearchbar = () => {
+    setSearchText("");
+  };
+
   // Filtering logic
   const filteredImages = images.filter((image) => {
     // Filter the images that are displayed.
@@ -50,10 +59,15 @@ export function PageTemplate({
     // Returns images that include the chosen keywords selected via the filtering buttons
     const hasSelectedFilters =
       selectedFilters.length === 0 || // If no filters have been chosen, show all
-      selectedFilters.every(
-        // Return images that contain all filter words in the selectedFilters state array
-        (filter) => image.keywords.includes(filter.toLowerCase()),
-      );
+      filterLogic
+        ? selectedFilters.every(
+            // Return images that contain all filter words in the selectedFilters state array
+            (filter) => image.keywords.includes(filter.toLowerCase()),
+          )
+        : selectedFilters.some(
+            // Return images that contain all filter words in the selectedFilters state array
+            (filter) => image.keywords.includes(filter.toLowerCase()),
+          );
 
     return (
       // Show images based on search text AND the filters
@@ -101,8 +115,9 @@ export function PageTemplate({
                 value={searchText}
               ></input>
               <button
-                aria-label={"Clear image filtering"}
-                title={"Clear image filtering"}
+                onClick={handleClearSearchbar}
+                aria-label={"Clear search bar"}
+                title={"Clear search bar"}
                 className={`bg-black/10 px-2 dark:bg-white/10 dark:hover:bg-white/15 dark:active:bg-white/10`}
               >
                 <svg
@@ -138,151 +153,188 @@ export function PageTemplate({
                 ></div>
               </button>
             </div>
-            {/*-------------------------------------------------------------------------- ASTRO FILTERS --------------------------------------------------------------------------*/}
-            {/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-            {isAstroImage && (
-              <fieldset
-                className={`${
-                  showFilterMenu
-                    ? "pointer-events-auto mb-4 mt-2 max-h-[999px] translate-y-0 opacity-100"
-                    : "pointer-events-none mb-0 mt-0 max-h-0 -translate-y-1 opacity-0"
-                } flex flex-wrap gap-6 pb-2 transition-all duration-300 sm:gap-10`}
+            <section
+              className={`${
+                showFilterMenu
+                  ? "pointer-events-auto mb-4 max-h-[999px] translate-y-0 opacity-100"
+                  : "pointer-events-none mb-0 mt-0 max-h-0 -translate-y-1 opacity-0"
+              } transition-all duration-300`}
+            >
+              <div
+                className={`mb-2 flex gap-4 text-[0.75rem] text-almostBlack/70 dark:text-almostWhite/70`}
               >
-                <div>
-                  <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
-                    Object Type
-                  </h4>
-                  <div className={`flex flex-wrap gap-2`}>
-                    {astroObjectType.map((item) => (
-                      <button
-                        key={item}
-                        onClick={() => handleFilterClick(item)}
-                        className={`rounded px-2 py-1 text-sm transition-colors ${
-                          selectedFilters.includes(item)
-                            ? "bg-sky-700 text-white dark:text-almostWhite"
-                            : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
-                        }`}
-                      >
-                        {item}
-                      </button>
-                    ))}
-                  </div>
+                <div className={`flex items-center justify-center gap-1`}>
+                  <button
+                    onClick={() => handleFilterLogic(true)}
+                    className={`aspect-square w-4 rounded border-[1px] border-white/40 px-2 py-1 text-sm transition-colors ${
+                      filterLogic
+                        ? "bg-sky-700 text-white dark:text-almostWhite"
+                        : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
+                    }`}
+                  ></button>
+                  <p className={`mt-1`}>
+                    Show images that match <strong>all</strong> selected
+                    filters.
+                  </p>
                 </div>
-                <div>
-                  <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
-                    Colour Palette
-                  </h4>
-                  <div className={`flex flex-wrap gap-2`}>
-                    {astroPalette.map((item) => (
-                      <button
-                        key={item}
-                        onClick={() => handleFilterClick(item)}
-                        className={`rounded px-2 py-1 text-sm transition-colors ${
-                          selectedFilters.includes(item)
-                            ? "bg-sky-700 text-white dark:text-almostWhite"
-                            : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
-                        }`}
-                      >
-                        {item}
-                      </button>
-                    ))}
-                  </div>
+                <div className={`flex items-center justify-center gap-1`}>
+                  <button
+                    onClick={() => handleFilterLogic(false)}
+                    className={`aspect-square w-4 rounded border-[1px] border-white/40 px-2 py-1 text-sm transition-colors ${
+                      !filterLogic
+                        ? "bg-sky-700 text-white dark:text-almostWhite"
+                        : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
+                    }`}
+                  ></button>
+                  <p className={`mt-1`}>
+                    Show images that match <strong>any</strong> selected
+                    filters.
+                  </p>
                 </div>
-                <div>
-                  <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
-                    Camera Type{" "}
-                  </h4>
-                  <div className={`flex flex-wrap gap-2`}>
-                    {astroCameraType.map((item) => (
-                      <button
-                        key={item}
-                        onClick={() => handleFilterClick(item)}
-                        className={`rounded px-2 py-1 text-sm transition-colors ${
-                          selectedFilters.includes(item)
-                            ? "bg-sky-700 text-white dark:text-almostWhite"
-                            : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
-                        }`}
-                      >
-                        {item}
-                      </button>
-                    ))}
+              </div>
+              <hr
+                className={`mb-2 h-[1px] border-none bg-almostBlack/40 dark:bg-white/40`}
+              />
+              {/*-------------------------------------------------------------------------- ASTRO FILTERS --------------------------------------------------------------------------*/}
+              {/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
+              {isAstroImage && (
+                <fieldset className={`flex flex-wrap gap-6 pb-2 sm:gap-10`}>
+                  <div>
+                    <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
+                      Object Type
+                    </h4>
+                    <div className={`flex flex-wrap gap-2`}>
+                      {astroObjectType.map((item) => (
+                        <button
+                          key={item}
+                          onClick={() => handleFilterClick(item)}
+                          className={`rounded px-2 py-1 text-sm transition-colors ${
+                            selectedFilters.includes(item)
+                              ? "bg-sky-700 text-white dark:text-almostWhite"
+                              : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
+                          }`}
+                        >
+                          {item}
+                        </button>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                  <div>
+                    <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
+                      Colour Palette
+                    </h4>
+                    <div className={`flex flex-wrap gap-2`}>
+                      {astroPalette.map((item) => (
+                        <button
+                          key={item}
+                          onClick={() => handleFilterClick(item)}
+                          className={`rounded px-2 py-1 text-sm transition-colors ${
+                            selectedFilters.includes(item)
+                              ? "bg-sky-700 text-white dark:text-almostWhite"
+                              : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
+                          }`}
+                        >
+                          {item}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
+                      Camera Type{" "}
+                    </h4>
+                    <div className={`flex flex-wrap gap-2`}>
+                      {astroCameraType.map((item) => (
+                        <button
+                          key={item}
+                          onClick={() => handleFilterClick(item)}
+                          className={`rounded px-2 py-1 text-sm transition-colors ${
+                            selectedFilters.includes(item)
+                              ? "bg-sky-700 text-white dark:text-almostWhite"
+                              : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
+                          }`}
+                        >
+                          {item}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
 
-                <div>
-                  <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
-                    Focal Length
-                  </h4>
-                  <div className={`flex flex-wrap gap-2`}>
-                    {astroFocalLength.map((item) => (
-                      <button
-                        key={item}
-                        onClick={() => handleFilterClick(item)}
-                        className={`rounded px-2 py-1 text-sm transition-colors ${
-                          selectedFilters.includes(item)
-                            ? "bg-sky-700 text-white dark:text-almostWhite"
-                            : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
-                        }`}
-                      >
-                        {item}
-                      </button>
-                    ))}
+                  <div>
+                    <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
+                      Focal Length
+                    </h4>
+                    <div className={`flex flex-wrap gap-2`}>
+                      {astroFocalLength.map((item) => (
+                        <button
+                          key={item}
+                          onClick={() => handleFilterClick(item)}
+                          className={`rounded px-2 py-1 text-sm transition-colors ${
+                            selectedFilters.includes(item)
+                              ? "bg-sky-700 text-white dark:text-almostWhite"
+                              : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
+                          }`}
+                        >
+                          {item}
+                        </button>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              </fieldset>
-            )}
-            {/*-------------------------------------------------------------------------- NON-ASTRO FILTERS --------------------------------------------------------------------------*/}
-            {/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-            {!isAstroImage && (
-              <fieldset
-                className={`${
-                  showFilterMenu
-                    ? "pointer-events-auto mb-4 mt-2 max-h-[999px] translate-y-0 opacity-100"
-                    : "pointer-events-none mb-0 mt-0 max-h-0 -translate-y-1 opacity-0"
-                } flex flex-wrap gap-6 pb-2 transition-all duration-300 sm:gap-10`}
-              >
-                <div>
-                  <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
-                    Object Type
-                  </h4>
-                  <div className={`flex flex-wrap gap-2`}>
-                    {nonAstroKeywords.map((item) => (
-                      <button
-                        key={item}
-                        onClick={() => handleFilterClick(item)}
-                        className={`rounded px-2 py-1 text-sm transition-colors ${
-                          selectedFilters.includes(item)
-                            ? "bg-sky-700 text-white dark:text-almostWhite"
-                            : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
-                        }`}
-                      >
-                        {item}
-                      </button>
-                    ))}
+                </fieldset>
+              )}
+              {/*-------------------------------------------------------------------------- NON-ASTRO FILTERS --------------------------------------------------------------------------*/}
+              {/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
+              {!isAstroImage && (
+                <fieldset
+                  className={`${
+                    showFilterMenu
+                      ? "pointer-events-auto mb-4 mt-2 max-h-[999px] translate-y-0 opacity-100"
+                      : "pointer-events-none mb-0 mt-0 max-h-0 -translate-y-1 opacity-0"
+                  } flex flex-wrap gap-6 pb-2 transition-all duration-300 sm:gap-10`}
+                >
+                  <div>
+                    <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
+                      Object Type
+                    </h4>
+                    <div className={`flex flex-wrap gap-2`}>
+                      {nonAstroKeywords.map((item) => (
+                        <button
+                          key={item}
+                          onClick={() => handleFilterClick(item)}
+                          className={`rounded px-2 py-1 text-sm transition-colors ${
+                            selectedFilters.includes(item)
+                              ? "bg-sky-700 text-white dark:text-almostWhite"
+                              : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
+                          }`}
+                        >
+                          {item}
+                        </button>
+                      ))}
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
-                    Colour Palette
-                  </h4>
-                  <div className={`flex flex-wrap gap-2`}>
-                    {locations.map((item) => (
-                      <button
-                        key={item}
-                        onClick={() => handleFilterClick(item)}
-                        className={`rounded px-2 py-1 text-sm transition-colors ${
-                          selectedFilters.includes(item)
-                            ? "bg-sky-700 text-white dark:text-almostWhite"
-                            : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
-                        }`}
-                      >
-                        {item}
-                      </button>
-                    ))}
+                  <div>
+                    <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
+                      Colour Palette
+                    </h4>
+                    <div className={`flex flex-wrap gap-2`}>
+                      {locations.map((item) => (
+                        <button
+                          key={item}
+                          onClick={() => handleFilterClick(item)}
+                          className={`rounded px-2 py-1 text-sm transition-colors ${
+                            selectedFilters.includes(item)
+                              ? "bg-sky-700 text-white dark:text-almostWhite"
+                              : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
+                          }`}
+                        >
+                          {item}
+                        </button>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              </fieldset>
-            )}
+                </fieldset>
+              )}
+            </section>
           </div>
         )}
         <Gallery images={filteredImages} isAstroImage={isAstroImage} />

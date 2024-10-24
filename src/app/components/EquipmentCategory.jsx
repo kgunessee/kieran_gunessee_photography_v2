@@ -11,11 +11,11 @@ export function EquipmentCategory({ content, header }) {
   return (
     <>
       <h3 className={`text-headerText my-2 font-semibold`}>{header}</h3>
-      <ul className={`grid grid-cols-3 gap-2 sm:flex sm:flex-wrap`}>
+      <ul className={`flex flex-wrap gap-2`}>
         {convertObjectToArray(content).map((item, index) => {
           return (
             <li
-              className={`text-contentText relative flex w-[200px] flex-col gap-1 text-center text-xs`}
+              className={`text-contentText relative flex w-[100px] flex-col gap-1 text-center text-xs lg:w-[200px]`}
               key={`scope${index}`}
             >
               <Image
