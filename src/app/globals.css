@@ -110,14 +110,24 @@ body.dark .is-prev {
   border: 2px solid rgba(0, 0, 0, 0.6) !important;
 }
 
-.modal-close-btn {
+.modal-close-btn,
+.filter-icon {
   fill: var(--almost-black) !important;
 }
 
-body.dark .modal-close-btn {
+body.dark .modal-close-btn,
+body.dark .filter-icon {
   fill: var(--almost-white) !important;
 }
 
 .fullscreen-style {
   width: 2rem !important;
+}
+
+.clear-search-icon {
+  fill: var(--almost-black) !important;
+}
+
+body.dark .clear-search-icon {
+  fill: var(--almost-white) !important;
 }

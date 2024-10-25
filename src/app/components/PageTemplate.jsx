@@ -120,7 +120,7 @@ export function PageTemplate({
                 className={`bg-black/10 px-2 dark:bg-white/10 dark:hover:bg-white/15 dark:active:bg-white/10`}
               >
                 <svg
-                  className={`opacity-70`}
+                  className={`clear-search-icon opacity-70`}
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
                   height="28"
@@ -137,6 +137,7 @@ export function PageTemplate({
                 className={`relative flex items-center justify-center rounded-r bg-black/10 px-2 hover:bg-black/15 active:bg-black/10 dark:bg-white/10 dark:hover:bg-white/15 dark:active:bg-white/10`}
               >
                 <svg
+                  className={`filter-icon`}
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
                   height="28"
@@ -163,32 +164,42 @@ export function PageTemplate({
                 className={`mb-2 flex gap-4 text-[0.75rem] text-almostBlack/70 dark:text-almostWhite/70`}
               >
                 <div className={`flex items-center justify-center gap-1`}>
-                  <button
+                  <input
+                    type={"button"}
+                    id={"filterAllBtn"}
                     onClick={() => handleFilterLogic(true)}
                     className={`aspect-square w-4 rounded border-[1px] border-white/40 px-2 py-1 text-sm transition-colors ${
                       filterLogic
                         ? "bg-sky-700 text-white dark:text-almostWhite"
                         : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
                     }`}
-                  ></button>
-                  <p className={`mt-1`}>
+                  ></input>
+                  <label
+                    htmlFor={"filterAllBtn"}
+                    className={`mt-1 hover:cursor-pointer`}
+                  >
                     Show images that match <strong>all</strong> selected
                     filters.
-                  </p>
+                  </label>
                 </div>
                 <div className={`flex items-center justify-center gap-1`}>
-                  <button
+                  <input
+                    type={"button"}
+                    id={"filterAnyBtn"}
                     onClick={() => handleFilterLogic(false)}
                     className={`aspect-square w-4 rounded border-[1px] border-white/40 px-2 py-1 text-sm transition-colors ${
                       !filterLogic
                         ? "bg-sky-700 text-white dark:text-almostWhite"
                         : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
                     }`}
-                  ></button>
-                  <p className={`mt-1`}>
+                  ></input>
+                  <label
+                    htmlFor={"filterAnyBtn"}
+                    className={`mt-1 hover:cursor-pointer`}
+                  >
                     Show images that match <strong>any</strong> selected
                     filters.
-                  </p>
+                  </label>
                 </div>
               </div>
               <hr
