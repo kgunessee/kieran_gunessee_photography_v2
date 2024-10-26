@@ -35,7 +35,7 @@ export default function locations() {
             <GalleryCategoryCard
               category={"/peak-district"}
               title={"THE PEAK DISTRICT"}
-              imageUrl={"/images/thumbnails/water/thumb_Iceland_5.webp"}
+              imageUrl={"/images/thumbnails/water/thumb_Down and Under.webp"}
               alt={"The peak district category image"}
             />
             <GalleryCategoryCard

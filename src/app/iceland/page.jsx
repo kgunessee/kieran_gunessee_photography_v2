@@ -19,11 +19,11 @@ export const metadata = {
 
 const icelandImages = [...waterImageInfo, ...landscapeImageInfo].filter(
   (image) => {
-    return image.location.toLowerCase().includes("iceland");
+    return image.keywords.includes("iceland".toLowerCase());
   },
 );
 
-export default function Water() {
+export default function Iceland() {
   const pageText =
     "Iceland is an incredible country and was home to some amazing scenery. Here are my images from the land of ice and fire.";
   return (

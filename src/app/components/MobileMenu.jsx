@@ -59,11 +59,11 @@ export function MobileMenu() {
             variants={liVariants}
             className={`mb-2 list-none rounded px-2 py-1 transition-colors hover:bg-white/10`}
           >
-            <Link href={"/equipment"}>Locations</Link>
+            <Link href={"/locations"}>Locations</Link>
           </motion.li>
 
           <div className={`my-2 h-[1px] w-full bg-white/40`}></div>
-          {NavbarItems.slice(1).map((item) => {
+          {NavbarItems.slice(2).map((item) => {
             return (
               <motion.li
                 key={item.name}
