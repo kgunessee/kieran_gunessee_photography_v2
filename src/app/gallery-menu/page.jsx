@@ -1,6 +1,5 @@
 //Hooks & Plugins
 import { GalleryCategories } from "@/app/components/GalleryCategories";
-import { GalleryCategoryCard } from "@/app/components/GalleryCategoryCard";
 
 //Components
 import Header from "@/app/components/Header";

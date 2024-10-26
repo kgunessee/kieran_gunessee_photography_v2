@@ -17,6 +17,12 @@ export const metadata = {
   ],
 };
 
+const icelandImages = [...waterImageInfo, ...landscapeImageInfo].filter(
+  (image) => {
+    return image.location.toLowerCase().includes("iceland");
+  },
+);
+
 export default function Water() {
   const pageText =
     "Iceland is an incredible country and was home to some amazing scenery. Here are my images from the land of ice and fire.";
@@ -26,7 +32,7 @@ export default function Water() {
       <PageTemplate
         pageTitle={"ICELAND"}
         pageText={pageText}
-        images={[...waterImageInfo, ...landscapeImageInfo]}
+        images={icelandImages}
         isLocationCategory={true}
         bgColourDark={"dark:to-blue-500/5"}
         bgColourLight={"to-blue-500/15"}

@@ -1,5 +1,6 @@
 //Fonts
 import { Poppins } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -8,6 +9,7 @@ const poppins = Poppins({
 
 //Styles
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
@@ -29,6 +31,8 @@ export default function RootLayout({ children }) {
       >
         {children}
       </body>
+      <SpeedInsights />
+      <Analytics />
     </html>
   );
 }
