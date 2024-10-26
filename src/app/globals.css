@@ -124,10 +124,12 @@ body.dark .filter-icon {
   width: 2rem !important;
 }
 
-.clear-search-icon {
+.clear-search-icon,
+.help-icon {
   fill: var(--almost-black) !important;
 }
 
-body.dark .clear-search-icon {
+body.dark .clear-search-icon,
+body.dark .help-icon {
   fill: var(--almost-white) !important;
 }

@@ -25,6 +25,15 @@ export function PageTemplate({
   const [selectedFilters, setSelectedFilters] = useState([]);
   const [showFilterMenu, setShowFilterMenu] = useState(false);
   const [filterLogic, setFilterLogic] = useState(true);
+  const [isTooltipVisible, setIsTooltipVisible] = useState(false);
+
+  const handleTooltipToggle = () => {
+    setIsTooltipVisible(true);
+    // Auto-hide tooltip after 3 seconds on mobile
+    setTimeout(() => {
+      setIsTooltipVisible(false);
+    }, 3000);
+  };
 
   const handleSearchTerm = (e) => {
     const searchTerm = e.target.value;
@@ -163,43 +172,53 @@ export function PageTemplate({
               <div
                 className={`mb-2 flex gap-4 text-[0.75rem] text-almostBlack/70 dark:text-almostWhite/70`}
               >
-                <div className={`flex items-center justify-center gap-1`}>
-                  <input
-                    type={"button"}
-                    id={"filterAllBtn"}
-                    onClick={() => handleFilterLogic(true)}
-                    className={`aspect-square w-4 rounded border-[1px] border-white/40 px-2 py-1 text-sm transition-colors ${
-                      filterLogic
-                        ? "bg-sky-700 text-white dark:text-almostWhite"
-                        : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
-                    }`}
-                  ></input>
-                  <label
-                    htmlFor={"filterAllBtn"}
-                    className={`mt-1 hover:cursor-pointer`}
+                <button
+                  aria-label={"Match all filters button"}
+                  onClick={() => handleFilterLogic(true)}
+                  className={`rounded px-2 py-1 text-sm transition-colors ${
+                    filterLogic
+                      ? "bg-sky-700 text-white dark:text-almostWhite"
+                      : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
+                  }`}
+                >
+                  Match All Filters
+                </button>
+                <button
+                  aria-label={"Match any filters button"}
+                  onClick={() => handleFilterLogic(false)}
+                  className={`rounded px-2 py-1 text-sm transition-colors ${
+                    !filterLogic
+                      ? "bg-sky-700 text-white dark:text-almostWhite"
+                      : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
+                  }`}
+                >
+                  Match Any Filter
+                </button>
+                <div className="group relative" onClick={handleTooltipToggle}>
+                  <svg
+                    className="help-icon -ml-2 hover:cursor-pointer hover:opacity-80"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="#e8eaed"
+                    viewBox="0 -960 960 960"
                   >
-                    Show images that match <strong>all</strong> selected
-                    filters.
-                  </label>
-                </div>
-                <div className={`flex items-center justify-center gap-1`}>
-                  <input
-                    type={"button"}
-                    id={"filterAnyBtn"}
-                    onClick={() => handleFilterLogic(false)}
-                    className={`aspect-square w-4 rounded border-[1px] border-white/40 px-2 py-1 text-sm transition-colors ${
-                      !filterLogic
-                        ? "bg-sky-700 text-white dark:text-almostWhite"
-                        : "bg-almostBlack/10 hover:bg-almostBlack/5 active:bg-almostBlack/10 dark:bg-white/10 dark:text-almostWhite dark:hover:bg-white/15 dark:active:bg-white/10"
+                    <path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93zm0-320z"></path>
+                  </svg>
+                  <div
+                    className={`absolute left-1/2 top-full z-20 mt-1 w-max max-w-[70vw] -translate-x-1/2 rounded border-[1px] border-white/40 bg-black px-2 py-1 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100 ${
+                      isTooltipVisible ? "opacity-100" : "opacity-0"
                     }`}
-                  ></input>
-                  <label
-                    htmlFor={"filterAnyBtn"}
-                    className={`mt-1 hover:cursor-pointer`}
                   >
-                    Show images that match <strong>any</strong> selected
-                    filters.
-                  </label>
+                    <p className={`text-wrap`}>
+                      <strong> Match All Filters: </strong>Show images that
+                      match ALL selected filter tags.
+                      <br />
+                      <br />
+                      <strong> Match Any Filter: </strong>Show all images that
+                      have ANY selected filter tag.
+                    </p>
+                  </div>
                 </div>
               </div>
               <hr
@@ -274,7 +293,7 @@ export function PageTemplate({
                   </div>
                   <div>
                     <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
-                      Colour Palette
+                      Location
                     </h4>
                     <FilterTagButton
                       filterCategory={locations}

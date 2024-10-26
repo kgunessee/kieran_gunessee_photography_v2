@@ -1638,7 +1638,7 @@ export const landscapeImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1/2000",
     mapLocation: "https://maps.app.goo.gl/xrgiDuRPbf5UMYwC9",
-    keywords: ["uk", "midlands", "minimalist", "wide angle"],
+    keywords: ["uk", "midlands", "hills", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/landscape/thumb_Standing at the End.webp",
@@ -1652,7 +1652,7 @@ export const landscapeImageInfo = [
     aperture: "8.0",
     shutterSpeed: "1/60",
     mapLocation: "https://maps.app.goo.gl/yenzTTbf5gUmWFbz8",
-    keywords: ["uk", "midlands", "minimalist", "wide angle"],
+    keywords: ["uk", "midlands", "atmospheric", "minimalist", "wide angle"],
   },
   {
     thumb: "/images/thumbnails/landscape/thumb_A Tree in Fog.webp",
