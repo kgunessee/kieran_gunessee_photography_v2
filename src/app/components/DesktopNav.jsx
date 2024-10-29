@@ -36,6 +36,9 @@ export function DesktopNav() {
           Equipment
         </Link>
       </div>
+      <Link style={{ color: "#e1e1e1" }} href="/blog">
+        Blog
+      </Link>
       <div className="relative" ref={menuRef}>
         <DropDownButton
           title={"Gallery"}
