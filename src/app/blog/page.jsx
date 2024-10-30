@@ -7,7 +7,7 @@ export default async function BlogListPage() {
   const posts = await fetchEntries();
   console.log(posts[0].fields.blogImage.fields.file.url);
   return (
-    <div>
+    <section>
       <h1>Blog</h1>
       <ul>
         {posts.map((post) => (
@@ -22,6 +22,6 @@ export default async function BlogListPage() {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }
