@@ -36,9 +36,12 @@ export function DesktopNav() {
           Equipment
         </Link>
       </div>
-      <Link style={{ color: "#e1e1e1" }} href="/blog">
-        Blog
-      </Link>
+      <div className="cursor-pointer rounded px-2 py-1 text-almostWhite transition-all hover:bg-white/10">
+        <Link style={{ color: "#e1e1e1" }} href="/blog">
+          Blog
+        </Link>
+      </div>
+
       <div className="relative" ref={menuRef}>
         <DropDownButton
           title={"Gallery"}
@@ -72,9 +75,7 @@ export function DesktopNav() {
               </span>
             </li>
           ))}
-          <hr
-            className={`my-2 h-[1px] w-full border-none bg-almostBlack/40 p-0 dark:bg-white/40`}
-          />
+          <hr className={`my-2 h-[1px] w-full border-none bg-white/40 p-0`} />
           {NavbarItems.slice(4).map((item) => (
             <li
               key={item.name}
