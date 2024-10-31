@@ -43,27 +43,38 @@ export function MobileMenu() {
         className={`absolute bottom-40 right-0 flex flex-col gap-4 py-6 pr-5 text-right text-2xl text-almostWhite`}
       >
         <ul className={`flex flex-col items-end`}>
-          <motion.li
-            variants={liVariants}
-            className={`mb-2 list-none rounded px-2 py-1 transition-colors hover:bg-white/10`}
-          >
-            <Link href={"/gallery-menu"}>Gallery</Link>
-          </motion.li>
-          <motion.li
-            variants={liVariants}
-            className={`mb-2 list-none rounded px-2 py-1 transition-colors hover:bg-white/10`}
-          >
-            <Link href={"/equipment"}>Equipment</Link>
-          </motion.li>
-          <motion.li
-            variants={liVariants}
-            className={`mb-2 list-none rounded px-2 py-1 transition-colors hover:bg-white/10`}
-          >
-            <Link href={"/locations"}>Locations</Link>
-          </motion.li>
+          {NavbarItems.slice(0, 4).map((item) => {
+            return (
+              <motion.li
+                key={item.name}
+                variants={liVariants}
+                className={`mb-3 list-none rounded px-2 py-1 transition-colors hover:bg-white/10`}
+              >
+                <Link href={item.url}>{item.name}</Link>
+              </motion.li>
+            );
+          })}
+          {/*<motion.li*/}
+          {/*  variants={liVariants}*/}
+          {/*  className={`mb-2 list-none rounded px-2 py-1 transition-colors hover:bg-white/10`}*/}
+          {/*>*/}
+          {/*  <Link href={"/gallery-menu"}>Gallery</Link>*/}
+          {/*</motion.li>*/}
+          {/*<motion.li*/}
+          {/*  variants={liVariants}*/}
+          {/*  className={`mb-2 list-none rounded px-2 py-1 transition-colors hover:bg-white/10`}*/}
+          {/*>*/}
+          {/*  <Link href={"/equipment"}>Equipment</Link>*/}
+          {/*</motion.li>*/}
+          {/*<motion.li*/}
+          {/*  variants={liVariants}*/}
+          {/*  className={`mb-2 list-none rounded px-2 py-1 transition-colors hover:bg-white/10`}*/}
+          {/*>*/}
+          {/*  <Link href={"/locations"}>Locations</Link>*/}
+          {/*</motion.li>*/}
 
           <div className={`my-2 h-[1px] w-full bg-white/40`}></div>
-          {NavbarItems.slice(2).map((item) => {
+          {NavbarItems.slice(4).map((item) => {
             return (
               <motion.li
                 key={item.name}
