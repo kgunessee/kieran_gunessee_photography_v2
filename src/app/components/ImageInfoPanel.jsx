@@ -1,5 +1,7 @@
+"use client";
 //Hooks & Plugins
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 //Components
 import { CloseButton } from "@/app/components/CloseButton";
@@ -11,6 +13,22 @@ export function ImageInfoPanel({
   isAstroImage,
 }) {
   const handleCloseModal = () => setIsInfoPanelOpen(false);
+
+  useEffect(() => {
+    // Function to handle the back action
+    const handlePopState = (event) => {
+      event.preventDefault();
+      handleCloseModal();
+    };
+
+    // Add listener when the panel opens
+    window.addEventListener("popstate", handlePopState);
+
+    // Clean up the listener on component unmount
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
+  }, []);
 
   return (
     <motion.div

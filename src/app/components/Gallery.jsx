@@ -96,8 +96,18 @@ export default function Gallery({ images, isAstroImage }) {
       },
     });
 
+    // Prevent back navigation when Fancybox is open
+    const handleBackNavigation = (event) => {
+      if (Fancybox.getInstance()) {
+        event.preventDefault();
+        Fancybox.close();
+      }
+    };
+    window.addEventListener("popstate", handleBackNavigation);
+
     return () => {
       Fancybox.destroy();
+      window.removeEventListener("popstate", handleBackNavigation);
     };
   }, [isMobileScreen]);
 
