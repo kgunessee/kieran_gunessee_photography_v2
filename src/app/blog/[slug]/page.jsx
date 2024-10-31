@@ -12,7 +12,10 @@ const renderOptions = {
       <p className="mb-4 leading-relaxed">{children}</p>
     ),
     [BLOCKS.HEADING_2]: (node, children) => (
-      <h2 className="mb-3 text-2xl font-bold">{children}</h2>
+      <h2 className="mb-4 mt-8 text-3xl font-bold">{children}</h2>
+    ),
+    [BLOCKS.HEADING_3]: (node, children) => (
+      <h2 className="mb-4 mt-8 text-xl font-bold">{children}</h2>
     ),
     [BLOCKS.UL_LIST]: (node, children) => (
       <ul className="mb-4 list-disc pl-5">{children}</ul>
@@ -30,14 +33,27 @@ const renderOptions = {
         {node.content[0].value}
       </a>
     ),
-  },
-  [BLOCKS.EMBEDDED_ASSET]: (node) => {
-    const { file, title, description } = node.data.target.fields;
-    return (
-      <div className="my-4">
-        <Image src={`https:${file.url}`} alt={description || title} />
-      </div>
-    );
+    [BLOCKS.EMBEDDED_ASSET]: (node) => {
+      const { file, title, description } = node.data.target.fields;
+      return (
+        <div className="shado my-4 lg:w-3/4 2xl:w-1/2">
+          <Image
+            style={{
+              borderRadius: "0.5rem",
+              boxShadow:
+                " 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+            }}
+            src={`https:${file.url}`}
+            alt={description || title}
+            height={2000}
+            width={2000}
+          />
+        </div>
+      );
+    },
+    [BLOCKS.HR]: () => (
+      <hr className="border-t-1 mb-4 mt-8 border-almostBlack opacity-40 dark:border-almostWhite" />
+    ),
   },
 };
 
@@ -52,7 +68,7 @@ export async function generateStaticParams() {
 export default async function BlogPostPage({ params }) {
   const post = await fetchEntry(params.slug);
   const { title, date, blogImage, content } = post.fields;
-  const formattedDate = new Date(date).toLocaleDateString("en-US", {
+  const formattedDate = new Date(date).toLocaleDateString("en-GB", {
     year: "numeric",
     month: "numeric",
     day: "numeric",
@@ -66,10 +82,10 @@ export default async function BlogPostPage({ params }) {
         className={`flex min-h-[calc(100dvh-65px)] flex-col justify-between overflow-hidden border-t-[1px] border-white/20 bg-gradient-to-tr from-transparent from-50% lg:min-h-[calc(100dvh-80px)]`}
       >
         <article
-          className={`mt-2 px-mobileXPadding text-almostBlack lg:mt-8 lg:px-desktopXPadding dark:text-almostWhite`}
+          className={`mt-2 px-mobileXPadding text-almostBlack md:px-[10%] lg:mt-8 lg:px-[20%] dark:text-almostWhite`}
         >
           <div
-            className={`mb-8 flex flex-col-reverse justify-between rounded border-[1px] border-almostBlack/10 shadow-lg lg:flex-row dark:border-almostWhite/10`}
+            className={`mb-8 flex flex-col-reverse justify-between rounded-lg border-[1px] border-almostBlack/10 shadow-lg lg:flex-row dark:border-almostWhite/10`}
           >
             <div className={`flex flex-col justify-center p-4 lg:px-20`}>
               <div className={`mb-2 flex justify-between font-light lg:mb-4`}>
@@ -79,11 +95,11 @@ export default async function BlogPostPage({ params }) {
               <h1 className={`text-2xl font-semibold lg:text-4xl`}>{title}</h1>
             </div>
 
-            <figure className={`w-full flex-1 basis-[60%]`}>
+            <figure className={`w-full`}>
               <Image
                 style={{
-                  borderTopRightRadius: "0.25rem",
-                  borderBottomRightRadius: "0.25rem",
+                  borderTopRightRadius: "0.5rem",
+                  borderBottomRightRadius: "0.5rem",
                   objectFit: "cover",
                 }}
                 src={`https:${blogImage.fields.file.url}`}

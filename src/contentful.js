@@ -8,6 +8,7 @@ const client = createClient({
 
 export async function fetchEntries() {
   const entries = await client.getEntries({ content_type: "blog" });
+
   return entries.items;
 }
 
