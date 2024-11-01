@@ -101,6 +101,38 @@ export default function Gallery({ images, isAstroImage }) {
     };
   }, [isMobileScreen]);
 
+  // Handle back-swipe gesture with popstate and beforeunload
+  useEffect(() => {
+    const preventBackSwipe = (event) => {
+      if (isInfoPanelOpen) {
+        event.preventDefault();
+        setIsInfoPanelOpen(false);
+        // Push a state entry to prevent back navigation
+        window.history.pushState(null, document.title, window.location.href);
+      }
+    };
+
+    const preventUnload = (event) => {
+      if (isInfoPanelOpen) {
+        event.preventDefault();
+        event.returnValue = ""; // Compatibility for older browsers
+        setIsInfoPanelOpen(false);
+      }
+    };
+
+    // Initial history state push
+    window.history.pushState(null, document.title, window.location.href);
+
+    // Attach listeners
+    window.addEventListener("popstate", preventBackSwipe);
+    window.addEventListener("beforeunload", preventUnload);
+
+    return () => {
+      window.removeEventListener("popstate", preventBackSwipe);
+      window.removeEventListener("beforeunload", preventUnload);
+    };
+  }, [isInfoPanelOpen]);
+
   return (
     <>
       <div className="gallery grid grid-cols-3 gap-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
