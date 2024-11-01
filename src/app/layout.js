@@ -26,6 +26,27 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Favicon and Apple Touch Icons */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/public/images/icons/MobileLogo.svg"
+          sizes="32x32"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/public/images/icons/MobileLogo.svg"
+          sizes="180x180"
+        />
+
+        {/* Meta tags */}
+        <meta name="keywords" content={metadata.keywords.join(", ")} />
+        <meta name="description" content={metadata.description} />
+        <meta name="author" content={metadata.author} />
+        <meta name="robots" content={metadata.robots} />
+      </head>
       <body
         className={`${poppins.className} dark overflow-x-hidden bg-almostWhite antialiased transition-colors duration-200 dark:bg-almostBlack`}
       >
