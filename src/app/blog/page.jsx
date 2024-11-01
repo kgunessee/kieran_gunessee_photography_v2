@@ -5,6 +5,16 @@ import Image from "next/image";
 import Header from "@/app/components/Header";
 import { Footer } from "@/app/components/Footer";
 
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "Blog",
+  description:
+    "My blog, offering guides, tutorials, tips and insight into photography and astrophotography. ",
+  keywords: [
+    "photography blog,astrophotography blog, guides, tutorials, photography",
+  ],
+};
+
 const formatDate = (dateInput) => {
   return new Date(dateInput).toLocaleDateString("en-GB", {
     year: "numeric",

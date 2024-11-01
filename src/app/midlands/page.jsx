@@ -9,7 +9,7 @@ import { PageTemplate } from "@/app/components/PageTemplate";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
-  title: "Iceland - Kieran Gunessee Astrophotography",
+  title: "The Midlands",
   description: "Images of the Midlands and surrounding areas.",
   keywords: [
     "photography",

@@ -207,7 +207,7 @@ export function PageTemplate({
                   </svg>
                   <div
                     className={`pointer-events-none absolute -left-52 top-full z-20 mt-1 w-max max-w-[70vw] rounded border-[1px] border-white/40 bg-black px-2 py-1 text-almostWhite opacity-0 transition-opacity duration-200 group-hover:opacity-100 sm:-right-40 ${
-                      isTooltipVisible ? "opacity-100" : "opacity-100"
+                      isTooltipVisible ? "opacity-100" : "opacity-0"
                     }`}
                   >
                     <p className={`text-wrap`}>

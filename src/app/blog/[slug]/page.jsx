@@ -57,6 +57,17 @@ const renderOptions = {
   },
 };
 
+export async function generateMetadata({ params }) {
+  const post = await fetchEntry(params.slug);
+  const { title, description } = post.fields;
+
+  return {
+    title: title || "Blog Post",
+    description: description || "An insightful blog post",
+    keywords: ["photography", "astrophotography", "guides", "tutorials"],
+  };
+}
+
 export async function generateStaticParams() {
   const posts = await fetchEntries();
 

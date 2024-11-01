@@ -5,6 +5,15 @@ import Header from "@/app/components/Header";
 import { Footer } from "@/app/components/Footer";
 import { GalleryCategoryCard } from "@/app/components/GalleryCategoryCard";
 
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "Locations",
+  description: "The locations where I have taken my photos.",
+  keywords: [
+    "photography locations ,gallery locations, UK, Peak District, Iceland, Devon, astrophotography, fine art photography",
+  ],
+};
+
 export default function locations() {
   return (
     <>

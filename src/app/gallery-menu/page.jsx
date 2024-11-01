@@ -5,6 +5,16 @@ import { GalleryCategories } from "@/app/components/GalleryCategories";
 import Header from "@/app/components/Header";
 import { Footer } from "@/app/components/Footer";
 
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "Gallery",
+  description:
+    "My gallery, showcasing the different types of photography I do.",
+  keywords: [
+    "photography gallery,gallery, landscape, astrophotography, fine art photography",
+  ],
+};
+
 export default function galleryMenu() {
   return (
     <>

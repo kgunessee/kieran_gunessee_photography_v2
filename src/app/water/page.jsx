@@ -5,7 +5,7 @@ import { PageTemplate } from "@/app/components/PageTemplate";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
-  title: "Water - Kieran Gunessee Photography",
+  title: "Water",
   description:
     "Images of waterfalls, rivers, lakes, and everything related to water.",
   keywords: [
