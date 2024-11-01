@@ -133,6 +133,10 @@ export const daytimeEquipmentInfo = {
       name: "Samyang 14mm F2.8 Nikon Z",
       image: "/images/equipment/Samyang 14mm F2.8 Nikon Z.webp",
     },
+    "Nikon 105mm MC": {
+      name: "Nikon Nikkor Z MC 105mm f/2.8 VR S",
+      image: "/images/equipment/Samyang 14mm F2.8 Nikon Z.webp",
+    },
   },
 
   Tripod: {
@@ -1908,5 +1912,22 @@ export const woodlandImageInfo = [
     shutterSpeed: "1/200",
     mapLocation: "https://maps.app.goo.gl/bZuBfZXhnLFFK4DM8",
     keywords: ["uk", "midlands", "focused subject", "summer"],
+  },
+];
+
+export const macroImageInfo = [
+  {
+    thumb: "",
+    fullRes: "",
+    title: "",
+    camera: daytimeEquipmentInfo.Camera.Z7II.name,
+    lens: daytimeEquipmentInfo.Lens["Nikon 105mm MC"].name,
+    imageDate: "",
+    location: "",
+    iso: "",
+    aperture: "",
+    shutterSpeed: "",
+    mapLocation: "",
+    keywords: "",
   },
 ];
