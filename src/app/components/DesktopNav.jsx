@@ -36,7 +36,7 @@ export function DesktopNav() {
           Equipment
         </Link>
       </div>
-      <div className="cursor-pointer rounded px-2 py-1 text-almostWhite transition-all hover:bg-white/10">
+      <div className="-ml-2 cursor-pointer rounded px-2 py-1 text-almostWhite transition-all hover:bg-white/10">
         <Link style={{ color: "#e1e1e1" }} href="/blog">
           Blog
         </Link>

@@ -34,7 +34,7 @@ export default function Equipment() {
           </p>
           <section className={`mb-4`}>
             <button
-              className={`flex w-full items-center justify-between rounded bg-greyBlue/40 p-2 text-left text-xl font-semibold text-almostBlack dark:bg-blueBlack dark:text-almostWhite`}
+              className={`flex w-full items-center justify-between rounded bg-greyBlue/40 p-2 text-left text-xl font-semibold text-almostBlack hover:bg-greyBlue/60 dark:bg-blueBlack dark:text-almostWhite hover:dark:bg-blueBlack/80`}
               onClick={() => setIsAstroOpen(!isAstroOpen)}
             >
               Astrophotography
@@ -73,7 +73,7 @@ export default function Equipment() {
           </section>
           <section>
             <button
-              className={`flex w-full items-center justify-between rounded bg-greyBlue/40 p-2 text-left text-xl font-semibold text-almostBlack dark:bg-blueBlack dark:text-almostWhite`}
+              className={`flex w-full items-center justify-between rounded bg-greyBlue/40 p-2 text-left text-xl font-semibold text-almostBlack hover:bg-greyBlue/60 dark:bg-blueBlack dark:text-almostWhite hover:dark:bg-blueBlack/80`}
               onClick={() => setIsDaytimeOpen(!isDaytimeOpen)}
             >
               Landscape, Nature & Everything Else

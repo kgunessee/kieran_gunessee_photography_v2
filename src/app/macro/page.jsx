@@ -30,7 +30,7 @@ export default function Water() {
         bgColourDark={"dark:to-blue-500/5"}
         bgColourLight={"to-blue-500/15"}
         locations={["Iceland", "UK", "Midlands", "Devon"]}
-        nonAstroKeywords={["Waterfall", "River", "Wide angle", "Mountain"]}
+        nonAstroKeywords={["Fungi", "Plants"]}
       />
     </main>
   );

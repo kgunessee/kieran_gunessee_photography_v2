@@ -34,7 +34,11 @@ export default async function BlogListPage() {
         className={`flex min-h-[calc(100dvh-65px)] flex-col justify-between overflow-hidden border-t-[1px] border-white/20 bg-gradient-to-tr from-transparent from-50% lg:min-h-[calc(100dvh-80px)]`}
       >
         <main className={`px-mobileXPadding lg:px-desktopXPadding`}>
-          <h1 className={`my-4 text-2xl font-semibold`}>Blog</h1>
+          <h1
+            className={`my-4 text-2xl font-semibold text-almostBlack dark:text-almostWhite`}
+          >
+            Blog
+          </h1>
           <ul
             className={`grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4`}
           >
