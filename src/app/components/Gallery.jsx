@@ -99,7 +99,10 @@ export default function Gallery({ images, isAstroImage }) {
       transitionDuration: 300,
       backdropClick: false,
       Carousel: {
-        transition: "fade",
+        friction: 0.3,
+        swipe: {
+          transitionEffect: "fade",
+        },
       },
     });
 
@@ -131,32 +134,37 @@ export default function Gallery({ images, isAstroImage }) {
 
   return (
     <>
-      <div className="gallery grid grid-cols-3 gap-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-        {images.map((image) => (
+      <div className="gallery mt-2 grid grid-cols-3 gap-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-2">
+        {images.map((image, index) => (
           <a
             href={image.fullRes}
-            key={`key=${image.title}`}
+            key={`full res image ${index}`}
             data-fancybox="gallery"
-            data-caption={`${image.title} <span class="dark:text-lightBlue text-blueBlack">//</span> ${
-              isAstroImage ? image.catalogue : image.location
-            }`}
+            data-caption={`${image.title} ${
+              image.title === ""
+                ? ""
+                : `<span class="text-blueBlack dark:text-lightBlue">//</span>`
+            } ${isAstroImage ? image.catalogue : image.location}`}
           >
-            <div className="thumbnail relative aspect-square w-full">
+            <div className="thumbnail relative aspect-square w-full overflow-hidden rounded-lg">
               <Image
                 src={image.thumb}
                 alt={image.title}
                 fill={true}
                 sizes="(max-width: 640px) 200px, (max-width: 768px) 350px, (max-width: 1024px) 400px, (max-width: 1280px) 500px"
-                style={{
-                  borderRadius: "3px",
-                  objectFit: "cover",
-                }}
+                className={`rounded-lg object-cover transition duration-300 hover:scale-105 hover:brightness-110`}
+                // style={{
+                //   borderRadius: "0.5rem",
+                //   objectFit: "cover",
+                // }}
               />
-              <div className="absolute top-0 grid h-full w-full place-items-center bg-almostBlack/90 opacity-0 transition-opacity duration-150 hover:opacity-100">
-                <p className="text-wrap text-center text-xs text-almostWhite lg:text-base">
-                  {image.title}
-                </p>
-              </div>
+              {isAstroImage && (
+                <div className="absolute top-0 grid h-full w-full place-items-center rounded-lg bg-almostBlack/90 opacity-0 transition-opacity duration-150 hover:opacity-100">
+                  <p className="text-wrap text-center text-xs text-almostWhite lg:text-base">
+                    {image.title}
+                  </p>
+                </div>
+              )}
             </div>
           </a>
         ))}

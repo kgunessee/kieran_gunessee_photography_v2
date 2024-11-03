@@ -1,6 +1,4 @@
 //Hooks & Plugins
-import Link from "next/link";
-import Image from "next/image";
 
 //Components
 import { GalleryCategoryCard } from "@/app/components/GalleryCategoryCard";
@@ -13,7 +11,7 @@ export function GalleryCategories({ galleryRef }) {
       className={`bg-almostWhite px-mobileXPadding py-4 lg:px-desktopXPadding dark:bg-almostBlack`}
     >
       <h2
-        className={`mb-4 text-2xl font-semibold text-almostBlack dark:text-almostWhite`}
+        className={`mb-4 text-2xl font-semibold text-almostBlack lg:text-3xl dark:text-almostWhite`}
       >
         GALLERY
       </h2>
@@ -49,7 +47,7 @@ export function GalleryCategories({ galleryRef }) {
         <GalleryCategoryCard
           category={"/macro"}
           title={"MACRO"}
-          imageUrl={"/images/thumbnails/water/thumb_Iceland_5.webp"}
+          imageUrl={"/images/thumbnails/macro/thumb_Mushroom 01.webp"}
           alt={"Macro category image"}
         />
         <GalleryCategoryCard
@@ -57,6 +55,26 @@ export function GalleryCategories({ galleryRef }) {
           title={"ICELAND"}
           imageUrl={"/images/thumbnails/landscape/thumb_Iceland_11.webp"}
           alt={"Iceland category image"}
+        />
+        <GalleryCategoryCard
+          category={"/peak-district"}
+          title={"THE PEAK DISTRICT"}
+          imageUrl={"/images/thumbnails/water/thumb_Down and Under.webp"}
+          alt={"The peak district category image"}
+        />
+        <GalleryCategoryCard
+          category={"/devon"}
+          title={"DEVON"}
+          imageUrl={"/images/thumbnails/woodland/thumb_The_Log_Walk.webp"}
+          alt={"Devon category image"}
+        />
+        <GalleryCategoryCard
+          category={"/midlands"}
+          title={"THE MIDLANDS"}
+          imageUrl={
+            "/images/thumbnails/landscape/thumb_Standing at the End.webp"
+          }
+          alt={"The Midlands category image"}
         />
       </div>
     </section>

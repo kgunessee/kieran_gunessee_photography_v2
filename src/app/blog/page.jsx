@@ -35,14 +35,14 @@ export default async function BlogListPage() {
       >
         <main className={`px-mobileXPadding lg:px-desktopXPadding`}>
           <h1
-            className={`my-4 text-2xl font-semibold text-almostBlack dark:text-almostWhite`}
+            className={`my-4 text-2xl font-semibold text-almostBlack lg:text-3xl dark:text-almostWhite`}
           >
             Blog
           </h1>
           <ul
             className={`grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4`}
           >
-            {posts.map((post, index) => (
+            {posts.map((post) => (
               <li
                 className={`group w-fit rounded-lg border-[1px] border-almostBlack/10 shadow-xl dark:border-almostWhite/10`}
                 key={post.sys.id}

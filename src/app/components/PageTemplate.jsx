@@ -61,7 +61,6 @@ export function PageTemplate({
 
   // Filtering logic
   const filteredImages = images.filter((image) => {
-    // Filter the images that are displayed.
     const searchTerm = searchText.toLowerCase(); // Text input by the user in the search box
 
     // Returns images that include the chosen keywords selected via the filtering buttons
@@ -99,11 +98,13 @@ export function PageTemplate({
     >
       <section className={`px-mobileXPadding lg:px-desktopXPadding`}>
         <h2
-          className={`mt-2 text-2xl font-semibold text-blueBlack xl:text-3xl dark:text-almostWhite`}
+          className={`mt-2 text-2xl font-semibold text-blueBlack lg:text-3xl xl:text-3xl dark:text-almostWhite`}
         >
           {pageTitle}
         </h2>
-        <p className={`mb-4 text-almostBlack dark:text-almostWhite`}>
+        <p
+          className={`mb-4 mt-2 text-almostBlack lg:text-xl dark:text-almostWhite`}
+        >
           {pageText}
         </p>
 
@@ -118,7 +119,7 @@ export function PageTemplate({
                     ? "Search by name or catalogue ID"
                     : "Search by name or location"
                 }`}
-                className={`h-12 w-full rounded-l bg-black/10 px-2 xl:text-xl dark:bg-white/10 dark:text-almostWhite`}
+                className={`h-12 w-full rounded-l-lg bg-black/10 px-2 xl:text-xl dark:bg-white/10 dark:text-almostWhite`}
                 onChange={handleSearchTerm}
                 value={searchText}
               ></input>
@@ -143,7 +144,7 @@ export function PageTemplate({
                 aria-label={"Show image filtering options"}
                 title={"Show image filtering options"}
                 onClick={handleShowFilterMenu}
-                className={`relative flex items-center justify-center rounded-r bg-black/10 px-2 hover:bg-black/15 active:bg-black/10 dark:bg-white/10 dark:hover:bg-white/15 dark:active:bg-white/10`}
+                className={`relative flex items-center justify-center rounded-r-lg bg-black/10 px-2 hover:bg-black/15 active:bg-black/10 dark:bg-white/10 dark:hover:bg-white/15 dark:active:bg-white/10`}
               >
                 <svg
                   className={`filter-icon`}

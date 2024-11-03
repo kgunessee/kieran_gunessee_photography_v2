@@ -25,11 +25,13 @@ export default function locations() {
           className={`bg-almostWhite px-mobileXPadding py-4 lg:px-desktopXPadding dark:bg-almostBlack`}
         >
           <h2
-            className={`mb-4 text-2xl font-semibold text-almostBlack dark:text-almostWhite`}
+            className={`mb-4 text-2xl font-semibold text-almostBlack lg:text-3xl dark:text-almostWhite`}
           >
             LOCATIONS
           </h2>
-          <p className={`mb-4 text-almostBlack dark:text-almostWhite`}>
+          <p
+            className={`mb-4 text-almostBlack lg:text-xl dark:text-almostWhite`}
+          >
             Locations I have visited for my photography.
           </p>
           <div
