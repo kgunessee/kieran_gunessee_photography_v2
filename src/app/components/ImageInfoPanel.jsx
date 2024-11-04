@@ -29,7 +29,7 @@ export function ImageInfoPanel({
         exit={{ scale: 0.9, opacity: 0 }}
         transition={{ type: "spring", duration: 0.3, bounce: 0.125 }}
         onClick={(e) => e.stopPropagation()}
-        className={`h-[95%] w-[95%] overflow-y-auto rounded-xl bg-almostWhite p-4 text-almostBlack lg:h-3/4 lg:w-3/4 dark:bg-blueBlack dark:text-almostWhite`}
+        className={`h-[95%] w-[95%] overflow-y-auto bg-almostWhite p-4 text-almostBlack lg:h-3/4 lg:w-3/4 dark:bg-blueBlack dark:text-almostWhite`}
       >
         <div className={`flex items-start justify-between`}>
           <h2 className={`mr-4 text-2xl font-semibold`}>

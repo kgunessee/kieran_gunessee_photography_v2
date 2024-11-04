@@ -67,7 +67,7 @@ export default function Home() {
               </p>
               <button
                 onClick={handleScrollToGallery}
-                className={`rounded border-2 border-almostWhite p-4 text-almostWhite backdrop-blur-md transition-colors hover:bg-white/20 lg:text-xl`}
+                className={`border-2 border-almostWhite bg-white/10 p-4 text-almostWhite transition-colors hover:bg-white/20 lg:text-xl`}
               >
                 View my Gallery
               </button>

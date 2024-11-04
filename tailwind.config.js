@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         blueBlack: "#21252D", //Header BG DM / Text LM / Mobile Menu BG
         almostBlack: "#101010", //Header BG DM / Content BG DM
-        almostWhite: "#e1e1e1", //Content BG LM / Text DM
+        almostWhite: "#efefef", //Content BG LM / Text DM
         lightBlue: "#92DCE5", //Accent - Buttons & Links / <hr>
         greyBlue: "#848fbd", //Accent - Misc
       },

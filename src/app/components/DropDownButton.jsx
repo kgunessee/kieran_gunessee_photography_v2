@@ -2,12 +2,12 @@ export function DropDownButton({
   title,
   onClickFunction = null,
   openCloseState = null,
-  padding = "py-1 pl-2 pr-0",
+  padding = "py-2 pl-4 pr-2",
 }) {
   return (
     <button
       onClick={onClickFunction}
-      className={`flex cursor-pointer items-center rounded border-[1px] border-white/40 ${padding} text-almostWhite transition-colors hover:bg-white/10 active:bg-white/0`}
+      className={`flex cursor-pointer items-center border-[1px] border-white/40 ${padding} text-almostWhite transition-colors hover:bg-white/10 active:bg-white/0`}
     >
       {title}
       <span

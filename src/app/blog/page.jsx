@@ -44,13 +44,13 @@ export default async function BlogListPage() {
           >
             {posts.map((post) => (
               <li
-                className={`group w-fit rounded-lg border-[1px] border-almostBlack/10 shadow-xl dark:border-almostWhite/10`}
+                className={`group w-fit border-[1px] border-almostBlack/10 shadow-xl dark:border-almostWhite/10`}
                 key={post.sys.id}
               >
                 <Link href={`/blog/${post.fields.slug}`}>
                   <div className={`blog-img-card w-full overflow-hidden`}>
                     <Image
-                      className={`h-56 rounded-t-lg object-cover brightness-75 transition duration-200 group-hover:brightness-100 sm:h-full`}
+                      className={`h-56 object-cover brightness-75 transition duration-200 group-hover:brightness-100 sm:h-full`}
                       src={`https:${post.fields.blogImage.fields.file.url}`}
                       alt={"img"}
                       width={2000}

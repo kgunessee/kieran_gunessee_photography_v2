@@ -31,12 +31,12 @@ export function DesktopNav() {
 
   return (
     <nav className="flex items-center gap-4 text-almostBlack dark:text-almostWhite">
-      <div className="cursor-pointer rounded px-2 py-1 text-almostWhite transition-all hover:bg-white/10">
+      <div className="cursor-pointer px-4 py-2 text-almostWhite transition-all hover:bg-white/10">
         <Link style={{ color: "#e1e1e1" }} href="/equipment">
           Equipment
         </Link>
       </div>
-      <div className="-ml-2 cursor-pointer rounded px-2 py-1 text-almostWhite transition-all hover:bg-white/10">
+      <div className="-ml-2 cursor-pointer px-4 py-2 text-almostWhite transition-all hover:bg-white/10">
         <Link style={{ color: "#e1e1e1" }} href="/blog">
           Blog
         </Link>
@@ -53,12 +53,12 @@ export function DesktopNav() {
             isMenuOpen
               ? "pointer-events-auto translate-y-0 opacity-100"
               : "pointer-events-none -translate-y-2 opacity-0"
-          } right-0 top-full z-10 mt-2 flex flex-col items-start rounded border-[1px] border-white/40 bg-almostBlack p-2 transition-all duration-150 dark:bg-blueBlack`}
+          } right-0 top-full z-10 mt-2 flex flex-col items-start gap-2 border-[1px] border-white/40 bg-almostBlack p-2 transition-all duration-150 dark:bg-blueBlack`}
         >
           {NavbarItems.slice(0, 2).map((item) => (
             <li
               key={item.name}
-              className="group flex items-center rounded px-2 py-1 text-almostWhite transition-colors hover:bg-white/10"
+              className="group flex items-center px-2 py-1 text-almostWhite transition-colors hover:bg-white/10"
             >
               <Link href={item.url}>{item.name}</Link>
               <span>
@@ -79,7 +79,7 @@ export function DesktopNav() {
           {NavbarItems.slice(4).map((item) => (
             <li
               key={item.name}
-              className="group flex items-center rounded px-2 py-1 text-almostWhite transition-colors hover:bg-white/10"
+              className="group flex items-center px-2 py-1 text-almostWhite transition-colors hover:bg-white/10"
             >
               <Link href={item.url}>{item.name}</Link>
               <span>

@@ -29,7 +29,7 @@ export default function Woodland() {
         pageText={pageText}
         images={woodlandImageInfo}
         bgColourDark={"dark:to-emerald-700/10"}
-        bgColourLight={"to-emerald-700/20"}
+        bgColourLight={"to-almostWhite"}
         locations={["UK", "Midlands", "Devon", "Peak District"]}
         nonAstroKeywords={[
           "Spring",

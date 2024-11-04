@@ -29,7 +29,7 @@ export default function Landscape() {
         pageText={pageText}
         images={landscapeImageInfo}
         bgColourDark={"dark:to-orange-300/5"}
-        bgColourLight={"to-orange-300/20"}
+        bgColourLight={"to-almostWhite"}
         locations={["Iceland", "UK", "Lanzarote", "Midlands", "Devon"]}
         nonAstroKeywords={[
           "Wide angle",

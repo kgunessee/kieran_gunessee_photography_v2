@@ -30,7 +30,7 @@ export default function Astrophotography() {
         images={astroImageInfo}
         isAstroImage={true}
         bgColourDark={"dark:to-indigo-500/5"}
-        bgColourLight={"to-indigo-500/20"}
+        bgColourLight={"to-almostWhite"}
         astroObjectType={["Nebula", "Galaxy", "Stars & Clusters", "Comets"]}
         astroCameraType={["Mono", "OSC"]}
         astroPalette={[

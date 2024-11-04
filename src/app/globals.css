@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --almost-white: #e1e1e1;
+  --almost-white: #efefef;
   --almost-black: #101010;
 }
 
@@ -39,7 +39,7 @@ body.dark .fancybox__backdrop {
 }
 
 body.image-has-border .fancybox-image {
-  border: 1rem solid #eeeeee !important;
+  border: 1rem solid #efefef !important;
   width: auto !important;
   height: auto !important;
 }
@@ -48,12 +48,12 @@ body.image-has-border .fancybox-image {
 }
 
 body.image-has-border .thumbnail {
-  border: 0.25rem solid #eeeeee !important;
+  border: 0.25rem solid #efefef !important;
 }
 
 @media (min-width: 1024px) {
   body.image-has-border .fancybox-image {
-    border: 2rem solid #eeeeee !important;
+    border: 2rem solid #efefef !important;
     width: auto !important;
     height: auto !important;
   }
@@ -62,7 +62,7 @@ body.image-has-border .thumbnail {
   }
 
   body.image-has-border .thumbnail {
-    border: 0.75rem solid #eeeeee !important;
+    border: 0.75rem solid #efefef !important;
   }
 }
 

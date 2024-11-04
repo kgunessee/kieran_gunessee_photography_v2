@@ -96,7 +96,7 @@ export default async function BlogPostPage({ params }) {
           className={`mt-2 px-mobileXPadding text-almostBlack md:px-[10%] lg:mt-8 lg:px-[20%] dark:text-almostWhite`}
         >
           <div
-            className={`mb-8 flex flex-col-reverse justify-between rounded-lg border-[1px] border-almostBlack/10 shadow-lg lg:flex-row dark:border-almostWhite/10`}
+            className={`mb-8 flex flex-col-reverse justify-between border-[1px] border-almostBlack/10 shadow-lg lg:flex-row dark:border-almostWhite/10`}
           >
             <div className={`flex flex-col justify-center p-4 lg:px-20`}>
               <div className={`mb-2 flex justify-between font-light lg:mb-4`}>
@@ -109,8 +109,6 @@ export default async function BlogPostPage({ params }) {
             <figure className={`w-full`}>
               <Image
                 style={{
-                  borderTopRightRadius: "0.5rem",
-                  borderBottomRightRadius: "0.5rem",
                   objectFit: "cover",
                 }}
                 src={`https:${blogImage.fields.file.url}`}

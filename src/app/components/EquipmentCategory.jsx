@@ -24,7 +24,7 @@ export function EquipmentCategory({ content, header }) {
                 height={200}
                 alt={item.name}
                 sizes="(max-width: 400px) 200px, (max-width: 401px) 400px"
-                style={{ borderRadius: "0.25rem" }}
+                // style={{ borderRadius: "0.25rem" }}
               />
               <p className={`w-full text-wrap`}>{item.name}</p>
             </li>

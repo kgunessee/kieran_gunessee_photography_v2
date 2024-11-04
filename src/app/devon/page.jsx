@@ -44,7 +44,7 @@ export default function Devon() {
         images={devonImages}
         isLocationCategory={true}
         bgColourDark={"dark:to-blue-500/5"}
-        bgColourLight={"to-blue-500/15"}
+        bgColourLight={"to-almostWhite"}
       />
     </main>
   );

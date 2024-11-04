@@ -15,7 +15,9 @@ export function GalleryCategories({ galleryRef }) {
       >
         GALLERY
       </h2>
-      <div className={`grid grid-cols-2 gap-2 md:grid-cols-3 2xl:grid-cols-3`}>
+      <div
+        className={`grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-2 2xl:grid-cols-3`}
+      >
         <GalleryCategoryCard
           category={"/astrophotography"}
           title={"ASTROPHOTOGRAPHY"}
@@ -72,7 +74,7 @@ export function GalleryCategories({ galleryRef }) {
           category={"/midlands"}
           title={"THE MIDLANDS"}
           imageUrl={
-            "/images/thumbnails/landscape/thumb_Standing at the End.webp"
+            "/images/thumbnails/landscape/thumb_Sunset in the distance.webp"
           }
           alt={"The Midlands category image"}
         />

@@ -74,13 +74,12 @@ export default function Gallery({ images, isAstroImage }) {
             width="24"
             height="24"
             fill="none"
-            strokeWidth="1.5"
+           
             viewBox="0 0 24 24"
           >
             <path
               stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+         
               d="M12 11.5v5M12 7.51l.01-.011M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"
             ></path>
           </svg></div>`,
@@ -134,7 +133,7 @@ export default function Gallery({ images, isAstroImage }) {
 
   return (
     <>
-      <div className="gallery mt-2 grid grid-cols-3 gap-0.5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-0.5">
+      <div className="gallery mt-2 grid grid-cols-3 gap-0.5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {images.map((image, index) => (
           <a
             href={image.fullRes}
@@ -146,7 +145,7 @@ export default function Gallery({ images, isAstroImage }) {
                 : `<span class="text-blueBlack dark:text-lightBlue">//</span>`
             } ${isAstroImage ? image.catalogue : image.location}`}
           >
-            <div className="thumbnail relative aspect-square w-full overflow-hidden rounded-lg">
+            <div className="thumbnail relative aspect-square w-full overflow-hidden">
               <Image
                 src={image.thumb}
                 alt={image.title}
@@ -159,8 +158,8 @@ export default function Gallery({ images, isAstroImage }) {
                 // }}
               />
 
-              <div className="absolute top-0 grid h-full w-full place-items-center rounded-lg bg-almostBlack/75 px-4 opacity-0 transition duration-150 hover:opacity-100">
-                <p className="text-wrap text-center text-xs text-almostWhite lg:text-base">
+              <div className="absolute top-0 grid h-full w-full place-items-center bg-almostBlack/80 from-transparent via-transparent via-10% to-almostBlack/80 px-4 opacity-0 transition duration-150 hover:opacity-100 sm:block sm:bg-transparent sm:bg-gradient-to-bl sm:px-0">
+                <p className="text-wrap text-center text-sm text-almostWhite sm:absolute sm:bottom-0 sm:px-4 sm:py-4 sm:text-left sm:text-xl">
                   {image.title}
                 </p>
               </div>
