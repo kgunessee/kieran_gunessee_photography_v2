@@ -134,7 +134,7 @@ export default function Gallery({ images, isAstroImage }) {
 
   return (
     <>
-      <div className="gallery mt-2 grid grid-cols-3 gap-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-2">
+      <div className="gallery mt-2 grid grid-cols-3 gap-0.5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-0.5">
         {images.map((image, index) => (
           <a
             href={image.fullRes}
@@ -152,19 +152,18 @@ export default function Gallery({ images, isAstroImage }) {
                 alt={image.title}
                 fill={true}
                 sizes="(max-width: 640px) 200px, (max-width: 768px) 350px, (max-width: 1024px) 400px, (max-width: 1280px) 500px"
-                className={`rounded-lg object-cover transition duration-300 hover:scale-105 hover:brightness-110`}
+                className={`object-cover transition duration-300 hover:scale-105`}
                 // style={{
                 //   borderRadius: "0.5rem",
                 //   objectFit: "cover",
                 // }}
               />
-              {isAstroImage && (
-                <div className="absolute top-0 grid h-full w-full place-items-center rounded-lg bg-almostBlack/90 opacity-0 transition-opacity duration-150 hover:opacity-100">
-                  <p className="text-wrap text-center text-xs text-almostWhite lg:text-base">
-                    {image.title}
-                  </p>
-                </div>
-              )}
+
+              <div className="absolute top-0 grid h-full w-full place-items-center rounded-lg bg-almostBlack/75 px-4 opacity-0 transition duration-150 hover:opacity-100">
+                <p className="text-wrap text-center text-xs text-almostWhite lg:text-base">
+                  {image.title}
+                </p>
+              </div>
             </div>
           </a>
         ))}

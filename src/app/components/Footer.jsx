@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <>
       <footer
-        className={`mt-4 flex h-20 items-center justify-between border-t-[1px] border-black/20 bg-transparent px-mobileXPadding lg:px-desktopXPadding dark:border-white/20`}
+        className={`mt-4 flex h-20 items-center justify-between border-t-[1px] border-almostBlack/30 bg-transparent px-mobileXPadding lg:px-desktopXPadding dark:border-white/20`}
       >
         <p
           className={`text-sm text-almostBlack/70 lg:text-base dark:text-almostWhite/70`}

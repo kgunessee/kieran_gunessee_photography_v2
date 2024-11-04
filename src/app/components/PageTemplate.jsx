@@ -6,6 +6,7 @@ import { useState } from "react";
 import Gallery from "@/app/components/Gallery";
 import { Footer } from "@/app/components/Footer";
 import { FilterTagButton } from "@/app/components/FilterTagButton";
+import { HorizontalRule } from "@/app/components/HorizontalRule";
 export function PageTemplate({
   images,
   bgColourLight,
@@ -98,15 +99,14 @@ export function PageTemplate({
     >
       <section className={`px-mobileXPadding lg:px-desktopXPadding`}>
         <h2
-          className={`mt-2 text-2xl font-semibold text-blueBlack lg:text-3xl xl:text-3xl dark:text-almostWhite`}
+          className={`mb-2 mt-4 text-2xl font-semibold text-blueBlack lg:text-3xl xl:text-3xl dark:text-almostWhite`}
         >
           {pageTitle}
         </h2>
-        <p
-          className={`mb-4 mt-2 text-almostBlack lg:text-xl dark:text-almostWhite`}
-        >
+        <p className={`mb-4 text-almostBlack lg:text-xl dark:text-almostWhite`}>
           {pageText}
         </p>
+        <HorizontalRule />
 
         {/*isLocationCategory checks if the page/category is for a location (Iceland, Dartmoor etc.), or a specific category (woodland, water etc.). If true, hide the search bar*/}
         {!isLocationCategory && (
@@ -222,9 +222,7 @@ export function PageTemplate({
                   </div>
                 </div>
               </div>
-              <hr
-                className={`mb-2 h-[1px] border-none bg-almostBlack/40 dark:bg-white/40`}
-              />
+              <HorizontalRule marginBottom={"mb-2"} />
               {/*-------------------------------------------------------------------------- ASTRO FILTERS --------------------------------------------------------------------------*/}
               {/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
               {isAstroImage && (

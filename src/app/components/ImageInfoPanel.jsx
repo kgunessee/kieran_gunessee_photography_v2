@@ -32,7 +32,9 @@ export function ImageInfoPanel({
         className={`h-[95%] w-[95%] overflow-y-auto rounded-xl bg-almostWhite p-4 text-almostBlack lg:h-3/4 lg:w-3/4 dark:bg-blueBlack dark:text-almostWhite`}
       >
         <div className={`flex items-start justify-between`}>
-          <h2 className={`mr-4 text-2xl font-semibold`}>{imageInfo.title}</h2>
+          <h2 className={`mr-4 text-2xl font-semibold`}>
+            {imageInfo.title === "" ? "Unnamed" : imageInfo.title}
+          </h2>
           <CloseButton setIsInfoPanelOpen={setIsInfoPanelOpen} />
         </div>
         <div className={`relative flex flex-col`}>

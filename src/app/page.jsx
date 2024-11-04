@@ -8,11 +8,12 @@ import Header from "@/app/components/Header";
 import { Footer } from "@/app/components/Footer";
 const homepageImages = [
   "/images/homepage/hp_Road_To_The_Mountain.webp",
-  "/images/homepage/hp_TriangulumGalaxy.webp",
-  "/images/homepage/hp_Down_to_the_River.webp",
-  "/images/homepage/hp_ElephantsTrunkNebulaHOO.webp",
-  "/images/homepage/hp_GhostOfCassiopeia.webp",
-  "/images/homepage/hp_HorseheadAndFlameNebula.webp",
+  "/images/homepage/hp_Andromeda.webp",
+  // "/images/homepage/hp_TriangulumGalaxy.webp",
+  // "/images/homepage/hp_Down_to_the_River.webp",
+  // "/images/homepage/hp_ElephantsTrunkNebulaHOO.webp",
+  // "/images/homepage/hp_GhostOfCassiopeia.webp",
+  // "/images/homepage/hp_HorseheadAndFlameNebula.webp",
   "/images/homepage/hp_Iceland_5.webp",
   "/images/homepage/hp_Iceland_12.webp",
 ];
@@ -31,7 +32,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setbgImage((prevIndex) => (prevIndex + 1) % homepageImages.length);
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -56,9 +57,13 @@ export default function Home() {
             <div
               className={`absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-4 bg-black/60 px-4 lg:gap-8`}
             >
+              <h1
+                className={`text-center text-3xl font-semibold text-almostWhite`}
+              >
+                Kieran Gunessee Photography
+              </h1>
               <p className={`text-center text-xl text-almostWhite`}>
-                Hi, my name is Kieran and I&apos;m a landscape, nature &
-                astrophotographer based in the UK.
+                Astro, Landscape & Macro Photography based in the UK.
               </p>
               <button
                 onClick={handleScrollToGallery}

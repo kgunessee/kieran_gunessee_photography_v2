@@ -133,3 +133,13 @@ body.dark .clear-search-icon,
 body.dark .help-icon {
   fill: var(--almost-white) !important;
 }
+
+::placeholder {
+  color: black !important;
+  opacity: 0.5 !important;
+}
+
+body.dark ::placeholder {
+  color: white !important;
+  opacity: 0.5 !important;
+}

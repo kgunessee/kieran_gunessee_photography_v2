@@ -124,7 +124,11 @@ export default function Header({ isHomepage = false }) {
     >
       <Link href={"/"}>
         <h1 className={`text-2xl font-semibold text-white`}>
-          {isMobileScreen ? mobileLogo : "Kieran Gunessee Photography"}
+          {isMobileScreen
+            ? mobileLogo
+            : !isHomepage
+              ? "Kieran Gunessee Photography"
+              : mobileLogo}
         </h1>
       </Link>
       <div className={`flex items-center gap-4 lg:gap-2`}>

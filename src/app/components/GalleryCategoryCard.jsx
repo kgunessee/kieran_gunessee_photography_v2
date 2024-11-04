@@ -8,7 +8,7 @@ export function GalleryCategoryCard({ category, title, imageUrl, alt }) {
         <div className={`group relative flex w-full flex-col`}>
           <div className={`w-fit overflow-hidden rounded-t-lg`}>
             <div
-              className={`h-32 transition duration-300 hover:brightness-105 group-hover:scale-105 md:h-40 2xl:h-52`}
+              className={`h-32 transition duration-300 hover:brightness-105 group-hover:scale-[1.025] md:h-40 2xl:h-52`}
             >
               <Image
                 className={`h-full rounded-t-lg object-cover object-center`}
