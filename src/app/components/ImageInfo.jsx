@@ -164,7 +164,7 @@ export const astroImageInfo = [
     thumb:
       "/images/thumbnails/astrophotography/thumb_Elephants Trunk Nebula SHO.webp",
     fullRes:
-      "/images/full_res/astrophotography/fs_Elephants Trunk Nebula SHO.webp",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_Elephants Trunk Nebula SHO",
     title: "The Elephants Trunk Nebula in SHO",
     catalogue: "IC 1396",
     captureDetails: {
@@ -190,7 +190,7 @@ export const astroImageInfo = [
     thumb:
       "/images/thumbnails/astrophotography/thumb_ElephantsTrunkNebulaHOO.webp",
     fullRes:
-      "/images/full_res/astrophotography/fs_ElephantsTrunkNebulaHOO.webp",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_ElephantsTrunkNebulaHOO",
     title: "The Elephants Trunk Nebula in HOO",
     catalogue: "IC 1396",
     captureDetails: {
@@ -214,7 +214,8 @@ export const astroImageInfo = [
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_PelicanNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_PelicanNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_PelicanNebula",
     title: "The Pelican Nebula",
     catalogue: "IC 5070",
     captureDetails: {
@@ -238,7 +239,8 @@ export const astroImageInfo = [
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_WR134.webp",
-    fullRes: "/images/full_res/astrophotography/fs_WR134.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_WR134",
     title: "Wolf-Rayet 134",
     catalogue: "WR134",
     captureDetails: {
@@ -262,7 +264,8 @@ export const astroImageInfo = [
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_ComaGalaxyCluster.webp",
-    fullRes: "/images/full_res/astrophotography/fs_ComaGalaxyCluster.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_ComaGalaxyCluster",
     title: "The Coma Galaxy Cluster",
     catalogue: "Abell 1656",
     captureDetails: {
@@ -293,7 +296,8 @@ export const astroImageInfo = [
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_M101May2024.webp",
-    fullRes: "/images/full_res/astrophotography/fs_M101May2024.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_M101May2024",
     title: "The Pinwheel Galaxy",
     catalogue: "M101",
     captureDetails: {
@@ -319,7 +323,7 @@ export const astroImageInfo = [
     thumb:
       "/images/thumbnails/astrophotography/thumb_HorseheadAndFlameNebula.webp",
     fullRes:
-      "/images/full_res/astrophotography/fs_HorseheadAndFlameNebula.webp",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_HorseheadAndFlameNebula",
     title: "The Horsehead and Flame Nebula",
     catalogue: "IC 434 / NGC 2024",
     captureDetails: {
@@ -343,7 +347,8 @@ export const astroImageInfo = [
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_HeartNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_HeartNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_HeartNebula",
     title: "The Heart Nebula",
     catalogue: "IC 1805",
     captureDetails: {
@@ -382,7 +387,8 @@ export const astroImageInfo = [
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_AndromedaGalaxy.webp",
-    fullRes: "/images/full_res/astrophotography/fs_AndromedaGalaxy.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_AndromedaGalaxy",
     title: "The Andromeda Galaxy",
     catalogue: "M31",
     captureDetails: {
@@ -415,7 +421,8 @@ export const astroImageInfo = [
   }, //10/01/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_ThePleiades.webp",
-    fullRes: "/images/full_res/astrophotography/fs_ThePleiades.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_ThePleiades",
     title: "The Pleiades",
     catalogue: "M45",
     captureDetails: {
@@ -439,7 +446,8 @@ export const astroImageInfo = [
   }, //03/12/2021
   {
     thumb: "/images/thumbnails/astrophotography/thumb_GhostOfCassiopeia.webp",
-    fullRes: "/images/full_res/astrophotography/fs_GhostOfCassiopeia.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_GhostOfCassiopeia",
     title: "The Ghost of Cassiopeia",
     catalogue: "IC 63",
     captureDetails: {
@@ -482,7 +490,8 @@ export const astroImageInfo = [
   }, //02/10/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_RosetteNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_RosetteNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_RosetteNebula",
     title: "The Rosette Nebula",
     catalogue: "NGC 2244",
     captureDetails: {
@@ -517,7 +526,8 @@ export const astroImageInfo = [
   }, //16/12/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_LouiesStar.webp",
-    fullRes: "/images/full_res/astrophotography/fs_LouiesStar.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_LouiesStar",
     title: "Louie's Star",
     catalogue: "1695225 Gemini / DSS2",
     captureDetails: {
@@ -556,7 +566,8 @@ export const astroImageInfo = [
   }, //27/12/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_CrescentNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_CrescentNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_CrescentNebula",
     title: "The Crescent Nebula",
     catalogue: "NGC 6888",
     captureDetails: {
@@ -580,7 +591,8 @@ export const astroImageInfo = [
   }, //04/06/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_BodesAndCigarGalaxy.webp",
-    fullRes: "/images/full_res/astrophotography/fs_BodesAndCigarGalaxy.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_BodesAndCigarGalaxy",
     title: "Bodes & Cigar Galaxy",
     catalogue: "M81 & M82",
     captureDetails: {
@@ -626,7 +638,8 @@ export const astroImageInfo = [
   }, //05/04/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_MTheWhirlpoolGalaxy.webp",
-    fullRes: "/images/full_res/astrophotography/fs_MTheWhirlpoolGalaxy.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_MTheWhirlpoolGalaxy",
     title: "The Whirlpool Galaxy",
     catalogue: "M51",
     captureDetails: {
@@ -650,7 +663,8 @@ export const astroImageInfo = [
   }, //08/04/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_TadpolesNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_TadpolesNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_TadpolesNebula",
     title: "The Tadpoles Nebula",
     catalogue: "IC 410",
     captureDetails: {
@@ -689,7 +703,8 @@ export const astroImageInfo = [
   }, //14/02/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_OrionNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_OrionNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_OrionNebula",
     title: "The Orion Nebula",
     catalogue: "M42",
     captureDetails: {
@@ -730,7 +745,8 @@ export const astroImageInfo = [
   }, //27/01/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_TriangulumGalaxy.webp",
-    fullRes: "/images/full_res/astrophotography/fs_TriangulumGalaxy.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_TriangulumGalaxy",
     title: "The Triangulum Galaxy",
     catalogue: "M33",
     captureDetails: {
@@ -767,7 +783,8 @@ export const astroImageInfo = [
   }, //10/01/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_IrisNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_IrisNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_IrisNebula",
     title: "The Iris Nebula",
     catalogue: "NGC 7023",
     captureDetails: {
@@ -800,7 +817,8 @@ export const astroImageInfo = [
   }, //11/12/2021
   {
     thumb: "/images/thumbnails/astrophotography/thumb_HerculesCluster.webp",
-    fullRes: "/images/full_res/astrophotography/fs_HerculesCluster.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_HerculesCluster",
     title: "Hercules Star Cluster",
     catalogue: "M13",
     captureDetails: {
@@ -834,7 +852,8 @@ export const astroImageInfo = [
 
   {
     thumb: "/images/thumbnails/astrophotography/thumb_QuestionMarkNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_QuestionMarkNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_QuestionMarkNebula",
     title: "A Section of the Question Mark Nebula",
     catalogue: "NGC 7822",
     captureDetails: {
@@ -869,7 +888,8 @@ export const astroImageInfo = [
   }, //19/03/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_VeilNebulaMosaic.webp",
-    fullRes: "/images/full_res/astrophotography/fs_VeilNebulaMosaic.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_VeilNebulaMosaic",
     title: "The Cygnus Loop",
     catalogue: "SH2-103",
     captureDetails: {
@@ -903,7 +923,8 @@ export const astroImageInfo = [
   {
     thumb:
       "/images/thumbnails/astrophotography/thumb_SadrAndCrescentNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_SadrAndCrescentNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_SadrAndCrescentNebula",
     title: "Sadr Region & Crescent Nebula",
     catalogue: "SH2-103",
     captureDetails: {
@@ -930,7 +951,7 @@ export const astroImageInfo = [
     thumb:
       "/images/thumbnails/astrophotography/thumb_NorthAmericaAndPelicanNebula.webp",
     fullRes:
-      "/images/full_res/astrophotography/fs_NorthAmericaAndPelicanNebula.webp",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_NorthAmericaAndPelicanNebula",
     title: "The North America & Pelican Nebula",
     catalogue: "NGC 7000 / IC 5070",
     captureDetails: {
@@ -966,7 +987,8 @@ export const astroImageInfo = [
   }, //11/08/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_LionNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_LionNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_LionNebula",
     title: "The Lion Nebula",
     catalogue: "SH2-132",
     captureDetails: {
@@ -999,7 +1021,8 @@ export const astroImageInfo = [
   }, //13/08/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_EasternVeilNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_EasternVeilNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_EasternVeilNebula",
     title: "The Eastern Veil Nebula",
     catalogue: "NGC 6992",
     captureDetails: {
@@ -1030,7 +1053,8 @@ export const astroImageInfo = [
   }, //17/09/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_PacmanNebulaNatural.webp",
-    fullRes: "/images/full_res/astrophotography/fs_PacmanNebulaNatural.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_PacmanNebulaNatural",
     title: "The Pacman Nebula",
     catalogue: "NGC 281",
     captureDetails: {
@@ -1063,7 +1087,8 @@ export const astroImageInfo = [
   }, //20/08/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_TheTulipNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_TheTulipNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_TheTulipNebula",
     title: "The Tulip Nebula",
     catalogue: "SH2-101",
     captureDetails: {
@@ -1088,7 +1113,8 @@ export const astroImageInfo = [
 
   {
     thumb: "/images/thumbnails/astrophotography/thumb_SmallClusterNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_SmallClusterNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_SmallClusterNebula",
     title: "The Small Cluster Nebula",
     catalogue: "NGC 7129",
     captureDetails: {
@@ -1118,7 +1144,8 @@ export const astroImageInfo = [
   }, //25/09/2022
   {
     thumb: "/images/thumbnails/astrophotography/thumb_CaveNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_CaveNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_CaveNebula",
     title: "The Cave Nebula",
     catalogue: "SH2-155",
     captureDetails: {
@@ -1144,7 +1171,8 @@ export const astroImageInfo = [
   {
     thumb:
       "/images/thumbnails/astrophotography/thumb_ChristmasTreeCluster.webp",
-    fullRes: "/images/full_res/astrophotography/fs_ChristmasTreeCluster.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_ChristmasTreeCluster",
     title: "The Christmas Tree Cluster",
     catalogue: "NGC 2264",
     captureDetails: {
@@ -1171,7 +1199,7 @@ export const astroImageInfo = [
     thumb:
       "/images/thumbnails/astrophotography/thumb_CasperTheFriendlyGhostNebula.webp",
     fullRes:
-      "/images/full_res/astrophotography/fs_CasperTheFriendlyGhostNebula.webp",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_CasperTheFriendlyGhostNebula",
     title: "Casper the Friendly Ghost Nebula",
     catalogue: "M78",
     captureDetails: {
@@ -1205,7 +1233,8 @@ export const astroImageInfo = [
   }, //14/01/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_JellyfishNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_JellyfishNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_JellyfishNebula",
     title: "The Jellyfish Nebula",
     catalogue: "IC 443",
     captureDetails: {
@@ -1241,7 +1270,8 @@ export const astroImageInfo = [
   }, //22/01/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_CometZTF.webp",
-    fullRes: "/images/full_res/astrophotography/fs_CometZTF.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_CometZTF",
     title: "Comet E3 2022 ZTF",
     catalogue: "E3 2022 ZTF",
     captureDetails: {
@@ -1284,7 +1314,7 @@ export const astroImageInfo = [
     thumb:
       "/images/thumbnails/astrophotography/thumb_PinwheelGalaxySupernova.webp",
     fullRes:
-      "/images/full_res/astrophotography/fs_PinwheelGalaxySupernova.webp",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_PinwheelGalaxySupernova",
     title: "SN2023IXF Supernova in the Pinwheel Galaxy",
     catalogue: "M101",
     captureDetails: {
@@ -1323,7 +1353,8 @@ export const astroImageInfo = [
 
   {
     thumb: "/images/thumbnails/astrophotography/thumb_PropellerNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_PropellerNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_PropellerNebula",
     title: "The Propeller Nebula",
     catalogue: "DWB 111/119",
     captureDetails: {
@@ -1347,7 +1378,8 @@ export const astroImageInfo = [
   }, //18/06/2023
   {
     thumb: "/images/thumbnails/astrophotography/thumb_SoulNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_SoulNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_SoulNebula",
     title: "The Soul Nebula",
     catalogue: "IC 1848",
     captureDetails: {
@@ -1374,7 +1406,8 @@ export const astroImageInfo = [
 export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Peaking Through.webp",
-    fullRes: "/images/full_res/water/fs_Peaking Through.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Peaking_Through",
     title: "Peaking Through",
     camera: daytimeEquipmentInfo.Camera.D750.name,
     lens: daytimeEquipmentInfo.Lens["Tamron 24-70mm"].name,
@@ -1388,7 +1421,8 @@ export const waterImageInfo = [
   },
   {
     thumb: "/images/thumbnails/water/thumb_Meandering through.webp",
-    fullRes: "/images/full_res/water/fs_Meandering through.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Meandering_through",
     title: "Meandering through",
     camera: daytimeEquipmentInfo.Camera.D750.name,
     lens: daytimeEquipmentInfo.Lens["Tamron 24-70mm"].name,
@@ -1402,7 +1436,8 @@ export const waterImageInfo = [
   },
   {
     thumb: "/images/thumbnails/water/thumb_Two Waterfalls.webp",
-    fullRes: "/images/full_res/water/fs_Two Waterfalls.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Two_Waterfalls",
     title: "Two Waterfalls",
     camera: daytimeEquipmentInfo.Camera.D750.name,
     lens: daytimeEquipmentInfo.Lens["Tamron 24-70mm"].name,
@@ -1416,7 +1451,8 @@ export const waterImageInfo = [
   },
   {
     thumb: "/images/thumbnails/water/thumb_Down and Under.webp",
-    fullRes: "/images/full_res/water/fs_Down and Under.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Down_and_Under",
     title: "Down and Under",
     camera: daytimeEquipmentInfo.Camera.D750.name,
     lens: daytimeEquipmentInfo.Lens["Tamron 24-70mm"].name,
@@ -1430,7 +1466,8 @@ export const waterImageInfo = [
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_5.webp",
-    fullRes: "/images/full_res/water/fs_Iceland_5.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_5",
     title: "Svöðufoss & River",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1445,7 +1482,8 @@ export const waterImageInfo = [
 
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_7.webp",
-    fullRes: "/images/full_res/water/fs_Iceland_7.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_7",
     title: "Svöðufoss",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1459,7 +1497,8 @@ export const waterImageInfo = [
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_6.webp",
-    fullRes: "/images/full_res/water/fs_Iceland_6.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_6",
     title: "Svöðufoss from afar",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1474,7 +1513,8 @@ export const waterImageInfo = [
 
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_20.webp",
-    fullRes: "/images/full_res/water/fs_Iceland_20.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_20",
     title: "Skógafoss",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1488,7 +1528,8 @@ export const waterImageInfo = [
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_18.webp",
-    fullRes: "/images/full_res/water/fs_Iceland_18.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_18",
     title: "Gullfoss Falls",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1502,7 +1543,8 @@ export const waterImageInfo = [
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_13.webp",
-    fullRes: "/images/full_res/water/fs_Iceland_13.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_13",
     title: "Kirkjufellsfossar",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1516,7 +1558,8 @@ export const waterImageInfo = [
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_12.webp",
-    fullRes: "/images/full_res/water/fs_Iceland_12.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_12",
     title: "Kirkjufell & Kirkjufellsfossar",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1530,7 +1573,8 @@ export const waterImageInfo = [
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_10.webp",
-    fullRes: "/images/full_res/water/fs_Iceland_10.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_10",
     title: "Kerlingarfoss",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1544,7 +1588,8 @@ export const waterImageInfo = [
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_9.webp",
-    fullRes: "/images/full_res/water/fs_Iceland_9.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_9",
     title: "Kerlingarfoss wide-portrait",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1558,7 +1603,8 @@ export const waterImageInfo = [
   },
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_8.webp",
-    fullRes: "/images/full_res/water/fs_Iceland_8.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_8",
     title: "Kerlingarfoss wide-angle",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1572,7 +1618,8 @@ export const waterImageInfo = [
   },
   {
     thumb: "/images/thumbnails/water/thumb_Kerlingarfoss & River.webp",
-    fullRes: "/images/full_res/water/fs_Kerlingarfoss & River.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Kerlingarfoss_&_River",
     title: "Kerlingarfoss & River",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1587,7 +1634,8 @@ export const waterImageInfo = [
 
   {
     thumb: "/images/thumbnails/water/thumb_The_first_cascade.webp",
-    fullRes: "/images/full_res/water/fs_The_first_cascade.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_The_first_cascade",
     title: "The First Cascade",
     camera: daytimeEquipmentInfo.Camera.Z7II.name,
     lens: daytimeEquipmentInfo.Lens["Nikon Z 24-70mm f4"].name,
@@ -1601,7 +1649,8 @@ export const waterImageInfo = [
   },
   {
     thumb: "/images/thumbnails/water/thumb_Looking_Upstream.webp",
-    fullRes: "/images/full_res/water/fs_Looking_Upstream.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Looking_Upstream",
     title: "Looking Upstream",
     camera: daytimeEquipmentInfo.Camera.Z7II.name,
     lens: daytimeEquipmentInfo.Lens["Nikon Z 24-70mm f4"].name,
@@ -1615,7 +1664,8 @@ export const waterImageInfo = [
   },
   {
     thumb: "/images/thumbnails/water/thumb_Waterfall down the valley.webp",
-    fullRes: "/images/full_res/water/fs_Waterfall down the valley.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Waterfall_down_the_valley",
     title: "Waterfall down the Valley",
     camera: daytimeEquipmentInfo.Camera.D750.name,
     lens: daytimeEquipmentInfo.Lens["Tamron 24-70mm"].name,
