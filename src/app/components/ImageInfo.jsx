@@ -1932,7 +1932,8 @@ export const macroImageInfo = [
   },
   {
     thumb: "/images/thumbnails/macro/thumb_Spikes.webp",
-    fullRes: "/images/full_res/macro/fs_Spikes.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/p6lxopdfszxs96vjijci",
     title: "Spikes",
     camera: daytimeEquipmentInfo.Camera.Z7II.name,
     lens: daytimeEquipmentInfo.Lens["Nikon 105mm MC"].name,
@@ -1946,7 +1947,8 @@ export const macroImageInfo = [
   },
   {
     thumb: "/images/thumbnails/macro/thumb_Mushroom 01.webp",
-    fullRes: "/images/full_res/macro/fs_Mushroom 01.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/hecqbaxhs5hobd2zbblz",
     title: "",
     camera: daytimeEquipmentInfo.Camera.Z7II.name,
     lens: daytimeEquipmentInfo.Lens["Nikon 105mm MC"].name,
@@ -1960,7 +1962,8 @@ export const macroImageInfo = [
   },
   {
     thumb: "/images/thumbnails/macro/thumb_Petal.webp",
-    fullRes: "/images/full_res/macro/fs_Petal.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/yzeae07glaacanqzxlrh",
     title: "",
     camera: daytimeEquipmentInfo.Camera.Z7II.name,
     lens: daytimeEquipmentInfo.Lens["Nikon 105mm MC"].name,

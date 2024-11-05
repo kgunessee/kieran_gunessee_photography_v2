@@ -1,4 +1,5 @@
 "use client";
+import { CldImage } from "next-cloudinary";
 
 //Hooks and Plugins
 import { useState } from "react";
