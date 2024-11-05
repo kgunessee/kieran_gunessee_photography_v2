@@ -164,7 +164,7 @@ export const astroImageInfo = [
     thumb:
       "/images/thumbnails/astrophotography/thumb_Elephants Trunk Nebula SHO.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_Elephants Trunk Nebula SHO",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/v1/Astro/fs_Elephants Trunk Nebula SHO",
     title: "The Elephants Trunk Nebula in SHO",
     catalogue: "IC 1396",
     captureDetails: {
@@ -1407,7 +1407,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Peaking Through.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Peaking_Through",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Peaking_Through",
     title: "Peaking Through",
     camera: daytimeEquipmentInfo.Camera.D750.name,
     lens: daytimeEquipmentInfo.Lens["Tamron 24-70mm"].name,
@@ -1422,7 +1422,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Meandering through.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Meandering_through",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Meandering_through",
     title: "Meandering through",
     camera: daytimeEquipmentInfo.Camera.D750.name,
     lens: daytimeEquipmentInfo.Lens["Tamron 24-70mm"].name,
@@ -1437,7 +1437,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Two Waterfalls.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Two_Waterfalls",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Two_Waterfalls",
     title: "Two Waterfalls",
     camera: daytimeEquipmentInfo.Camera.D750.name,
     lens: daytimeEquipmentInfo.Lens["Tamron 24-70mm"].name,
@@ -1452,7 +1452,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Down and Under.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Down_and_Under",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Down_and_Under",
     title: "Down and Under",
     camera: daytimeEquipmentInfo.Camera.D750.name,
     lens: daytimeEquipmentInfo.Lens["Tamron 24-70mm"].name,
@@ -1467,7 +1467,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_5.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_5",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Iceland_5",
     title: "Svöðufoss & River",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1483,7 +1483,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_7.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_7",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Iceland_7",
     title: "Svöðufoss",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1498,7 +1498,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_6.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_6",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Iceland_6",
     title: "Svöðufoss from afar",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1514,7 +1514,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_20.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_20",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Iceland_20",
     title: "Skógafoss",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1529,7 +1529,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_18.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_18",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Iceland_18",
     title: "Gullfoss Falls",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1544,7 +1544,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_13.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_13",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Iceland_13",
     title: "Kirkjufellsfossar",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1559,7 +1559,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_12.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_12",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Iceland_12",
     title: "Kirkjufell & Kirkjufellsfossar",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1574,7 +1574,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_10.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_10",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Iceland_10",
     title: "Kerlingarfoss",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1589,7 +1589,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_9.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_9",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Iceland_9",
     title: "Kerlingarfoss wide-portrait",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1604,7 +1604,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Iceland_8.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Iceland_8",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Iceland_8",
     title: "Kerlingarfoss wide-angle",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1619,7 +1619,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Kerlingarfoss & River.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Kerlingarfoss_&_River",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Kerlingarfoss_River",
     title: "Kerlingarfoss & River",
     camera: daytimeEquipmentInfo.Camera.D3300.name,
     lens: daytimeEquipmentInfo.Lens["Tokina 11-16mm"].name,
@@ -1635,7 +1635,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_The_first_cascade.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_The_first_cascade",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_The_first_cascade",
     title: "The First Cascade",
     camera: daytimeEquipmentInfo.Camera.Z7II.name,
     lens: daytimeEquipmentInfo.Lens["Nikon Z 24-70mm f4"].name,
@@ -1650,7 +1650,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Looking_Upstream.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Looking_Upstream",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Looking_Upstream",
     title: "Looking Upstream",
     camera: daytimeEquipmentInfo.Camera.Z7II.name,
     lens: daytimeEquipmentInfo.Lens["Nikon Z 24-70mm f4"].name,
@@ -1665,7 +1665,7 @@ export const waterImageInfo = [
   {
     thumb: "/images/thumbnails/water/thumb_Waterfall down the valley.webp",
     fullRes:
-      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/fs_Waterfall_down_the_valley",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto:good,fl_awebp/fs_Waterfall_down_the_valley",
     title: "Waterfall down the Valley",
     camera: daytimeEquipmentInfo.Camera.D750.name,
     lens: daytimeEquipmentInfo.Lens["Tamron 24-70mm"].name,
