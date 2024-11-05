@@ -164,7 +164,7 @@ export const astroImageInfo = [
     thumb:
       "/images/thumbnails/astrophotography/thumb_Elephants Trunk Nebula SHO.webp",
     fullRes:
-      "/images/full_res/astrophotography/fs_Elephants Trunk Nebula SHO.webp",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_AndromedaGalaxy",
     title: "The Elephants Trunk Nebula in SHO",
     catalogue: "IC 1396",
     captureDetails: {
@@ -190,7 +190,7 @@ export const astroImageInfo = [
     thumb:
       "/images/thumbnails/astrophotography/thumb_ElephantsTrunkNebulaHOO.webp",
     fullRes:
-      "/images/full_res/astrophotography/fs_ElephantsTrunkNebulaHOO.webp",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_BodesAndCigarGalaxy",
     title: "The Elephants Trunk Nebula in HOO",
     catalogue: "IC 1396",
     captureDetails: {
@@ -214,7 +214,8 @@ export const astroImageInfo = [
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_PelicanNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_PelicanNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_CaliforniaNebula",
     title: "The Pelican Nebula",
     catalogue: "IC 5070",
     captureDetails: {
@@ -238,7 +239,8 @@ export const astroImageInfo = [
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_WR134.webp",
-    fullRes: "/images/full_res/astrophotography/fs_WR134.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/fs_CasperTheFriendlyGhostNebula",
     title: "Wolf-Rayet 134",
     catalogue: "WR134",
     captureDetails: {
@@ -262,7 +264,8 @@ export const astroImageInfo = [
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_ComaGalaxyCluster.webp",
-    fullRes: "/images/full_res/astrophotography/fs_ComaGalaxyCluster.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/zdbdxegxbgbqc92j1ilx",
     title: "The Coma Galaxy Cluster",
     catalogue: "Abell 1656",
     captureDetails: {
@@ -293,7 +296,8 @@ export const astroImageInfo = [
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_M101May2024.webp",
-    fullRes: "/images/full_res/astrophotography/fs_M101May2024.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/domvnvgk9tbfpa5ywegi",
     title: "The Pinwheel Galaxy",
     catalogue: "M101",
     captureDetails: {
@@ -319,7 +323,7 @@ export const astroImageInfo = [
     thumb:
       "/images/thumbnails/astrophotography/thumb_HorseheadAndFlameNebula.webp",
     fullRes:
-      "/images/full_res/astrophotography/fs_HorseheadAndFlameNebula.webp",
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/wzjlj7dzejkeuehmgmby",
     title: "The Horsehead and Flame Nebula",
     catalogue: "IC 434 / NGC 2024",
     captureDetails: {
@@ -343,7 +347,8 @@ export const astroImageInfo = [
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_HeartNebula.webp",
-    fullRes: "/images/full_res/astrophotography/fs_HeartNebula.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/hhevnbyg9rbqan9a9nes",
     title: "The Heart Nebula",
     catalogue: "IC 1805",
     captureDetails: {
@@ -382,7 +387,8 @@ export const astroImageInfo = [
   },
   {
     thumb: "/images/thumbnails/astrophotography/thumb_AndromedaGalaxy.webp",
-    fullRes: "/images/full_res/astrophotography/fs_AndromedaGalaxy.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto/v1/Astro/mtmafahgoyhphcry09gz",
     title: "The Andromeda Galaxy",
     catalogue: "M31",
     captureDetails: {
