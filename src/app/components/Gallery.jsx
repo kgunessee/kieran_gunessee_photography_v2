@@ -103,6 +103,25 @@ export default function Gallery({ images, isAstroImage }) {
           transitionEffect: "fade",
         },
       },
+      Images: {
+        content: (_ref, slide) => {
+          let rez = "<picture>";
+          const media = slide.media.split(";");
+
+          slide.sources.split(";").map((source, index) => {
+            rez += `<source
+media="${media[index] || ""}"
+srcset="${source}"
+/>`;
+          });
+
+          rez += `<img src="${slide.src}" alt="" />`;
+
+          rez += "</picture>";
+
+          return rez;
+        },
+      },
     });
 
     return () => {
@@ -136,14 +155,22 @@ export default function Gallery({ images, isAstroImage }) {
       <div className="gallery mt-2 grid grid-cols-3 gap-0.5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {images.map((image, index) => (
           <a
-            href={image.fullRes}
             key={`full res image ${index}`}
+            href={image.fullRes}
             data-fancybox="gallery"
-            data-caption={`${image.title} ${
-              image.title === ""
-                ? ""
-                : `<span class="text-blueBlack dark:text-lightBlue">//</span>`
-            } ${isAstroImage ? image.catalogue : image.location}`}
+            data-media="(max-width: 400px);(max-width: 800px); (max-width: 1400px)"
+            data-sources={`${image["400px"]};${image["800px"]};${image["1400px"]};`}
+
+            // href={image.fullRes}
+            // key={`full res image ${index}`}
+            // data-fancybox="gallery"
+            // data-caption={`${image.title} ${
+            //   image.title === ""
+            //     ? ""
+            //     : `<span class="text-blueBlack dark:text-lightBlue">//</span>`
+            // } ${isAstroImage ? image.catalogue : image.location}`}
+            // data-src-set={`${image["400px"]} 400px,${image["800px"]} 800px,${image["1440px"]} 1440px,${image["2000px"]} 2000px`}
+            // data-sizes={`(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1440px) 1440px, `}
           >
             <div className="thumbnail relative aspect-square w-full overflow-hidden">
               <Image
