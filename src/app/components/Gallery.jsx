@@ -158,9 +158,9 @@ srcset="${source}"
             key={`full res image ${index}`}
             href={image.fullRes}
             data-fancybox="gallery"
-            data-media="(max-width: 400px);(max-width: 800px); (max-width: 1400px)"
-            data-sources={`${image["400px"]};${image["800px"]};${image["1400px"]};`}
-
+            data-media="(max-width: 800px);(max-width: 1500px)"
+            data-sources={`${image["1400px"]};`}
+            // ${image["400px"]};${image["800px"]} (max-width: 1400px);
             // href={image.fullRes}
             // key={`full res image ${index}`}
             // data-fancybox="gallery"
