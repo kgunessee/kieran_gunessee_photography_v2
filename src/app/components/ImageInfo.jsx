@@ -2445,4 +2445,24 @@ export const macroImageInfo = [
     mapLocation: "https://maps.app.goo.gl/z39V26mNFLPVX51X6",
     keywords: ["plants", "uk", "midlands"],
   },
+  {
+    thumb: "/images/thumbnails/macro/thumb_hanging_on.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Macro/fs_hanging_on",
+    ["2100px"]:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_2100/v1/Macro/fs_hanging_on",
+    ["1400px"]:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_1440/v1/Macro/fs_hanging_on",
+
+    title: "Hanging On",
+    camera: daytimeEquipmentInfo.Camera.Z7II.name,
+    lens: daytimeEquipmentInfo.Lens["Nikon 105mm MC"].name,
+    imageDate: "06/11/2024",
+    location: "Monks Park Wood, Atherstone",
+    iso: "1000",
+    aperture: "4.0",
+    shutterSpeed: "1/160",
+    mapLocation: "https://maps.app.goo.gl/z39V26mNFLPVX51X6",
+    keywords: ["fungi", "uk", "midlands"],
+  },
 ];
