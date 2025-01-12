@@ -156,6 +156,32 @@
   },
   "astroImageInfo": [
     {
+      "thumb": "/images/thumbnails/astrophotography/thumb_M44.webp",
+      "fullRes": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Astro/fs_m44",
+      "2100px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_2100/v1/Astro/fs_m44",
+      "1400px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_1440/v1/Astro/fs_m44",
+      "title": "The Beehive Star Cluster",
+      "catalogue": "M44",
+      "captureDetails": {
+        "exposureTime": "180s",
+        "integration": "45m",
+        "darks": "10",
+        "flats": "10",
+        "darkFlats": "10",
+        "scope": "Explorer 130PDS",
+        "mount": "HEQ5 Pro",
+        "camera": "533MM Pro",
+        "filters": "Optolong LRGB",
+        "imagingCapture": "ASIAIR Plus",
+        "guidescope": "Svbony 60mm",
+        "guideCamera": "220mm Mini",
+        "software": "Affinity & PixInsight",
+        "imageDate": "10/01/2025"
+      },
+      "description": "",
+      "keywords": ["stars & clusters", "lrgb", "broadband", "400mm - 700mm", "mono"]
+    },
+    {
       "thumb": "/images/thumbnails/astrophotography/thumb_m78.webp",
       "fullRes": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Astro/fs_m78",
       "2100px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_2100/v1/Astro/fs_m78",
