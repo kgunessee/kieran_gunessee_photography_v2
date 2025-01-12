@@ -161,6 +161,36 @@ export const daytimeEquipmentInfo = {
 
 export const astroImageInfo = [
   {
+    thumb: "/images/thumbnails/astrophotography/thumb_m78.webp",
+    fullRes:
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Astro/fs_FlamingStarNebula2024",
+    "2100px":
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_2100/v1/Astro/fs_FlamingStarNebula2024",
+    "1400px":
+      "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_1440/v1/Astro/fs_FlamingStarNebula2024",
+
+    title: "Casper the Friendly Ghost Nebula",
+    catalogue: "M78",
+    captureDetails: {
+      exposureTime: "180s",
+      integration: "14.5hrs",
+      darks: "20",
+      flats: "20",
+      darkFlats: "20",
+      scope: astroEquipmentInfo.Scope["explorer130PDS"].name,
+      mount: astroEquipmentInfo.Mount.heq5pro.name,
+      camera: astroEquipmentInfo.Camera["533MMPRO"].name,
+      filters: astroEquipmentInfo.Filters.antliaEdge.name,
+      imagingCapture: astroEquipmentInfo["Image Capture"].asiairplus.name,
+      guidescope: astroEquipmentInfo["Guide Scope"].svbony60mm.name,
+      guideCamera: astroEquipmentInfo["Guide Camera"]["220mmMini"].name,
+      software: `${astroEquipmentInfo.Software.affinity.name} & ${astroEquipmentInfo.Software.pixinsight.name}`,
+      imageDate: "01/12/2024",
+    },
+    description: "",
+    keywords: ["nebula", "sho", "narrowband", "100mm - 400mm", "mono"],
+  },
+  {
     thumb: "/images/thumbnails/astrophotography/thumb_FlamingStarNebula.webp",
     fullRes:
       "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Astro/fs_FlamingStarNebula2024",
