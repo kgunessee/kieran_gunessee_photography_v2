@@ -41,7 +41,7 @@ export function PageTemplate({
     setSearchText(searchTerm);
   };
 
-  // Toggle filter button on click - update setSelectedFilters state with keywords to filter images with
+  // Toggle filter button on click - update setSelectedFilters state with keywords to filter images with.
   const handleFilterClick = (buttonValue) => {
     setSelectedFilters(
       // Grab the value already stored in the useState Array
@@ -82,9 +82,11 @@ export function PageTemplate({
       (isAstroImage
         ? image.title.toLowerCase().includes(searchTerm) ||
           image.catalogue.toLowerCase().includes(searchTerm) ||
-          image.keywords.includes(searchTerm)
+          image.keywords.includes(searchTerm) ||
+          image.captureDetails.imageDate.includes(searchTerm)
         : image.title.toLowerCase().includes(searchTerm) ||
           image.location.toLowerCase().includes(searchTerm) ||
+          image.imageDate.includes(searchTerm) ||
           image.keywords.includes(searchTerm)) && hasSelectedFilters
     );
   });

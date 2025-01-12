@@ -1,5 +1,6 @@
 //Components
-import { landscapeImageInfo } from "@/app/components/ImageInfo";
+// import { landscapeImageInfo } from "@/app/components/ImageInfo";
+import imageData from "../imageData.json";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
 
@@ -27,7 +28,7 @@ export default function Landscape() {
       <PageTemplate
         pageTitle={"LANDSCAPE"}
         pageText={pageText}
-        images={landscapeImageInfo}
+        images={imageData.landscapeImageInfo}
         bgColourDark={"dark:to-orange-300/5"}
         bgColourLight={"to-almostWhite"}
         locations={["Iceland", "UK", "Lanzarote", "Midlands", "Devon"]}

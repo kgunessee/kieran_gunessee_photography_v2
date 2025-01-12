@@ -4,6 +4,8 @@ import {
   landscapeImageInfo,
   woodlandImageInfo,
 } from "@/app/components/ImageInfo";
+import imageData from "../imageData.json";
+
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
 
@@ -25,9 +27,12 @@ export const metadata = {
 };
 
 const devonImages = [
-  ...waterImageInfo,
-  ...landscapeImageInfo,
-  ...woodlandImageInfo,
+  ...imageData.waterImageInfo,
+  ...imageData.landscapeImageInfo,
+  ...imageData.woodlandImageInfo,
+  // ...waterImageInfo,
+  // ...landscapeImageInfo,
+  // ...woodlandImageInfo,
 ].filter((image) => {
   return image.keywords.includes("devon".toLowerCase());
 });

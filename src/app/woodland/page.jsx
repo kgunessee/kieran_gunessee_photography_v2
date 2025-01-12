@@ -1,5 +1,6 @@
 //Components
-import { woodlandImageInfo } from "@/app/components/ImageInfo";
+// import { woodlandImageInfo } from "@/app/components/ImageInfo";
+import imageData from "../imageData.json";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
 
@@ -27,7 +28,7 @@ export default function Woodland() {
       <PageTemplate
         pageTitle={"WOODLAND"}
         pageText={pageText}
-        images={woodlandImageInfo}
+        images={imageData.woodlandImageInfo}
         bgColourDark={"dark:to-emerald-700/10"}
         bgColourLight={"to-almostWhite"}
         locations={["UK", "Midlands", "Devon", "Peak District"]}

@@ -1,5 +1,6 @@
 //Components
-import { astroImageInfo } from "@/app/components/ImageInfo";
+// import { astroImageInfo } from "@/app/components/ImageInfo";
+import imageData from "../imageData.json";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
 
@@ -27,7 +28,7 @@ export default function Astrophotography() {
       <PageTemplate
         pageTitle={"ASTROPHOTOGRAPHY"}
         pageText={pageText}
-        images={astroImageInfo}
+        images={imageData.astroImageInfo}
         isAstroImage={true}
         bgColourDark={"dark:to-indigo-500/5"}
         bgColourLight={"to-almostWhite"}

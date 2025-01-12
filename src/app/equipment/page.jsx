@@ -6,10 +6,12 @@ import { useState } from "react";
 
 //Components
 import Header from "@/app/components/Header";
-import {
-  daytimeEquipmentInfo,
-  astroEquipmentInfo,
-} from "@/app/components/ImageInfo";
+// import {
+//   daytimeEquipmentInfo,
+//   astroEquipmentInfo,
+// } from "@/app/components/ImageInfo";
+
+import imageData from "../imageData.json";
 import { EquipmentCategory } from "@/app/components/EquipmentCategory";
 import { Footer } from "@/app/components/Footer";
 
@@ -17,9 +19,11 @@ export default function Equipment() {
   const [isAstroOpen, setIsAstroOpen] = useState(true);
   const [isDaytimeOpen, setIsDaytimeOpen] = useState(true);
 
+  const astroEquipmentInfo = imageData.astroEquipmentInfo;
+  const daytimeEquipmentInfo = imageData.daytimeEquipmentInfo;
+
   const astroEquipmentLength = Object.keys(astroEquipmentInfo);
   const dayEquipmentLength = Object.keys(daytimeEquipmentInfo);
-
   return (
     <main>
       <Header />

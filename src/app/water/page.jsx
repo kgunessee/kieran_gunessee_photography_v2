@@ -1,5 +1,6 @@
 //Components
-import { waterImageInfo } from "@/app/components/ImageInfo";
+// import { waterImageInfo } from "@/app/components/ImageInfo";
+import imageData from "../imageData.json";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
 
@@ -28,7 +29,7 @@ export default function Water() {
       <PageTemplate
         pageTitle={"WATER"}
         pageText={pageText}
-        images={waterImageInfo}
+        images={imageData.waterImageInfo}
         bgColourDark={"dark:to-blue-500/5"}
         bgColourLight={"to-almostWhite"}
         locations={["Iceland", "UK", "Midlands", "Devon"]}

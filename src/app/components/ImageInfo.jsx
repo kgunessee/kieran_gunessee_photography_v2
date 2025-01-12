@@ -1,3 +1,5 @@
+//DEPRECIATED - USE imageData.json instead.
+
 //The keys in the equipment objects are capitalised because they are used to display the category header on the equipment page.
 
 export const astroEquipmentInfo = {

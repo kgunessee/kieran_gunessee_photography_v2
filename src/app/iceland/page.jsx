@@ -1,7 +1,8 @@
 //Components
-import { waterImageInfo, landscapeImageInfo } from "@/app/components/ImageInfo";
+// import { waterImageInfo, landscapeImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
+import imageData from "@/app/imageData.json";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
@@ -17,11 +18,14 @@ export const metadata = {
   ],
 };
 
-const icelandImages = [...waterImageInfo, ...landscapeImageInfo].filter(
-  (image) => {
-    return image.keywords.includes("iceland".toLowerCase());
-  },
-);
+const icelandImages = [
+  ...imageData.waterImageInfo,
+  ...imageData.landscapeImageInfo,
+  // ...waterImageInfo,
+  // ...landscapeImageInfo,
+].filter((image) => {
+  return image.keywords.includes("iceland".toLowerCase());
+});
 
 export default function Iceland() {
   const pageText =
