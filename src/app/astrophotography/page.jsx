@@ -1,6 +1,6 @@
 //Components
 // import { astroImageInfo } from "@/app/components/ImageInfo";
-import imageData from "../imageData.json";
+import astroData from "../image-data/astroData.json";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
 
@@ -21,14 +21,14 @@ export const metadata = {
 
 export default function Astrophotography() {
   const pageText =
-    "Galaxies, nebulae, comets and stars - the endless beauty of the universe.";
+    "Deep sky images of galaxies, nebulae, stars and the universe.";
   return (
     <main>
       <Header />
       <PageTemplate
         pageTitle={"ASTROPHOTOGRAPHY"}
         pageText={pageText}
-        images={imageData.astroImageInfo}
+        images={astroData.astroImageInfo}
         isAstroImage={true}
         bgColourDark={"dark:to-indigo-500/5"}
         bgColourLight={"to-almostWhite"}
@@ -43,6 +43,7 @@ export default function Astrophotography() {
           "Broadband",
         ]}
         astroFocalLength={["100mm - 400mm", "400mm - 700mm"]}
+        imageDate={["< 2022", "2023", "2024", "2025"]}
       />
     </main>
   );

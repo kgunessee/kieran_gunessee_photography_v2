@@ -1,6 +1,6 @@
 //Components
 // import { woodlandImageInfo } from "@/app/components/ImageInfo";
-import imageData from "../imageData.json";
+import woodlandData from "../image-data/woodlandData.json";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
 
@@ -19,8 +19,7 @@ export const metadata = {
 };
 
 export default function Woodland() {
-  const pageText =
-    "Trees, leaves, orange and green - the chaos and calm of the woods.";
+  const pageText = "My photos of woodlands, forests and trees.";
   return (
     <main>
       <Header />
@@ -28,7 +27,7 @@ export default function Woodland() {
       <PageTemplate
         pageTitle={"WOODLAND"}
         pageText={pageText}
-        images={imageData.woodlandImageInfo}
+        images={woodlandData.woodlandImageInfo}
         bgColourDark={"dark:to-emerald-700/10"}
         bgColourLight={"to-almostWhite"}
         locations={["UK", "Midlands", "Devon", "Peak District"]}
@@ -40,6 +39,7 @@ export default function Woodland() {
           "Wide angle",
           "Focused subject",
         ]}
+        imageDate={["< 2022", "2023", "2024", "2025"]}
       />
     </main>
   );

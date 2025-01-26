@@ -6,7 +6,9 @@
 // } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
-import imageData from "@/app/imageData.json";
+import waterData from "@/app/image-data/waterData.json";
+import landscapeData from "@/app/image-data/landscapeData.json";
+import woodlandData from "@/app/image-data/woodlandData.json";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
@@ -26,12 +28,9 @@ export const metadata = {
 };
 
 const peakDistrictImages = [
-  ...imageData.waterImageInfo,
-  ...imageData.landscapeImageInfo,
-  ...imageData.woodlandImageInfo,
-  // ...waterImageInfo,
-  // ...landscapeImageInfo,
-  // ...woodlandImageInfo,
+  ...waterData.waterImageInfo,
+  ...landscapeData.landscapeImageInfo,
+  ...woodlandData.woodlandImageInfo,
 ].filter((image) => {
   return image.keywords.includes("peak district".toLowerCase());
 });

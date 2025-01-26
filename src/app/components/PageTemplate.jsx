@@ -7,6 +7,7 @@ import Gallery from "@/app/components/Gallery";
 import { Footer } from "@/app/components/Footer";
 import { FilterTagButton } from "@/app/components/FilterTagButton";
 import { HorizontalRule } from "@/app/components/HorizontalRule";
+
 export function PageTemplate({
   images,
   bgColourLight,
@@ -21,6 +22,7 @@ export function PageTemplate({
   astroPalette = null,
   astroFocalLength = null,
   astroObjectType = null,
+  imageDate,
 }) {
   const [searchText, setSearchText] = useState("");
   const [selectedFilters, setSelectedFilters] = useState([]);
@@ -119,7 +121,7 @@ export function PageTemplate({
                 placeholder={`${
                   isAstroImage
                     ? "Search by name or catalogue ID"
-                    : "Search by name or location"
+                    : "Search by name, location or date"
                 }`}
                 className={`h-12 w-full bg-black/10 px-2 xl:text-xl dark:bg-white/10 dark:text-almostWhite`}
                 onChange={handleSearchTerm}
@@ -270,6 +272,16 @@ export function PageTemplate({
                       selectedFilters={selectedFilters}
                     />
                   </div>
+                  <div>
+                    <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
+                      Date
+                    </h4>
+                    <FilterTagButton
+                      filterCategory={imageDate}
+                      handleFilterClick={handleFilterClick}
+                      selectedFilters={selectedFilters}
+                    />
+                  </div>
                 </fieldset>
               )}
               {/*-------------------------------------------------------------------------- NON-ASTRO FILTERS --------------------------------------------------------------------------*/}
@@ -298,6 +310,16 @@ export function PageTemplate({
                     </h4>
                     <FilterTagButton
                       filterCategory={locations}
+                      handleFilterClick={handleFilterClick}
+                      selectedFilters={selectedFilters}
+                    />
+                  </div>
+                  <div>
+                    <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
+                      Date
+                    </h4>
+                    <FilterTagButton
+                      filterCategory={imageDate}
                       handleFilterClick={handleFilterClick}
                       selectedFilters={selectedFilters}
                     />

@@ -1,11 +1,7 @@
 //Components
-import {
-  waterImageInfo,
-  landscapeImageInfo,
-  woodlandImageInfo,
-} from "@/app/components/ImageInfo";
-import imageData from "../imageData.json";
-
+import waterData from "../image-data/waterData.json";
+import landscapeData from "../image-data/landscapeData.json";
+import woodlandData from "../image-data/woodlandData.json";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
 
@@ -27,12 +23,9 @@ export const metadata = {
 };
 
 const devonImages = [
-  ...imageData.waterImageInfo,
-  ...imageData.landscapeImageInfo,
-  ...imageData.woodlandImageInfo,
-  // ...waterImageInfo,
-  // ...landscapeImageInfo,
-  // ...woodlandImageInfo,
+  ...waterData.waterImageInfo,
+  ...landscapeData.landscapeImageInfo,
+  ...woodlandData.woodlandImageInfo,
 ].filter((image) => {
   return image.keywords.includes("devon".toLowerCase());
 });

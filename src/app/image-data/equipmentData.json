@@ -1,0 +1,156 @@
+{
+  "astroEquipmentInfo": {
+    "Scope": {
+      "evostar72ED": {
+        "name": "Skywatcher Evostar 72ED",
+        "image": "/images/equipment/Skywatcher Evostar 72ED Telescope OTA.webp"
+      },
+      "explorer130PDS": {
+        "name": "Skywatcher Explorer 130PDS",
+        "image": "/images/equipment/Skywatcher Explorer 130PDS Telescope OTA.webp"
+      },
+      "GT71ii": {
+        "name": "William Optics GT71 II",
+        "image": "/images/equipment/William Optics GT71II Telescope OTA.webp"
+      }
+    },
+    "Mount": {
+      "heq5pro": {
+        "name": "Skywatcher HEQ5 Pro",
+        "image": "/images/equipment/Skywatcher HEQ5 Pro Mount.webp"
+      }
+    },
+    "Camera": {
+      "533MCPRO": {
+        "name": "ZWO ASI 533MC Pro",
+        "image": "/images/equipment/ZWO ASI533MM_MC Pro.webp"
+      },
+      "533MMPRO": {
+        "name": "ZWO ASI 533MM Pro",
+        "image": "/images/equipment/ZWO ASI533MM_MC Pro.webp"
+      }
+    },
+    "Filters": {
+      "lExtreme": {
+        "name": "Optolong L-Extreme",
+        "image": "/images/equipment/Optolong L-Extreme Filter.webp"
+      },
+      "lPro": {
+        "name": "Optolong L-Pro",
+        "image": "/images/equipment/Optolong L-Pro Filter.webp"
+      },
+      "optolongLRGB": {
+        "name": "Optolong LRGB Filter Set",
+        "image": "/images/equipment/Optolong LRGB Filter Set.webp"
+      },
+      "antliaEdge": {
+        "name": "Antlia 4.5nm Edge SHO",
+        "image": "/images/equipment/Antlia Edge 4.5nm SHO Filter Set.webp"
+      }
+    },
+    "Guide Scope": {
+      "svbony60mm": {
+        "name": "SVBony 60mm Guidescope",
+        "image": "/images/equipment/SVBony 60mm Guidescope.webp"
+      }
+    },
+    "Guide Camera": {
+      "120mmMini": {
+        "name": "ZWO ASI 110MM Mini",
+        "image": "/images/equipment/ZWO ASI220MM Mini Guide Camera.webp"
+      },
+      "220mmMini": {
+        "name": "ZWO ASI 220MM Mini",
+        "image": "/images/equipment/ZWO ASI220MM Mini Guide Camera.webp"
+      }
+    },
+    "Focuser": {
+      "zwoEAF": {
+        "name": "ZWO EAF",
+        "image": "/images/equipment/ZWO EAF Automatic Focuser.webp"
+      }
+    },
+    "Filter Wheel": {
+      "zwoEFW": {
+        "name": "ZWO EFW 8 x 1.25",
+        "image": "/images/equipment/ZWO EFW Electronic Filter Wheel.webp"
+      }
+    },
+    "Image Capture": {
+      "asiairplus": {
+        "name": "ZWO ASI Air Plus",
+        "image": "/images/equipment/ZWO ASI AIR Plus.webp"
+      }
+    },
+    "Software": {
+      "affinity": {
+        "name": "Affinity Photo",
+        "image": "/images/equipment/Affinity Photo 2 Logo.webp"
+      },
+      "pixinsight": {
+        "name": "Pixinsight",
+        "image": "/images/equipment/Pixinsight Logo.webp"
+      }
+    }
+  },
+  "daytimeEquipmentInfo": {
+    "Camera": {
+      "D3300": {
+        "name": "Nikon D3300",
+        "image": "/images/equipment/Nikon D3300 DSLR Camera.webp"
+      },
+      "D750": {
+        "name": "Nikon D750",
+        "image": "/images/equipment/Nikon D750 Full Frame DSLR Camera.webp"
+      },
+      "Z7II": {
+        "name": "Nikon Z7II",
+        "image": "/images/equipment/Nikon Z7II.webp"
+      }
+    },
+    "Lens": {
+      "Tokina 11-16mm": {
+        "name": "Tokina 11-16mm F/2.8 AT-X116 PRO DX II",
+        "image": "/images/equipment/Tokina 11-16mm F2.8 AT-X116 PRO DX II.webp"
+      },
+      "Tamron 24-70mm": {
+        "name": "Tamron 24-70 mm F2.8 VC USD",
+        "image": "/images/equipment/Tamron 24-70 mm F2.8 VC USD.webp"
+      },
+      "Nikon 50mm": {
+        "name": "Nikon AF-S Nikkor 50mm 1.8G",
+        "image": "/images/equipment/Nikon AF-S Nikkor 50mm 1.8G.webp"
+      },
+      "Nikon Z 24-70mm f4": {
+        "name": "Nikon Nikkor Z 24-70mm f/4 S",
+        "image": "/images/equipment/Nikon 24-70mm F4.webp"
+      },
+      "Samyang 14mm": {
+        "name": "Samyang 14mm F2.8 Nikon Z",
+        "image": "/images/equipment/Samyang 14mm F2.8 Nikon Z.webp"
+      },
+      "Nikon 105mm MC": {
+        "name": "Nikon Nikkor Z MC 105mm f/2.8 VR S",
+        "image": "/images/equipment/Nikon 105mm MC F2.8.webp"
+      }
+    },
+    "Tripod": {
+      "manfrotto": {
+        "name": "Manfrotto Element MKII",
+        "image": "/images/equipment/Manfrotto Element MKII Tripod.webp"
+      }
+    },
+    "Filters": {
+      "urth": {
+        "name": "Urth Magnetic 82mm Filter Set",
+        "image": "/images/equipment/Urth Filter Set.webp"
+      }
+    },
+    "Bag": {
+      "vanguardVeo": {
+        "name": "Vanguard VEO Active 46",
+        "image": "/images/equipment/Vanguard VEO Active 46.webp"
+      }
+    }
+  }
+}

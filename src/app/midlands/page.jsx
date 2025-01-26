@@ -6,7 +6,10 @@
 // } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
-import imageData from "@/app/imageData.json";
+import waterData from "@/app/image-data/waterData.json";
+import landscapeData from "@/app/image-data/landscapeData.json";
+import woodlandData from "@/app/image-data/woodlandData.json";
+import macroData from "@/app/image-data/macroData.json";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
@@ -22,13 +25,10 @@ export const metadata = {
 };
 
 const midlandsImages = [
-  ...imageData.waterImageInfo,
-  ...imageData.landscapeImageInfo,
-  ...imageData.woodlandImageInfo,
-  ...imageData.macroImageInfo,
-  // ...waterImageInfo,
-  // ...landscapeImageInfo,
-  // ...woodlandImageInfo,
+  ...waterData.waterImageInfo,
+  ...landscapeData.landscapeImageInfo,
+  ...woodlandData.woodlandImageInfo,
+  ...macroData.macroImageInfo,
 ].filter((image) => {
   return image.keywords.includes("midlands".toLowerCase());
 });

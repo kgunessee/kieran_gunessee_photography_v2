@@ -2,7 +2,8 @@
 // import { waterImageInfo, landscapeImageInfo } from "@/app/components/ImageInfo";
 import Header from "@/app/components/Header";
 import { PageTemplate } from "@/app/components/PageTemplate";
-import imageData from "@/app/imageData.json";
+import waterData from "../image-data/waterData.json";
+import landscapeData from "../image-data/landscapeData.json";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
@@ -19,10 +20,8 @@ export const metadata = {
 };
 
 const icelandImages = [
-  ...imageData.waterImageInfo,
-  ...imageData.landscapeImageInfo,
-  // ...waterImageInfo,
-  // ...landscapeImageInfo,
+  ...waterData.waterImageInfo,
+  ...landscapeData.landscapeImageInfo,
 ].filter((image) => {
   return image.keywords.includes("iceland".toLowerCase());
 });

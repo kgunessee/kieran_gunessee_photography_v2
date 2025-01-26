@@ -106,7 +106,7 @@ export default function Header({ isHomepage = false }) {
         />
         <div
           title={"Apply image border"}
-          className={`ml-2 cursor-pointer border-[1px] border-white/40 px-4 py-2 text-sm text-almostWhite transition-all hover:bg-white/10 lg:border-none lg:text-base`}
+          className={`mx-2 cursor-pointer border-[1px] border-white/40 px-4 py-2 text-sm text-almostWhite transition-all hover:bg-white/10 lg:border-none lg:text-base`}
           onClick={() => setImageBorder(!imageBorder)}
         >
           <p>Border {imageBorder ? "Off" : "On"}</p>

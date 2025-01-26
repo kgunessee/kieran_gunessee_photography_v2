@@ -11,7 +11,7 @@ import Header from "@/app/components/Header";
 //   astroEquipmentInfo,
 // } from "@/app/components/ImageInfo";
 
-import imageData from "../imageData.json";
+import equipmentData from "../image-data/equipmentData.json";
 import { EquipmentCategory } from "@/app/components/EquipmentCategory";
 import { Footer } from "@/app/components/Footer";
 
@@ -19,8 +19,8 @@ export default function Equipment() {
   const [isAstroOpen, setIsAstroOpen] = useState(true);
   const [isDaytimeOpen, setIsDaytimeOpen] = useState(true);
 
-  const astroEquipmentInfo = imageData.astroEquipmentInfo;
-  const daytimeEquipmentInfo = imageData.daytimeEquipmentInfo;
+  const astroEquipmentInfo = equipmentData.astroEquipmentInfo;
+  const daytimeEquipmentInfo = equipmentData.daytimeEquipmentInfo;
 
   const astroEquipmentLength = Object.keys(astroEquipmentInfo);
   const dayEquipmentLength = Object.keys(daytimeEquipmentInfo);
