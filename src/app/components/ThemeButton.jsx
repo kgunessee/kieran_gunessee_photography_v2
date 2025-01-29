@@ -7,7 +7,7 @@ export function ThemeButton({ handleIsDarkModeToggle, isDarkMode }) {
       title={"Toggle theme"}
       aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
       onClick={handleIsDarkModeToggle}
-      className={`relative grid h-7 w-8 place-items-center gap-2 overflow-hidden text-white`}
+      className={`relative grid h-7 w-8 place-items-center gap-2 overflow-hidden text-white md:mx-2`}
     >
       <AnimatePresence mode="wait">
         {!isDarkMode ? (

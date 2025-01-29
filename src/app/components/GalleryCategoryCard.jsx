@@ -22,7 +22,11 @@ export function GalleryCategoryCard({ category, title, imageUrl, alt }) {
               className={`absolute top-0 h-full w-full bg-gradient-to-bl from-transparent via-transparent to-almostBlack`}
             ></div>
             <div className="absolute bottom-0 left-0 p-2 text-almostWhite transition md:px-4">
-              <h3 className={`text-xl md:text-base 2xl:text-xl`}>{title}</h3>
+              <h3
+                className={`text-xl font-light md:text-base lg:font-normal 2xl:text-xl`}
+              >
+                {title}
+              </h3>
             </div>
           </div>
         </div>

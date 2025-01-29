@@ -109,9 +109,9 @@ export default function Header({ isHomepage = false }) {
               />
             ) : (
               <Image
-                src={"/images/icons/main_logo_mobile.webp"}
+                src={"/images/icons/main_logo.webp"}
                 alt={"Main Logo"}
-                width={100}
+                width={150}
                 height={100}
               />
             ))}
@@ -126,7 +126,7 @@ export default function Header({ isHomepage = false }) {
             />
             <button
               title={"Apply image border"}
-              className={`mx-2 cursor-pointer border-[1px] border-white/40 px-4 py-2 text-sm text-almostWhite transition-all hover:bg-white/10 lg:border-none lg:text-base`}
+              className={`mx-2 cursor-pointer border-[1px] border-white/20 px-2 py-2 text-sm text-almostWhite transition-all hover:bg-white/10 lg:border-none lg:text-base`}
               onClick={() => setImageBorder(!imageBorder)}
             >
               <p>Border {imageBorder ? "On" : "Off"}</p>
