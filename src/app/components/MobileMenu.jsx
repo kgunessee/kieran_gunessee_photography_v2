@@ -48,7 +48,7 @@ export function MobileMenu() {
                 <motion.li
                   key={item.name}
                   variants={liVariants}
-                  className={`mb-3 list-none rounded px-2 py-1 transition-colors hover:bg-white/10`}
+                  className={`mb-3 list-none px-2 py-1 transition-colors hover:bg-white/10`}
                 >
                   <Link href={item.url}>{item.name}</Link>
                 </motion.li>
@@ -64,7 +64,7 @@ export function MobileMenu() {
                 <motion.li
                   key={item.name}
                   variants={liVariants}
-                  className={`mb-3 list-none rounded px-2 py-1 transition-colors hover:bg-white/10`}
+                  className={`mb-3 list-none px-2 py-1 transition-colors hover:bg-white/10`}
                 >
                   <Link href={item.url}>{item.name}</Link>
                 </motion.li>

@@ -6,7 +6,7 @@ import { PageTemplate } from "@/app/components/PageTemplate";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
-  title: "Astrophotography - Kieran Gunessee Photography",
+  title: "Astrophotography",
   description: "Images of galaxies, nebulae, stars and the universe.",
   keywords: [
     "photography",

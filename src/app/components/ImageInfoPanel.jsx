@@ -1,7 +1,6 @@
 "use client";
 //Hooks & Plugins
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 
 //Components
 import { CloseButton } from "@/app/components/CloseButton";

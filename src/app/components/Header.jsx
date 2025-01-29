@@ -11,6 +11,7 @@ import { HamburgerMenu } from "@/app/components/HamburgerMenu";
 import { MobileMenu } from "@/app/components/MobileMenu";
 import { DesktopNav } from "@/app/components/DesktopNav";
 import { MobileLogo } from "@/app/components/MobileLogo";
+import Image from "next/image";
 
 export default function Header({ isHomepage = false }) {
   const [isMobileScreen, setIsMobileScreen] = useState(true); //Boolean to state whether the screen size is mobile (< 768px)
@@ -90,27 +91,49 @@ export default function Header({ isHomepage = false }) {
     >
       <Link href={"/"}>
         <h1 className={`text-2xl font-semibold text-white`}>
-          {isMobileScreen ? (
-            <MobileLogo />
-          ) : !isHomepage ? (
-            "Kieran Gunessee Photography"
-          ) : (
-            <MobileLogo />
+          {!isMobileScreen && (
+            <Image
+              src={"/images/icons/main_logo.webp"}
+              alt={"Main Logo"}
+              width={250}
+              height={100}
+            />
           )}
+          {isMobileScreen &&
+            (isHomepage ? (
+              <Image
+                src={"/images/icons/main_logo.webp"}
+                alt={"Main Logo"}
+                width={200}
+                height={100}
+              />
+            ) : (
+              <Image
+                src={"/images/icons/main_logo_mobile.webp"}
+                alt={"Main Logo"}
+                width={100}
+                height={100}
+              />
+            ))}
         </h1>
       </Link>
       <div className={`flex items-center gap-2`}>
-        <ThemeButton
-          handleIsDarkModeToggle={handleIsDarkModeToggle}
-          isDarkMode={isDarkMode}
-        />
-        <div
-          title={"Apply image border"}
-          className={`mx-2 cursor-pointer border-[1px] border-white/40 px-4 py-2 text-sm text-almostWhite transition-all hover:bg-white/10 lg:border-none lg:text-base`}
-          onClick={() => setImageBorder(!imageBorder)}
-        >
-          <p>Border {imageBorder ? "Off" : "On"}</p>
-        </div>
+        {!isHomepage && (
+          <>
+            <ThemeButton
+              handleIsDarkModeToggle={handleIsDarkModeToggle}
+              isDarkMode={isDarkMode}
+            />
+            <button
+              title={"Apply image border"}
+              className={`mx-2 cursor-pointer border-[1px] border-white/40 px-4 py-2 text-sm text-almostWhite transition-all hover:bg-white/10 lg:border-none lg:text-base`}
+              onClick={() => setImageBorder(!imageBorder)}
+            >
+              <p>Border {imageBorder ? "On" : "Off"}</p>
+            </button>
+          </>
+        )}
+
         {isMobileScreen && (
           <HamburgerMenu
             handleMobileMenuToggle={handleMobileMenuToggle}

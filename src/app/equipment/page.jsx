@@ -31,8 +31,8 @@ export default function Equipment() {
         <section
           className={`my-2 px-mobileXPadding text-blueBlack lg:px-desktopXPadding dark:text-almostWhite`}
         >
-          <h2 className={`text-2xl font-semibold lg:text-3xl`}>EQUIPMENT</h2>
-          <p className={`mb-4 mt-2 lg:text-xl`}>
+          <h2 className={`text-2xl lg:text-3xl`}>EQUIPMENT</h2>
+          <p className={`mb-4 mt-2 font-light lg:text-xl`}>
             Below is by photography equipment that I currently use or have used
             to capture my images.
           </p>

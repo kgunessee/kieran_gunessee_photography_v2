@@ -103,11 +103,13 @@ export function PageTemplate({
     >
       <section className={`px-mobileXPadding lg:px-desktopXPadding`}>
         <h2
-          className={`mb-2 mt-4 text-2xl font-semibold text-blueBlack lg:text-3xl xl:text-3xl dark:text-almostWhite`}
+          className={`mb-2 mt-4 text-2xl text-blueBlack lg:text-3xl xl:text-3xl dark:text-almostWhite`}
         >
           {pageTitle}
         </h2>
-        <p className={`mb-4 text-almostBlack lg:text-xl dark:text-almostWhite`}>
+        <p
+          className={`mb-4 font-light text-almostBlack lg:text-xl dark:text-almostWhite`}
+        >
           {pageText}
         </p>
         <HorizontalRule />

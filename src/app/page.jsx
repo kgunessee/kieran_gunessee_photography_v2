@@ -58,10 +58,11 @@ export default function Home() {
               className={`absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-4 bg-black/60 px-4 lg:gap-8`}
             >
               <h1
-                className={`text-center text-3xl font-semibold text-almostWhite`}
+                className={`text-center text-3xl font-medium text-almostWhite lg:font-semibold`}
               >
                 Kieran Gunessee Photography
               </h1>
+
               <p className={`text-center text-xl text-almostWhite`}>
                 Astro, Landscape & Macro Photography based in the UK.
               </p>

@@ -14,14 +14,12 @@ export default function Gallery({ images, isAstroImage }) {
   const [isMobileScreen, setIsMobileScreen] = useState(null); // Boolean to state whether the screen size is mobile (< 768px)
   const [isInfoPanelOpen, setIsInfoPanelOpen] = useState(false); // Boolean to state whether the info panel is open on an image (Fancybox)
   const [imgIndex, setImgIndex] = useState(0); // The current opened Fancybox image
-  const [isBlockingBack, setIsBlockingBack] = useState(false); // Flag to manage back navigation
 
   // Sets the image index in order to open the correct info panel
   const openInfoPanel = (index) => {
     setImgIndex(index);
     setIsInfoPanelOpen(true);
     window.history.pushState(null, document.title, window.location.href); // Push state when opening info panel
-    setIsBlockingBack(true);
   };
 
   // Disable scroll when info panel is open
@@ -59,22 +57,17 @@ export default function Gallery({ images, isAstroImage }) {
         },
         init: () => {
           window.history.pushState(null, document.title, window.location.href); // Push state when Fancybox is opened
-          setIsBlockingBack(true);
-        },
-        close: () => {
-          setIsBlockingBack(false); // Reset blocking back state when Fancybox is closed
         },
       },
 
       Toolbar: {
         items: {
           infoPanel: {
-            tpl: `<div class="f-button info-button"> <svg
+            tpl: `<div class="f-button info-button" aria-label="Open info panel" data-title="Open info panel"> <svg 
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             fill="none"
-           
             viewBox="0 0 24 24"
           >
             <path
@@ -138,8 +131,6 @@ srcset="${source}"
       } else if (Fancybox.getInstance()) {
         event.preventDefault();
         Fancybox.close();
-      } else {
-        setIsBlockingBack(false); // Allow back navigation if neither is open
       }
     };
 
@@ -152,7 +143,7 @@ srcset="${source}"
 
   return (
     <>
-      <div className="gallery mt-2 grid grid-cols-3 gap-0.5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+      <div className="gallery mt-2 grid grid-cols-3 gap-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {images.map((image, index) => (
           <a
             key={`full res image ${index}`}

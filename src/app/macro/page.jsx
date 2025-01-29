@@ -6,7 +6,7 @@ import { PageTemplate } from "@/app/components/PageTemplate";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
-  title: "Macro",
+  title: "Macro Photography UK",
   description: "Close up detailed images of various subjects.",
   keywords: [
     "photography",

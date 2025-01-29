@@ -11,7 +11,7 @@ export function GalleryCategories({ galleryRef }) {
       className={`bg-almostWhite px-mobileXPadding py-4 lg:px-desktopXPadding dark:bg-almostBlack`}
     >
       <h2
-        className={`mb-4 text-2xl font-semibold text-almostBlack lg:text-3xl dark:text-almostWhite`}
+        className={`mb-4 text-2xl text-almostBlack lg:text-3xl dark:text-almostWhite`}
       >
         GALLERY
       </h2>
