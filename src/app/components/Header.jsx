@@ -10,6 +10,7 @@ import { HamburgerMenu } from "@/app/components/HamburgerMenu";
 import { MobileMenu } from "@/app/components/MobileMenu";
 import { DesktopNav } from "@/app/components/DesktopNav";
 import Image from "next/image";
+import MainLogo from "@/app/components/MainLogo";
 
 export default function Header({ isHomepage = false }) {
   const [isMobileScreen, setIsMobileScreen] = useState(true); //Boolean to state whether the screen size is mobile (< 768px)
@@ -67,24 +68,7 @@ export default function Header({ isHomepage = false }) {
       } mx-auto flex min-h-[65px] items-center justify-between bg-almostBlack px-mobileXPadding py-4 transition-colors lg:min-h-[80px] lg:px-desktopXPadding dark:bg-blueBlack`}
     >
       <Link href={"/"}>
-        <h1 className={`text-2xl font-semibold text-white`}>
-          {!isMobileScreen && (
-            <Image
-              src={"/images/icons/main_logo.webp"}
-              alt={"Main Logo"}
-              width={250}
-              height={100}
-            />
-          )}
-          {isMobileScreen && (
-            <Image
-              src={"/images/icons/main_logo.webp"}
-              alt={"Main Logo"}
-              width={175}
-              height={100}
-            />
-          )}
-        </h1>
+        <MainLogo isMobileScreen={isMobileScreen} />
       </Link>
       <div className={`flex items-center gap-2`}>
         {!isHomepage && (
