@@ -210,8 +210,7 @@ export function PageTemplate({
                       images that contains a selected attribute, e.g. show{" "}
                       <span className={`underline`}>ALL </span>
                       images taken in the <strong>2025</strong> and show all
-                      images taken in the
-                      <strong>UK</strong>.
+                      images taken in the <strong>UK</strong>.
                     </p>
                   </div>
                 </div>
