@@ -7,6 +7,11 @@ import Gallery from "@/app/components/Gallery";
 import { Footer } from "@/app/components/Footer";
 import { FilterTagButton } from "@/app/components/FilterTagButton";
 import { HorizontalRule } from "@/app/components/HorizontalRule";
+import {
+  ClearSearchIcon,
+  FilterIcon,
+  TooltipIcon,
+} from "@/app/components/Logos_Icons";
 
 export function PageTemplate({
   images,
@@ -75,7 +80,7 @@ export function PageTemplate({
             (filter) => image.keywords.includes(filter.toLowerCase()),
           )
         : selectedFilters.some(
-            // Return images that contain all filter words in the selectedFilters state array
+            // Return images that contain any filter words in the selectedFilters state array
             (filter) => image.keywords.includes(filter.toLowerCase()),
           );
 
@@ -135,16 +140,7 @@ export function PageTemplate({
                 title={"Clear search bar"}
                 className={`bg-black/10 px-2 dark:bg-white/10 dark:hover:bg-white/15 dark:active:bg-white/10`}
               >
-                <svg
-                  className={`clear-search-icon opacity-70`}
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  fill="#e8eaed"
-                  viewBox="0 -960 960 960"
-                >
-                  <path d="M256-200l-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224z"></path>
-                </svg>
+                <ClearSearchIcon />
               </button>
               <button
                 aria-label={"Show image filtering options"}
@@ -152,20 +148,11 @@ export function PageTemplate({
                 onClick={handleShowFilterMenu}
                 className={`relative flex items-center justify-center bg-black/10 px-2 hover:bg-black/15 active:bg-black/10 dark:bg-white/10 dark:hover:bg-white/15 dark:active:bg-white/10`}
               >
-                <svg
-                  className={`filter-icon`}
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  fill="#e8eaed"
-                  viewBox="0 -960 960 960"
-                >
-                  <path d="M400-240v-80h160v80H400zM240-440v-80h480v80H240zM120-640v-80h720v80H120z"></path>
-                </svg>
+                <FilterIcon />
                 <div
                   className={`${
                     selectedFilters.length > 0 ? "block" : "hidden"
-                  } absolute right-[7%] top-[7%] h-2 w-2 bg-sky-400`}
+                  } absolute right-[7%] top-[7%] h-2 w-2 rounded-full bg-sky-400`}
                 ></div>
               </button>
             </div>
@@ -201,29 +188,30 @@ export function PageTemplate({
                 >
                   Match Any Filter
                 </button>
-                <div className="group relative" onClick={handleTooltipToggle}>
-                  <svg
-                    className="help-icon -ml-2 hover:cursor-pointer hover:opacity-80"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="#e8eaed"
-                    viewBox="0 -960 960 960"
-                  >
-                    <path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93zm0-320z"></path>
-                  </svg>
+                <div
+                  className="group md:relative"
+                  onClick={handleTooltipToggle}
+                >
+                  <TooltipIcon />
                   <div
-                    className={`max-w-[70vw]c pointer-events-none absolute -left-52 top-full z-20 mt-1 w-max border-[1px] border-white/40 bg-black px-2 py-1 text-almostWhite opacity-0 transition-opacity duration-200 group-hover:opacity-100 sm:-right-40 ${
+                    className={`pointer-events-none absolute left-0 top-10 z-[50] mt-1 w-auto border-[1px] border-white/40 bg-black px-2 py-1 text-almostWhite opacity-0 transition-opacity duration-200 group-hover:opacity-100 sm:-right-40 md:-top-1 md:left-4 md:w-[500px] ${
                       isTooltipVisible ? "opacity-100" : "opacity-0"
                     }`}
                   >
                     <p className={`text-wrap`}>
-                      <strong> Match All Filters: </strong>Show images that
-                      match ALL selected filter tags.
+                      <strong> Match All Filters (AND): </strong>Only display
+                      images that contain every selected attribute, e.g. taken
+                      in <strong>2025</strong>{" "}
+                      <span className={`underline`}>AND</span> in the{" "}
+                      <strong>UK</strong>
                       <br />
                       <br />
-                      <strong> Match Any Filter: </strong>Show all images that
-                      have ANY selected filter tag.
+                      <strong> Match Any Filter (OR): </strong>Displays all
+                      images that contains a selected attribute, e.g. show{" "}
+                      <span className={`underline`}>ALL </span>
+                      images taken in the <strong>2025</strong> and show all
+                      images taken in the
+                      <strong>UK</strong>.
                     </p>
                   </div>
                 </div>

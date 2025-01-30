@@ -6,6 +6,7 @@ import { useState, useEffect, useRef } from "react";
 import { GalleryCategories } from "@/app/components/GalleryCategories";
 import Header from "@/app/components/Header";
 import { Footer } from "@/app/components/Footer";
+import { MainLogo } from "@/app/components/Logos_Icons";
 const homepageImages = [
   "/images/homepage/hp_Road_To_The_Mountain.webp",
   "/images/homepage/hp_Andromeda.webp",
@@ -55,22 +56,18 @@ export default function Home() {
               ))}
             </div>
             <div
-              className={`absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-4 bg-black/60 px-4 lg:gap-8`}
+              className={`absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-4 bg-black/70 px-4 lg:gap-8`}
             >
-              <h1
-                className={`text-center text-3xl text-almostWhite lg:font-semibold`}
-              >
-                Kieran Gunessee Photography
-              </h1>
+              <MainLogo mobileWidth={"w-[300px]"} desktopWidth={"w-[450px]"} />
 
-              <p
-                className={`text-center text-xl font-light text-almostWhite lg:font-normal`}
+              <h1
+                className={`mb-1 text-center text-xl font-light text-almostWhite`}
               >
-                Astro, Landscape & Macro Photography based in the UK.
-              </p>
+                Astro, Landscape & Macro Photography based in the UK
+              </h1>
               <button
                 onClick={handleScrollToGallery}
-                className={`border-2 border-almostWhite bg-white/10 p-4 text-almostWhite transition-colors hover:bg-white/20 lg:text-xl`}
+                className={`border-[1px] border-almostWhite bg-white/10 p-4 font-light text-almostWhite transition-colors hover:bg-white/20 lg:text-xl`}
               >
                 View my Gallery
               </button>

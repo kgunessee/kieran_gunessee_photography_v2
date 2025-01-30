@@ -9,12 +9,10 @@ import Link from "next/link";
 import { HamburgerMenu } from "@/app/components/HamburgerMenu";
 import { MobileMenu } from "@/app/components/MobileMenu";
 import { DesktopNav } from "@/app/components/DesktopNav";
-import Image from "next/image";
-import MainLogo from "@/app/components/MainLogo";
+import { MainLogo } from "@/app/components/Logos_Icons";
 
 export default function Header({ isHomepage = false }) {
   const [isMobileScreen, setIsMobileScreen] = useState(true); //Boolean to state whether the screen size is mobile (< 768px)
-
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); //Boolean to state whether the mobile menu is open
   const [imageBorder, setImageBorder] = useState(false);
 
@@ -68,7 +66,9 @@ export default function Header({ isHomepage = false }) {
       } mx-auto flex min-h-[65px] items-center justify-between bg-almostBlack px-mobileXPadding py-4 transition-colors lg:min-h-[80px] lg:px-desktopXPadding dark:bg-blueBlack`}
     >
       <Link href={"/"}>
-        <MainLogo isMobileScreen={isMobileScreen} />
+        {!isHomepage && (
+          <MainLogo mobileWidth={"w-[175px]"} desktopWidth={"w-[250px]"} />
+        )}
       </Link>
       <div className={`flex items-center gap-2`}>
         {!isHomepage && (

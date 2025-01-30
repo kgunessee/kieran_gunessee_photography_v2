@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { ThemeButton } from "@/app/components/ThemeButton";
 import { useState, useEffect } from "react";
+import { AstrobinLogo, InstagramLogo } from "@/app/components/Logos_Icons";
 
 export function Footer() {
   const date = new Date();
@@ -35,7 +35,7 @@ export function Footer() {
   return (
     <>
       <footer
-        className={`mt-4 flex h-auto flex-col-reverse items-end border-t-[1px] border-almostBlack/30 bg-transparent px-mobileXPadding sm:h-20 sm:flex-row sm:items-center sm:justify-between lg:px-desktopXPadding dark:border-white/20`}
+        className={`mt-4 flex h-auto flex-col-reverse items-end border-t-[1px] border-almostBlack/30 bg-transparent px-mobileXPadding pt-1 sm:h-20 sm:flex-row sm:items-center sm:justify-between md:pt-0 lg:px-desktopXPadding dark:border-white/20`}
       >
         <p
           className={`mb-2 text-sm text-almostBlack/70 sm:mb-0 lg:text-base dark:text-almostWhite/70`}
@@ -54,44 +54,14 @@ export function Footer() {
             target="_blank"
             className="group relative"
           >
-            <Image
-              width={40}
-              height={40}
-              src={"/images/icons/astrobin_logo.webp"}
-              alt={"link to astrobin logo"}
-              className="transition duration-300 group-hover:opacity-70"
-            />
-            <div className="pointer-events-none absolute inset-0">
-              <Image
-                width={40}
-                height={40}
-                src={"/images/icons/astrobin_logo.webp"}
-                alt={"astrobin overlay"}
-                className="absolute inset-0 opacity-80 mix-blend-multiply invert filter transition duration-150 group-hover:opacity-70 dark:invert-0"
-              />
-            </div>
+            <AstrobinLogo />
           </Link>
           <Link
             href={"https://www.instagram.com/kieran_gunessee_photography/"}
             target="_blank"
             className="group relative"
           >
-            <Image
-              width={27}
-              height={27}
-              src={"/images/icons/instagram_logo.webp"}
-              alt={"link to instagram logo"}
-              className="transition duration-300 group-hover:opacity-70"
-            />
-            <div className="pointer-events-none absolute inset-0">
-              <Image
-                width={27}
-                height={27}
-                src={"/images/icons/instagram_logo.webp"}
-                alt={"instagram overlay"}
-                className="absolute inset-0 opacity-80 mix-blend-multiply invert filter transition duration-150 group-hover:opacity-70 dark:invert-0"
-              />
-            </div>
+            <InstagramLogo />
           </Link>
         </div>
       </footer>
