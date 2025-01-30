@@ -6,44 +6,21 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
 //Components
-import { ThemeButton } from "@/app/components/ThemeButton";
 import { HamburgerMenu } from "@/app/components/HamburgerMenu";
 import { MobileMenu } from "@/app/components/MobileMenu";
 import { DesktopNav } from "@/app/components/DesktopNav";
-import { MobileLogo } from "@/app/components/MobileLogo";
 import Image from "next/image";
 
 export default function Header({ isHomepage = false }) {
   const [isMobileScreen, setIsMobileScreen] = useState(true); //Boolean to state whether the screen size is mobile (< 768px)
-  const [isDarkMode, setIsDarkMode] = useState(true); //Boolean to set the theme
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); //Boolean to state whether the mobile menu is open
   const [imageBorder, setImageBorder] = useState(false);
-
-  // Handle dark mode toggle and persist in localStorage
-  const handleIsDarkModeToggle = () => {
-    const newDarkMode = !isDarkMode;
-    setIsDarkMode(newDarkMode);
-    localStorage.setItem("isDarkMode", JSON.stringify(newDarkMode)); // Save to localStorage
-  };
 
   // Handle mobile menu toggle
   const handleMobileMenuToggle = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-
-  // Set dark mode based on localStorage on initial load
-  useEffect(() => {
-    const savedThemePreference = localStorage.getItem("isDarkMode");
-    if (savedThemePreference !== null) {
-      setIsDarkMode(JSON.parse(savedThemePreference)); // Apply saved preference
-    }
-  }, []);
-
-  // Apply dark mode class to body when isDarkMode changes
-  useEffect(() => {
-    const body = document.querySelector("body");
-    isDarkMode ? body.classList.add("dark") : body.classList.remove("dark");
-  }, [isDarkMode]);
 
   // Apply class to body when imageBorder changes. This enables css in the globals.css file for the fancybox image.
   useEffect(() => {
@@ -99,39 +76,25 @@ export default function Header({ isHomepage = false }) {
               height={100}
             />
           )}
-          {isMobileScreen &&
-            (isHomepage ? (
-              <Image
-                src={"/images/icons/main_logo.webp"}
-                alt={"Main Logo"}
-                width={200}
-                height={100}
-              />
-            ) : (
-              <Image
-                src={"/images/icons/main_logo.webp"}
-                alt={"Main Logo"}
-                width={150}
-                height={100}
-              />
-            ))}
+          {isMobileScreen && (
+            <Image
+              src={"/images/icons/main_logo.webp"}
+              alt={"Main Logo"}
+              width={175}
+              height={100}
+            />
+          )}
         </h1>
       </Link>
       <div className={`flex items-center gap-2`}>
         {!isHomepage && (
-          <>
-            <ThemeButton
-              handleIsDarkModeToggle={handleIsDarkModeToggle}
-              isDarkMode={isDarkMode}
-            />
-            <button
-              title={"Apply image border"}
-              className={`mx-2 cursor-pointer border-[1px] border-white/20 px-2 py-2 text-sm text-almostWhite transition-all hover:bg-white/10 lg:border-none lg:text-base`}
-              onClick={() => setImageBorder(!imageBorder)}
-            >
-              <p>Border {imageBorder ? "On" : "Off"}</p>
-            </button>
-          </>
+          <button
+            title={"Apply image border"}
+            className={`mx-2 cursor-pointer border-[1px] border-white/20 px-2 py-2 text-sm text-almostWhite transition-all hover:bg-white/10 lg:border-none lg:text-base`}
+            onClick={() => setImageBorder(!imageBorder)}
+          >
+            <p>Border {imageBorder ? "On" : "Off"}</p>
+          </button>
         )}
 
         {isMobileScreen && (
