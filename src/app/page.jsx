@@ -58,7 +58,10 @@ export default function Home() {
             <div
               className={`absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-4 bg-black/70 px-4 lg:gap-8`}
             >
-              <MainLogo mobileWidth={"w-[300px]"} desktopWidth={"w-[450px]"} />
+              <MainLogo
+                mobileWidth={"w-[300px]"}
+                desktopWidth={"md:w-[450px]"}
+              />
 
               <h1
                 className={`mb-1 text-center text-xl font-light text-almostWhite`}

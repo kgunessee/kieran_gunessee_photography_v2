@@ -67,7 +67,7 @@ export default function Header({ isHomepage = false }) {
     >
       <Link href={"/"}>
         {!isHomepage && (
-          <MainLogo mobileWidth={"w-[175px]"} desktopWidth={"w-[250px]"} />
+          <MainLogo mobileWidth={"w-[175px]"} desktopWidth={"md:w-[250px]"} />
         )}
       </Link>
       <div className={`flex items-center gap-2`}>

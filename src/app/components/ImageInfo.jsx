@@ -2042,7 +2042,7 @@ export const landscapeImageInfo = [
     keywords: ["uk", "midlands", "hills", "wide angle"],
   },
   {
-    thumb: "/images/thumbnails/landscape/thumb_Standing at the End.webp",
+    thumb: "/images/thumbnails/landscape/thumb_A Foggy Morning.webp",
     fullRes:
       "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Landscape/fs_Standing at the End.webp",
     ["2100px"]:
@@ -2385,7 +2385,8 @@ export const woodlandImageInfo = [
     keywords: ["uk", "midlands", "summer", "wide angle"],
   },
   {
-    thumb: "/images/thumbnails/woodland/thumb_Fall in suspense.webp",
+    thumb:
+      "/images/thumbnails/woodland/thumb_Sun Shining on a Silver Birch.webp",
     fullRes:
       "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Woodland/fs_Fall in suspense.webp",
     ["2100px"]:

@@ -85,7 +85,7 @@
       "fullRes": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Macro/fs_Mushroom 01",
       "2100px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_2100/v1/Macro/fs_Mushroom 01",
       "1400px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_1440/v1/Macro/fs_Mushroom 01",
-      "title": "",
+      "title": "Mycena",
       "camera": "Nikon Z7II",
       "lens": "Nikon Nikkor Z MC 105mm f/2.8 VR S",
       "imageDate": "02/11/2024",
@@ -101,7 +101,7 @@
       "fullRes": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Macro/fs_Petal",
       "2100px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_2100/v1/Macro/fs_Petal",
       "1400px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_1440/v1/Macro/fs_Petal",
-      "title": "",
+      "title": "Petal",
       "camera": "Nikon Z7II",
       "lens": "Nikon Nikkor Z MC 105mm f/2.8 VR S",
       "imageDate": "02/11/2024",
@@ -110,7 +110,8 @@
       "aperture": "8.0",
       "shutterSpeed": "1/60",
       "mapLocation": "https://maps.app.goo.gl/z39V26mNFLPVX51X6",
-      "keywords": ["plants", "uk", "midlands", "2024"]
+      "keywords": ["plants", "uk", "midlands", "2024"],
+      "description": "I don't know what this is, I found it by chance when it caught my eye walking back to the car. It looks like some kind of petal, but I have no clue!"
     }
   ]
 }

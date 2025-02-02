@@ -30,7 +30,13 @@ export default function Woodland() {
         images={woodlandData.woodlandImageInfo}
         bgColourDark={"dark:to-emerald-700/10"}
         bgColourLight={"to-almostWhite"}
-        locations={["UK", "Midlands", "Devon", "Peak District"]}
+        locations={[
+          "UK",
+          "Midlands",
+          "Devon",
+          "Peak District",
+          "Cannock Chase",
+        ]}
         nonAstroKeywords={[
           "Spring",
           "Summer",

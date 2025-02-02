@@ -1,7 +1,7 @@
 export function MainLogo({ mobileWidth, desktopWidth }) {
   return (
     <svg
-      className={`h-auto ${mobileWidth} md:${desktopWidth}`}
+      className={`h-auto ${mobileWidth} ${desktopWidth}`}
       xmlns="http://www.w3.org/2000/svg"
       xmlSpace="preserve"
       fillRule="evenodd"

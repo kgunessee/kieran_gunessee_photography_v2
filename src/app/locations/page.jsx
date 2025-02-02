@@ -59,7 +59,7 @@ export default function locations() {
               category={"/midlands"}
               title={"THE MIDLANDS"}
               imageUrl={
-                "/images/thumbnails/landscape/thumb_Standing at the End.webp"
+                "/images/thumbnails/landscape/thumb_A Foggy Morning.webp"
               }
               alt={"The Midlands category image"}
             />
