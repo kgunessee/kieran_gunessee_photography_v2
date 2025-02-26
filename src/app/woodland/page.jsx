@@ -45,6 +45,7 @@ export default function Woodland() {
           "Wide angle",
           "Focused subject",
         ]}
+        focalLength={["11-24mm", "24-70mm", "70-300mm"]}
         imageDate={["< 2022", "2023", "2024", "2025"]}
       />
     </main>

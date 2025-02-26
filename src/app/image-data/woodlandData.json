@@ -13,8 +13,9 @@
       "iso": "1250",
       "aperture": "8.0",
       "shutterSpeed": "1/125",
+      "focalLength": "50mm",
       "mapLocation": "https://maps.app.goo.gl/DnuwCPMUcK67pDLK7",
-      "keywords": ["uk", "cannock chase", "winter", "2025"]
+      "keywords": ["uk", "cannock chase", "winter","24-70mm", "2025"]
     },
     {
       "thumb": "/images/thumbnails/woodland/thumb_Woodland Passage 01.webp",
@@ -29,8 +30,9 @@
       "iso": "1250",
       "aperture": "8.0",
       "shutterSpeed": "1/125",
+      "focalLength": "68mm",
       "mapLocation": "https://maps.app.goo.gl/DnuwCPMUcK67pDLK7",
-      "keywords": ["uk", "cannock chase", "winter", "wide angle", "2025"]
+      "keywords": ["uk", "cannock chase", "winter", "wide angle","24-70mm", "2025"]
     },
 
     {
@@ -46,8 +48,9 @@
       "iso": "1250",
       "aperture": "8.0",
       "shutterSpeed": "1/125",
+      "focalLength": "50mm",
       "mapLocation": "https://maps.app.goo.gl/DnuwCPMUcK67pDLK7",
-      "keywords": ["uk", "cannock chase", "winter", "wide angle", "2025"]
+      "keywords": ["uk", "cannock chase", "winter", "wide angle","24-70mm", "2025"]
     },
     {
       "thumb": "/images/thumbnails/woodland/thumb_Woodland Passage 03.webp",
@@ -62,8 +65,9 @@
       "iso": "1250",
       "aperture": "8.0",
       "shutterSpeed": "1/125",
+      "focalLength": "54mm",
       "mapLocation": "https://maps.app.goo.gl/DnuwCPMUcK67pDLK7",
-      "keywords": ["uk", "cannock chase", "winter", "wide angle", "2025"]
+      "keywords": ["uk", "cannock chase", "winter", "wide angle","24-70mm", "2025"]
     },
 
 
@@ -81,7 +85,7 @@
       "aperture": "8.0",
       "shutterSpeed": "1/50",
       "mapLocation": "https://maps.app.goo.gl/MBUnwMSeTUVSpCxK8",
-      "keywords": ["uk", "midlands", "winter", "wide angle", "2025"]
+      "keywords": ["uk", "midlands", "winter", "wide angle", "24-70mm","2025"]
     },
     {
       "thumb": "/images/thumbnails/woodland/thumb_Waterfall_with_a_view.webp",
@@ -96,8 +100,9 @@
       "iso": "80",
       "aperture": "10.0",
       "shutterSpeed": "1/6",
+      "focalLength": "25mm",
       "mapLocation": "https://maps.app.goo.gl/MBUnwMSeTUVSpCxK8",
-      "keywords": ["uk", "peak district", "summer", "wide angle", "2024"]
+      "keywords": ["uk", "peak district", "summer", "wide angle","24-70mm", "2024"]
     },
     {
       "thumb": "/images/thumbnails/woodland/thumb_The_Log_Walk.webp",
@@ -112,8 +117,9 @@
       "iso": "400",
       "aperture": "8.0",
       "shutterSpeed": "1/60",
+      "focalLength": "24mm",
       "mapLocation": "https://maps.app.goo.gl/rwr6LKXbPyfCpSkg9",
-      "keywords": ["uk", "devon", "summer", "wide angle", "2024"]
+      "keywords": ["uk", "devon", "summer", "wide angle","24-70mm", "2024"]
     },
     {
       "thumb": "/images/thumbnails/woodland/thumb_Down_to_the_River.webp",
@@ -128,8 +134,9 @@
       "iso": "400",
       "aperture": "8.0",
       "shutterSpeed": "1/15",
+      "focalLength": "25mm",
       "mapLocation": "https://maps.app.goo.gl/rwr6LKXbPyfCpSkg9",
-      "keywords": ["uk", "devon", "summer", "wide angle", "2024"]
+      "keywords": ["uk", "devon", "summer", "wide angle","24-70mm", "2024"]
     },
     {
       "thumb": "/images/thumbnails/woodland/thumb_Teardrop.webp",
@@ -144,8 +151,9 @@
       "iso": "6400",
       "aperture": "5.0",
       "shutterSpeed": "1/80",
+      "focalLength": "30mm",
       "mapLocation": "https://maps.app.goo.gl/S5hQgSA1id3EP8AE8",
-      "keywords": ["uk", "midlands", "focused subject", "summer", "wide angle", "2024"]
+      "keywords": ["uk", "midlands", "focused subject", "summer","24-70mm", "wide angle", "2024"]
     },
     {
       "thumb": "/images/thumbnails/woodland/thumb_Support.webp",
@@ -154,14 +162,15 @@
       "1400px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_1440/v1/Woodland/fs_Support.webp",
       "title": "Support",
       "camera": "Nikon D750",
-      "lens": "Tamron 24-70 mm F2.8 VC USD",
+      "lens": "Tokina 11-16mm F/2.8 AT-X116 PRO DXII",
       "imageDate": "02/06/2024",
       "location": "Hay Wood, Warwick",
       "iso": "6400",
       "aperture": "9.0",
       "shutterSpeed": "1/160",
+      "focalLength": "11mm",
       "mapLocation": "https://maps.app.goo.gl/9NWj47k8phr9f8n78",
-      "keywords": ["uk", "midlands", "summer", "wide angle", "2024"]
+      "keywords": ["uk", "midlands", "summer", "wide angle","11-24mm", "2024"]
     },
     {
       "thumb": "/images/thumbnails/woodland/thumb_Standing in the Sun.webp",
@@ -176,8 +185,9 @@
       "iso": "6400",
       "aperture": "16.0",
       "shutterSpeed": "1/50",
+      "focalLength": "26mm",
       "mapLocation": "https://maps.app.goo.gl/w2cPEVrQWjnGd1Vc7",
-      "keywords": ["uk", "midlands", "summer", "wide angle", "2024"]
+      "keywords": ["uk", "midlands", "summer", "wide angle","24-70mm", "2024"]
     },
     {
       "thumb": "/images/thumbnails/woodland/thumb_Sun Shining on a Silver Birch.webp",
@@ -192,8 +202,9 @@
       "iso": "1600",
       "aperture": "2.8",
       "shutterSpeed": "1/200",
+      "focalLength": "52mm",
       "mapLocation": "https://maps.app.goo.gl/bZuBfZXhnLFFK4DM8",
-      "keywords": ["uk", "midlands", "spring", "focused subject", "macro", "2024"]
+      "keywords": ["uk", "midlands", "spring", "focused subject", "macro","24-70mm", "2024"]
     }
   ]
 }

@@ -10,10 +10,10 @@
       "lens": "Nikon Nikkor Z 24-70mm f/4 S",
       "imageDate": "22/01/2025",
       "location": "Mam Tor, The Peak District",
-      "iso": "250",
+      "iso": "125",
       "aperture": "8.0",
-      "shutterSpeed": "1/1250",
-      "focalLength": "70mm",
+      "shutterSpeed": "1/500",
+      "focalLength": "24mm",
       "mapLocation": "https://maps.app.goo.gl/o7dq5gJngKF9bEHg9",
       "keywords": ["uk", "peak district", "hills", "wide angle","24-70mm", "2025"]
     },
@@ -27,10 +27,10 @@
       "lens": "Nikon Nikkor Z 24-70mm f/4 S",
       "imageDate": "22/01/2025",
       "location": "Mam Tor, The Peak District",
-      "iso": "250",
+      "iso": "1250",
       "aperture": "8.0",
-      "shutterSpeed": "1/1250",
-      "focalLength": "70mm",
+      "shutterSpeed": "1/125",
+      "focalLength": "24mm",
       "mapLocation": "https://maps.app.goo.gl/o7dq5gJngKF9bEHg9",
       "keywords": ["uk", "peak district", "hills", "wide angle", "24-70mm", "2025"]
     },
@@ -44,10 +44,10 @@
       "lens": "Tamron 70-300mm f/4.5-6.3 Di III RXD",
       "imageDate": "22/01/2025",
       "location": "Mam Tor, The Peak District",
-      "iso": "250",
+      "iso": "160",
       "aperture": "8.0",
-      "shutterSpeed": "1/1250",
-      "focalLength": "70mm",
+      "shutterSpeed": "1/320",
+      "focalLength": "125mm",
       "mapLocation": "https://maps.app.goo.gl/o7dq5gJngKF9bEHg9",
       "keywords": ["uk", "peak district", "hills", "telephoto", "70-300mm", "2025"]
     },
@@ -61,10 +61,10 @@
       "lens": "Tamron 70-300mm f/4.5-6.3 Di III RXD",
       "imageDate": "22/01/2025",
       "location": "Mam Tor, The Peak District",
-      "iso": "250",
+      "iso": "100",
       "aperture": "8.0",
-      "shutterSpeed": "1/1250",
-      "focalLength": "70mm",
+      "shutterSpeed": "1/320",
+      "focalLength": "123mm",
       "mapLocation": "https://maps.app.goo.gl/o7dq5gJngKF9bEHg9",
       "keywords": ["uk", "peak district", "hills", "telephoto", "70-300mm", "2025"]
     },
@@ -78,9 +78,9 @@
       "lens": "Tamron 70-300mm f/4.5-6.3 Di III RXD",
       "imageDate": "22/01/2025",
       "location": "Mam Tor, The Peak District",
-      "iso": "250",
+      "iso": "1250",
       "aperture": "8.0",
-      "shutterSpeed": "1/1250",
+      "shutterSpeed": "1/250",
       "focalLength": "70mm",
       "mapLocation": "https://maps.app.goo.gl/o7dq5gJngKF9bEHg9",
       "keywords": ["uk", "peak district", "hills", "telephoto", "70-300mm", "2025"],
@@ -99,6 +99,7 @@
       "iso": "100",
       "aperture": "8.0",
       "shutterSpeed": "1/2000",
+      "focalLength": "70mm",
       "mapLocation": "https://maps.app.goo.gl/xrgiDuRPbf5UMYwC9",
       "keywords": ["uk", "midlands", "hills", "wide angle","24-70mm", "2024"]
     },
@@ -115,6 +116,7 @@
       "iso": "500",
       "aperture": "8.0",
       "shutterSpeed": "1/60",
+      "focalLength": "30mm",
       "mapLocation": "https://maps.app.goo.gl/yenzTTbf5gUmWFbz8",
       "keywords": ["uk", "midlands", "atmospheric", "minimalist", "wide angle","24-70mm", "2024"]
     },
@@ -131,6 +133,7 @@
       "iso": "1250",
       "aperture": "8.0",
       "shutterSpeed": "1/30",
+      "focalLength": "49mm",
       "mapLocation": "https://maps.app.goo.gl/762oPAseXEBG4a1z7",
       "keywords": ["uk", "midlands", "atmospheric", "wide angle","24-70mm", "2024"]
     },
@@ -147,6 +150,7 @@
       "iso": "400",
       "aperture": "8.0",
       "shutterSpeed": "1/13",
+      "focalLength": "18mm",
       "mapLocation": "https://maps.app.goo.gl/AYb3pdHziwoqsNJz5",
       "keywords": ["iceland", "mountains", "hills", "wide angle", "11-24mm", "2023"]
     },
@@ -163,6 +167,7 @@
       "iso": "400",
       "aperture": "8.0",
       "shutterSpeed": "1/200",
+      "focalLength": "18mm",
       "mapLocation": "https://maps.app.goo.gl/AYb3pdHziwoqsNJz5",
       "keywords": ["iceland", "mountains", "hills", "wide angle", "11-24mm", "2023"]
     },
@@ -179,6 +184,7 @@
       "iso": "800",
       "aperture": "8.0",
       "shutterSpeed": "1/200",
+      "focalLength": "16mm",
       "mapLocation": "https://maps.app.goo.gl/KPZmmTDEJwmsd6CJA",
       "keywords": ["iceland", "mountains", "hills", "atmospheric", "wide angle","11-24mm", "2023"]
     },
@@ -195,6 +201,7 @@
       "iso": "100",
       "aperture": "8.0",
       "shutterSpeed": "1/6",
+      "focalLength": "11mm",
       "mapLocation": "https://maps.app.goo.gl/KPZmmTDEJwmsd6CJA",
       "keywords": ["iceland", "mountains", "hills", "wide angle","11-24mm", "2023"]
     },
@@ -211,6 +218,7 @@
       "iso": "800",
       "aperture": "8.0",
       "shutterSpeed": "1/125",
+      "focalLength": "14mm",
       "mapLocation": "https://maps.app.goo.gl/dFug6g8FoofHRXXR6",
       "keywords": ["iceland", "mountains", "hills", "wide angle","11-24mm", "2023"]
     },
@@ -227,6 +235,7 @@
       "iso": "200",
       "aperture": "9.0",
       "shutterSpeed": "1/250",
+      "focalLength": "15mm",
       "mapLocation": "https://maps.app.goo.gl/qmnd5eXBHvMCsGps6",
       "keywords": ["iceland", "mountains", "hills", "wide angle","11-24mm", "2023"]
     },
@@ -243,6 +252,7 @@
       "iso": "200",
       "aperture": "9.0",
       "shutterSpeed": "1/250",
+      "focalLength": "13mm",
       "mapLocation": "https://maps.app.goo.gl/MpxydhG2NKj4J3Dd8",
       "keywords": ["iceland", "mountains", "hills", "wide angle", "11-24mm","2023"]
     },
@@ -259,6 +269,7 @@
       "iso": "800",
       "aperture": "9.0",
       "shutterSpeed": "1/250",
+      "focalLength": "11mm",
       "mapLocation": "https://maps.app.goo.gl/qJHbcCZEAUf4Jyw4A",
       "keywords": ["iceland", "black & white","11-24mm", "2023"]
     },
@@ -275,6 +286,7 @@
       "iso": "800",
       "aperture": "8.0",
       "shutterSpeed": "1/2500",
+      "focalLength": "16mm",
       "mapLocation": "https://maps.app.goo.gl/HiBxvcLMmABLHmN88",
       "keywords": ["lanzarote","11-24mm", "< 2022"]
     }

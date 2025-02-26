@@ -27,6 +27,7 @@ export function PageTemplate({
   astroPalette = null,
   astroFocalLength = null,
   astroObjectType = null,
+  focalLength,
   imageDate,
 }) {
   const [searchText, setSearchText] = useState("");
@@ -313,6 +314,18 @@ export function PageTemplate({
                       selectedFilters={selectedFilters}
                     />
                   </div>
+                  {focalLength && (
+                    <div>
+                      <h4 className="text-almostDark mb-2 font-semibold dark:text-almostWhite">
+                        Focal Length
+                      </h4>
+                      <FilterTagButton
+                        filterCategory={focalLength}
+                        handleFilterClick={handleFilterClick}
+                        selectedFilters={selectedFilters}
+                      />
+                    </div>
+                  )}
                 </fieldset>
               )}
             </section>

@@ -33,6 +33,7 @@ export default function Water() {
         bgColourDark={"dark:to-blue-500/5"}
         bgColourLight={"to-almostWhite"}
         locations={["Iceland", "UK", "Midlands", "Devon", "Peak District"]}
+        focalLength={["11-24mm", "24-70mm", "70-300mm"]}
         nonAstroKeywords={["Waterfall", "River", "Wide angle", "Mountain"]}
         imageDate={["< 2022", "2023", "2024", "2025"]}
       />
