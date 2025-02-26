@@ -37,6 +37,7 @@ export function ImageInfoPanel({
           <CloseButton setIsInfoPanelOpen={setIsInfoPanelOpen} />
         </div>
         <div className={`relative flex flex-col`}>
+          {/*----------------------------ASTRO IMAGES---------------------------*/}
           {isAstroImage && (
             <div className={`lg:w-full`}>
               <h4 className={`text-blueBlack dark:text-greyBlue`}>
@@ -88,6 +89,8 @@ export function ImageInfoPanel({
               </ul>
             </div>
           )}
+          {/*----------------------------DAYTIME IMAGES---------------------------*/}
+
           {!isAstroImage && (
             <div className={`lg:w-full`}>
               <div className={`flex items-center gap-2`}>
@@ -120,6 +123,10 @@ export function ImageInfoPanel({
                 </li>
                 <li>
                   <strong>Aperture: </strong>ƒ/{imageInfo.aperture}
+                </li>
+                <li>
+                  <strong>Focal Length: </strong>
+                  {imageInfo.focalLength}
                 </li>
                 <li>
                   <strong>ISO: </strong>

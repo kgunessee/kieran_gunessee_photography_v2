@@ -6,11 +6,6 @@ import { useState } from "react";
 
 //Components
 import Header from "@/app/components/Header";
-// import {
-//   daytimeEquipmentInfo,
-//   astroEquipmentInfo,
-// } from "@/app/components/ImageInfo";
-
 import equipmentData from "../image-data/equipmentData.json";
 import { EquipmentCategory } from "@/app/components/EquipmentCategory";
 import { Footer } from "@/app/components/Footer";

@@ -15,7 +15,7 @@
       "shutterSpeed": "1/1250",
       "focalLength": "70mm",
       "mapLocation": "https://maps.app.goo.gl/o7dq5gJngKF9bEHg9",
-      "keywords": ["uk", "peak district", "hills", "wide angle", "2025"]
+      "keywords": ["uk", "peak district", "hills", "wide angle","24-70mm", "2025"]
     },
     {
       "thumb": "/images/thumbnails/landscape/thumb_Mam_Tor_Overlooking_Back_Tor.webp",
@@ -32,7 +32,7 @@
       "shutterSpeed": "1/1250",
       "focalLength": "70mm",
       "mapLocation": "https://maps.app.goo.gl/o7dq5gJngKF9bEHg9",
-      "keywords": ["uk", "peak district", "hills", "wide angle", "2025"]
+      "keywords": ["uk", "peak district", "hills", "wide angle", "24-70mm", "2025"]
     },
     {
       "thumb": "/images/thumbnails/landscape/thumb_Castleton_Fields.webp",
@@ -41,7 +41,7 @@
       "1400px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_1440/v1/Landscape/Castleton Fields 01.webp",
       "title": "Castleton Fields 01",
       "camera": "Nikon Z7II",
-      "lens": "Nikon Nikkor Z 24-70mm f/4 S",
+      "lens": "Tamron 70-300mm f/4.5-6.3 Di III RXD",
       "imageDate": "22/01/2025",
       "location": "Mam Tor, The Peak District",
       "iso": "250",
@@ -49,7 +49,7 @@
       "shutterSpeed": "1/1250",
       "focalLength": "70mm",
       "mapLocation": "https://maps.app.goo.gl/o7dq5gJngKF9bEHg9",
-      "keywords": ["uk", "peak district", "hills", "wide angle", "2025"]
+      "keywords": ["uk", "peak district", "hills", "telephoto", "70-300mm", "2025"]
     },
     {
       "thumb": "/images/thumbnails/landscape/thumb_Castleton_Fields_02.webp",
@@ -58,7 +58,7 @@
       "1400px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_1440/v1/Landscape/Castleton Fields 02.webp",
       "title": "Castleton Fields 02",
       "camera": "Nikon Z7II",
-      "lens": "Nikon Nikkor Z 24-70mm f/4 S",
+      "lens": "Tamron 70-300mm f/4.5-6.3 Di III RXD",
       "imageDate": "22/01/2025",
       "location": "Mam Tor, The Peak District",
       "iso": "250",
@@ -66,7 +66,7 @@
       "shutterSpeed": "1/1250",
       "focalLength": "70mm",
       "mapLocation": "https://maps.app.goo.gl/o7dq5gJngKF9bEHg9",
-      "keywords": ["uk", "peak district", "hills", "wide angle", "2025"]
+      "keywords": ["uk", "peak district", "hills", "telephoto", "70-300mm", "2025"]
     },
     {
       "thumb": "/images/thumbnails/landscape/thumb_Castleton_Fields_03.webp",
@@ -75,7 +75,7 @@
       "1400px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_1440/v1/Landscape/Castleton Fields 03.webp",
       "title": "Castleton Fields 03",
       "camera": "Nikon Z7II",
-      "lens": "Nikon Nikkor Z 24-70mm f/4 S",
+      "lens": "Tamron 70-300mm f/4.5-6.3 Di III RXD",
       "imageDate": "22/01/2025",
       "location": "Mam Tor, The Peak District",
       "iso": "250",
@@ -83,7 +83,7 @@
       "shutterSpeed": "1/1250",
       "focalLength": "70mm",
       "mapLocation": "https://maps.app.goo.gl/o7dq5gJngKF9bEHg9",
-      "keywords": ["uk", "peak district", "hills", "wide angle", "2025"],
+      "keywords": ["uk", "peak district", "hills", "telephoto", "70-300mm", "2025"],
       "description": "Getting up at 3:30am, driving 2 hours to Mam Tor and doing the initial climb was a bit of a slog to say the least, but the views were definitely worth it!"
     },
     {
@@ -100,7 +100,7 @@
       "aperture": "8.0",
       "shutterSpeed": "1/2000",
       "mapLocation": "https://maps.app.goo.gl/xrgiDuRPbf5UMYwC9",
-      "keywords": ["uk", "midlands", "hills", "wide angle", "2024"]
+      "keywords": ["uk", "midlands", "hills", "wide angle","24-70mm", "2024"]
     },
     {
       "thumb": "/images/thumbnails/landscape/thumb_A Foggy Morning.webp",
@@ -116,7 +116,7 @@
       "aperture": "8.0",
       "shutterSpeed": "1/60",
       "mapLocation": "https://maps.app.goo.gl/yenzTTbf5gUmWFbz8",
-      "keywords": ["uk", "midlands", "atmospheric", "minimalist", "wide angle", "2024"]
+      "keywords": ["uk", "midlands", "atmospheric", "minimalist", "wide angle","24-70mm", "2024"]
     },
     {
       "thumb": "/images/thumbnails/landscape/thumb_A Tree in Fog.webp",
@@ -132,7 +132,7 @@
       "aperture": "8.0",
       "shutterSpeed": "1/30",
       "mapLocation": "https://maps.app.goo.gl/762oPAseXEBG4a1z7",
-      "keywords": ["uk", "midlands", "atmospheric", "wide angle", "2024"]
+      "keywords": ["uk", "midlands", "atmospheric", "wide angle","24-70mm", "2024"]
     },
     {
       "thumb": "/images/thumbnails/landscape/thumb_Iceland_17.webp",
@@ -148,7 +148,7 @@
       "aperture": "8.0",
       "shutterSpeed": "1/13",
       "mapLocation": "https://maps.app.goo.gl/AYb3pdHziwoqsNJz5",
-      "keywords": ["iceland", "mountains", "hills", "wide angle", "2023"]
+      "keywords": ["iceland", "mountains", "hills", "wide angle", "11-24mm", "2023"]
     },
     {
       "thumb": "/images/thumbnails/landscape/thumb_Iceland_15.webp",
@@ -164,7 +164,7 @@
       "aperture": "8.0",
       "shutterSpeed": "1/200",
       "mapLocation": "https://maps.app.goo.gl/AYb3pdHziwoqsNJz5",
-      "keywords": ["iceland", "mountains", "hills", "wide angle", "2023"]
+      "keywords": ["iceland", "mountains", "hills", "wide angle", "11-24mm", "2023"]
     },
     {
       "thumb": "/images/thumbnails/landscape/thumb_House Opposite Kirkjufell.webp",
@@ -180,7 +180,7 @@
       "aperture": "8.0",
       "shutterSpeed": "1/200",
       "mapLocation": "https://maps.app.goo.gl/KPZmmTDEJwmsd6CJA",
-      "keywords": ["iceland", "mountains", "hills", "atmospheric", "wide angle", "2023"]
+      "keywords": ["iceland", "mountains", "hills", "atmospheric", "wide angle","11-24mm", "2023"]
     },
     {
       "thumb": "/images/thumbnails/landscape/thumb_Iceland_11.webp",
@@ -196,7 +196,7 @@
       "aperture": "8.0",
       "shutterSpeed": "1/6",
       "mapLocation": "https://maps.app.goo.gl/KPZmmTDEJwmsd6CJA",
-      "keywords": ["iceland", "mountains", "hills", "wide angle", "2023"]
+      "keywords": ["iceland", "mountains", "hills", "wide angle","11-24mm", "2023"]
     },
     {
       "thumb": "/images/thumbnails/landscape/thumb_Iceland_3.webp",
@@ -212,7 +212,7 @@
       "aperture": "8.0",
       "shutterSpeed": "1/125",
       "mapLocation": "https://maps.app.goo.gl/dFug6g8FoofHRXXR6",
-      "keywords": ["iceland", "mountains", "hills", "wide angle", "2023"]
+      "keywords": ["iceland", "mountains", "hills", "wide angle","11-24mm", "2023"]
     },
     {
       "thumb": "/images/thumbnails/landscape/thumb_The_Misty_Mountain.webp",
@@ -228,7 +228,7 @@
       "aperture": "9.0",
       "shutterSpeed": "1/250",
       "mapLocation": "https://maps.app.goo.gl/qmnd5eXBHvMCsGps6",
-      "keywords": ["iceland", "mountains", "hills", "wide angle", "2023"]
+      "keywords": ["iceland", "mountains", "hills", "wide angle","11-24mm", "2023"]
     },
     {
       "thumb": "/images/thumbnails/landscape/thumb_Road_To_The_Mountain.webp",
@@ -244,7 +244,7 @@
       "aperture": "9.0",
       "shutterSpeed": "1/250",
       "mapLocation": "https://maps.app.goo.gl/MpxydhG2NKj4J3Dd8",
-      "keywords": ["iceland", "mountains", "hills", "wide angle", "2023"]
+      "keywords": ["iceland", "mountains", "hills", "wide angle", "11-24mm","2023"]
     },
     {
       "thumb": "/images/thumbnails/landscape/thumb_Iceland_2.webp",
@@ -260,13 +260,13 @@
       "aperture": "9.0",
       "shutterSpeed": "1/250",
       "mapLocation": "https://maps.app.goo.gl/qJHbcCZEAUf4Jyw4A",
-      "keywords": ["iceland", "black & white", "2023"]
+      "keywords": ["iceland", "black & white","11-24mm", "2023"]
     },
     {
       "thumb": "/images/thumbnails/landscape/thumb_Tenerife_01.webp",
-      "fullRes": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Landscape/fs_Tenerife_01.png",
-      "2100px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_2100/v1/Landscape/fs_Tenerife_01.png",
-      "1400px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_1440/v1/Landscape/fs_Tenerife_01.png",
+      "fullRes": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Landscape/Tenerife_01.png",
+      "2100px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_2100/v1/Landscape/Tenerife_01.png",
+      "1400px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_1440/v1/Landscape/Tenerife_01.png",
       "title": "Rock formation in the Tenerife Desert",
       "camera": "Nikon D3300",
       "lens": "Tokina 11-16mm F/2.8 AT-X116 PRO DXII",
@@ -276,7 +276,7 @@
       "aperture": "8.0",
       "shutterSpeed": "1/2500",
       "mapLocation": "https://maps.app.goo.gl/HiBxvcLMmABLHmN88",
-      "keywords": ["lanzarote", "< 2022"]
+      "keywords": ["lanzarote","11-24mm", "< 2022"]
     }
   ]
 }
