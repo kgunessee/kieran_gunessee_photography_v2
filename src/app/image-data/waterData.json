@@ -13,8 +13,9 @@
       "iso": "360",
       "aperture": "11.0",
       "shutterSpeed": "0.6",
+      "focalLength": "58mm",
       "mapLocation": "https://maps.app.goo.gl/wEdz6aSv6Cwcn3Tu9",
-      "keywords": ["uk", "peak district", "summer", "2024"]
+      "keywords": ["uk", "peak district", "summer", "24-70mm", "2024"]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Meandering through.webp",
@@ -29,8 +30,16 @@
       "iso": "800",
       "aperture": "11.0",
       "shutterSpeed": "0.6",
+      "focalLength": "36mm",
       "mapLocation": "https://maps.app.goo.gl/wEdz6aSv6Cwcn3Tu9",
-      "keywords": ["uk", "peak district", "summer", "wide angle", "2024"]
+      "keywords": [
+        "uk",
+        "peak district",
+        "summer",
+        "wide angle",
+        "24-70mm",
+        "2024"
+      ]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Two Waterfalls.webp",
@@ -45,8 +54,16 @@
       "iso": "100",
       "aperture": "11.0",
       "shutterSpeed": "0.3",
+      "focalLength": "24mm",
       "mapLocation": "https://maps.app.goo.gl/wEdz6aSv6Cwcn3Tu9",
-      "keywords": ["uk", "peak district", "summer", "wide angle", "2024"]
+      "keywords": [
+        "uk",
+        "peak district",
+        "summer",
+        "wide angle",
+        "24-70mm",
+        "2024"
+      ]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Down and Under.webp",
@@ -61,8 +78,16 @@
       "iso": "100",
       "aperture": "11.0",
       "shutterSpeed": "0.3",
+      "focalLength": "24mm",
       "mapLocation": "https://maps.app.goo.gl/5NrayJFeZS3FBk7s7",
-      "keywords": ["uk", "peak district", "summer", "wide angle", "2024"]
+      "keywords": [
+        "uk",
+        "peak district",
+        "summer",
+        "wide angle",
+        "24-70mm",
+        "2024"
+      ]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Iceland_5.webp",
@@ -77,8 +102,16 @@
       "iso": "1600",
       "aperture": "8.0",
       "shutterSpeed": "2.5",
+      "focalLength": "14mm",
       "mapLocation": "https://maps.app.goo.gl/sSEebE2urW5AaWrp7",
-      "keywords": ["iceland", "waterfall", "river", "wide angle", "2023"]
+      "keywords": [
+        "iceland",
+        "waterfall",
+        "river",
+        "wide angle",
+        "24-70mm",
+        "2023"
+      ]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Iceland_7.webp",
@@ -93,8 +126,16 @@
       "iso": "3200",
       "aperture": "8.0",
       "shutterSpeed": "1.6",
+      "focalLength": "16mm",
       "mapLocation": "https://maps.app.goo.gl/sSEebE2urW5AaWrp7",
-      "keywords": ["iceland", "waterfall", "river", "wide angle", "2023"]
+      "keywords": [
+        "iceland",
+        "waterfall",
+        "river",
+        "wide angle",
+        "11-24mm",
+        "2023"
+      ]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Iceland_6.webp",
@@ -109,8 +150,16 @@
       "iso": "1600",
       "aperture": "8.0",
       "shutterSpeed": "3.0",
+      "focalLength": "16mm",
       "mapLocation": "https://maps.app.goo.gl/sSEebE2urW5AaWrp7",
-      "keywords": ["iceland", "waterfall", "river", "wide angle", "2023"]
+      "keywords": [
+        "iceland",
+        "waterfall",
+        "river",
+        "wide angle",
+        "11-24mm",
+        "2023"
+      ]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Iceland_20.webp",
@@ -125,8 +174,9 @@
       "iso": "100",
       "aperture": "8.0",
       "shutterSpeed": "1/3",
+      "focalLength": "13mm",
       "mapLocation": "https://maps.app.goo.gl/yKpovwmnafsVFspX7",
-      "keywords": ["iceland", "waterfall", "wide angle", "2023"]
+      "keywords": ["iceland", "waterfall", "wide angle", "11-24mm", "2023"]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Iceland_18.webp",
@@ -141,8 +191,16 @@
       "iso": "100",
       "aperture": "8.0",
       "shutterSpeed": "2.5",
+      "focalLength": "13mm",
       "mapLocation": "https://maps.app.goo.gl/WEHRmtvAJFA5mvbT9",
-      "keywords": ["iceland", "waterfall", "river", "wide angle", "2023"]
+      "keywords": [
+        "iceland",
+        "waterfall",
+        "river",
+        "wide angle",
+        "11-24mm",
+        "2023"
+      ]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Iceland_13.webp",
@@ -157,8 +215,9 @@
       "iso": "1600",
       "aperture": "8.0",
       "shutterSpeed": "0.5",
+      "focalLength": "18mm",
       "mapLocation": "https://maps.app.goo.gl/AYb3pdHziwoqsNJz5",
-      "keywords": ["iceland", "waterfall", "wide angle", "2023"]
+      "keywords": ["iceland", "waterfall", "wide angle", "11-24mm", "2023"]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Iceland_12.webp",
@@ -173,8 +232,16 @@
       "iso": "100",
       "aperture": "11.0",
       "shutterSpeed": "0.3",
+      "focalLength": "11mm",
       "mapLocation": "https://maps.app.goo.gl/kahiXFeGEczY8CwQ8",
-      "keywords": ["iceland", "waterfall", "mountain", "wide angle", "2023"]
+      "keywords": [
+        "iceland",
+        "waterfall",
+        "mountain",
+        "wide angle",
+        "11-24mm",
+        "2023"
+      ]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Iceland_10.webp",
@@ -183,14 +250,15 @@
       "1400px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_1440/fs_Iceland_10",
       "title": "Kerlingarfoss",
       "camera": "Nikon D3300",
-      "lens": "Tokina 11-16mm F/2.8 AT-X116 PRO DXII",
+      "lens": "Nikon AF-S DX 18-55mm VR",
       "imageDate": "04/11/2023",
       "location": "Ólafsvík, Iceland",
       "iso": "100",
       "aperture": "11.0",
       "shutterSpeed": "0.3",
+      "focalLength": "36mm",
       "mapLocation": "https://maps.app.goo.gl/kahiXFeGEczY8CwQ8",
-      "keywords": ["iceland", "waterfall", "2023"]
+      "keywords": ["iceland", "waterfall", "24-70mm", "2023"]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Iceland_9.webp",
@@ -205,8 +273,9 @@
       "iso": "800",
       "aperture": "8.0",
       "shutterSpeed": "0.5",
+      "focalLength": "13mm",
       "mapLocation": "https://maps.app.goo.gl/kahiXFeGEczY8CwQ8",
-      "keywords": ["iceland", "waterfall", "wide angle", "2023"]
+      "keywords": ["iceland", "waterfall", "wide angle", "11-24mm", "2023"]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Iceland_8.webp",
@@ -221,8 +290,9 @@
       "iso": "800",
       "aperture": "8.0",
       "shutterSpeed": "0.5",
+      "focalLength": "13mm",
       "mapLocation": "https://maps.app.goo.gl/kahiXFeGEczY8CwQ8",
-      "keywords": ["iceland", "waterfall", "wide angle", "2023"]
+      "keywords": ["iceland", "waterfall", "wide angle", "11-24mm", "2023"]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Kerlingarfoss & River.webp",
@@ -237,8 +307,9 @@
       "iso": "100",
       "aperture": "8.0",
       "shutterSpeed": "3.0",
+      "focalLength": "14mm",
       "mapLocation": "https://maps.app.goo.gl/kahiXFeGEczY8CwQ8",
-      "keywords": ["iceland", "waterfall", "wide angle", "2023"]
+      "keywords": ["iceland", "waterfall", "wide angle", "11-24mm", "2023"]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_The_first_cascade.webp",
@@ -253,8 +324,17 @@
       "iso": "100",
       "aperture": "10.0",
       "shutterSpeed": "1/6",
+      "focalLength": "26mm",
       "mapLocation": "https://maps.app.goo.gl/88rLSAy9HjvWKv2b7",
-      "keywords": ["devon", "uk", "waterfall", "river", "wide angle", "2024"]
+      "keywords": [
+        "devon",
+        "uk",
+        "waterfall",
+        "river",
+        "wide angle",
+        "24-70mm",
+        "2024"
+      ]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Looking_Upstream.webp",
@@ -269,8 +349,17 @@
       "iso": "100",
       "aperture": "10.0",
       "shutterSpeed": "1/6",
+      "focalLength": "28mm",
       "mapLocation": "https://maps.app.goo.gl/88rLSAy9HjvWKv2b7",
-      "keywords": ["devon", "uk", "waterfall", "river", "wide angle", "2024"]
+      "keywords": [
+        "devon",
+        "uk",
+        "waterfall",
+        "river",
+        "wide angle",
+        "24-70mm",
+        "2024"
+      ]
     },
     {
       "thumb": "/images/thumbnails/water/thumb_Waterfall down the valley.webp",
@@ -285,8 +374,9 @@
       "iso": "100",
       "aperture": "8.0",
       "shutterSpeed": "1/10",
+      "focalLength": "48mm",
       "mapLocation": "https://maps.app.goo.gl/HLjymusf7ePZr8qP9",
-      "keywords": ["uk", "peak district", "summer", "2024"]
+      "keywords": ["uk", "peak district", "summer", "24-70mm", "2024"]
     }
   ]
 }
