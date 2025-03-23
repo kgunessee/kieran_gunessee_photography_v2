@@ -1,6 +1,71 @@
 {
   "astroImageInfo": [
     {
+      "thumb": "/images/thumbnails/astrophotography/thumb_NGC 2043.webp",
+      "fullRes": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Astro/NGC2403",
+      "2100px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_2100/v1/Astro/NGC2403",
+      "1400px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_1440/v1/Astro/NGC2403",
+      "title": "NGC 2403",
+      "catalogue": "NGC 2403",
+      "captureDetails": {
+        "exposureTime": "180s",
+        "integration": "19.5hrs",
+        "darks": "10",
+        "flats": "10",
+        "darkFlats": "10",
+        "scope": "William Optics GT71ii",
+        "mount": "Skywatcher HEQ5 Pro",
+        "camera": "ZWO ASI 533MM Pro",
+        "filters": "Optolong LRGB",
+        "imagingCapture": "ZWO ASIAIR Plus",
+        "guidescope": "Svbony 60mm",
+        "guideCamera": "ZWO ASI 220mm Mini",
+        "software": "Affinity Photo & PixInsight",
+        "imageDate": "03/03/2025"
+      },
+      "description": "",
+      "keywords": [
+        "galaxy",
+        "broadband",
+        "lrgb",
+        "100mm - 400mm",
+        "mono",
+        "2025"
+      ]
+    },
+    {
+      "thumb": "/images/thumbnails/astrophotography/thumb_M96 & Co.webp",
+      "fullRes": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Astro/M96",
+      "2100px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_2100/v1/Astro/M96",
+      "1400px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_1440/v1/Astro/M96",
+      "title": "M96 & Co.",
+      "catalogue": "M96",
+      "captureDetails": {
+        "exposureTime": "180s",
+        "integration": "5.5hrs",
+        "darks": "10",
+        "flats": "10",
+        "darkFlats": "10",
+        "scope": "William Optics GT71ii",
+        "mount": "Skywatcher HEQ5 Pro",
+        "camera": "ZWO ASI 533MC Pro",
+        "filters": "Optolong L-Pro",
+        "imagingCapture": "ZWO ASIAIR Plus",
+        "guidescope": "Svbony 60mm",
+        "guideCamera": "ZWO ASI 220mm Mini",
+        "software": "Affinity Photo & PixInsight",
+        "imageDate": "18/03/2025"
+      },
+      "description": "",
+      "keywords": [
+        "galaxy",
+        "broadband",
+        "100mm - 400mm",
+        "osc",
+        "2025"
+      ]
+    },
+    {
       "thumb": "/images/thumbnails/astrophotography/thumb_Pacman_Nebula.webp",
       "fullRes": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Astro/pacman_nebula",
       "2100px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_2100/v1/Astro/pacman_nebula",
