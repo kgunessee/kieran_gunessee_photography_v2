@@ -108,7 +108,7 @@ srcset="${source}"
 />`;
           });
 
-          rez += `<img src="${slide.src}" alt="" />`;
+          rez += `<img src="${slide.src}" alt="${slide.alt}" />`;
 
           rez += "</picture>";
 
@@ -151,6 +151,7 @@ srcset="${source}"
             data-fancybox="gallery"
             data-media="(max-width: 800px);(max-width: 3840px)"
             data-sources={`${image["1400px"]};${image["2100px"]}`}
+            data-alt={`${image.title}`}
             // ${image["400px"]};${image["800px"]} (max-width: 1400px);
             // href={image.fullRes}
             // key={`full res image ${index}`}
@@ -166,7 +167,7 @@ srcset="${source}"
             <div className="thumbnail relative aspect-square w-full overflow-hidden">
               <Image
                 src={image.thumb}
-                alt={image.title}
+                alt={`${image.title} thumbnail`}
                 fill={true}
                 sizes="(max-width: 640px) 200px, (max-width: 768px) 350px, (max-width: 1024px) 400px, (max-width: 1280px) 500px"
                 className={`object-cover transition duration-300 hover:scale-105`}
