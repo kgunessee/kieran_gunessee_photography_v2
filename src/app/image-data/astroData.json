@@ -1,6 +1,39 @@
 {
   "astroImageInfo": [
     {
+      "thumb": "/images/thumbnails/astrophotography/thumb_M81 & M82 with IFN.webp",
+      "fullRes": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Astro/M81_M82 with IFN",
+      "2100px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_2100/v1/Astro/M81_M82 with IFN",
+      "1400px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_1440/v1/Astro/M81_M82 with IFN",
+      "title": "A Triplet in Ursa Major",
+      "catalogue": "M81 / M82 / NGC 3077",
+      "captureDetails": {
+        "exposureTime": "180s",
+        "integration": "56.2hrs",
+        "darks": "10",
+        "flats": "10",
+        "darkFlats": "10",
+        "scope": "William Optics GT71ii",
+        "mount": "Skywatcher HEQ5 Pro",
+        "camera": "ZWO ASI 533MM Pro",
+        "filters": "Optolong LRGB & Antlia Edge 4.5nm Ha",
+        "imagingCapture": "ZWO ASIAIR Plus",
+        "guidescope": "Svbony 60mm",
+        "guideCamera": "ZWO ASI 220mm Mini",
+        "software": "Affinity Photo & PixInsight",
+        "imageDate": "28/03/2025 - 08/04/2025"
+      },
+      "description": "This image is the biggest project in Astrophotography I've done so far. With an absurd run of clear nights (a week straight), I thought I'd capture something I've wanted to do for a while - the IFN in the M81 region.Because the IFN is so faint I knew I'd need a good amount of time on this, so I ended up capturing 30hrs of Luminance data alone. I also captured 10hrs of Ha, and the rest RGB.",
+      "keywords": [
+        "galaxy",
+        "broadband",
+        "lrgb",
+        "100mm - 400mm",
+        "mono",
+        "2025"
+      ]
+    },
+    {
       "thumb": "/images/thumbnails/astrophotography/thumb_NGC 2043.webp",
       "fullRes": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp/v1/Astro/NGC2403",
       "2100px": "https://res.cloudinary.com/dpnomv7av/image/upload/f_auto,q_auto,fl_awebp,w_2100/v1/Astro/NGC2403",
