@@ -44,6 +44,12 @@ export default function locations() {
               alt={"Iceland category image"}
             />
             <GalleryCategoryCard
+              category={"/norway"}
+              title={"NORWAY"}
+              imageUrl={"/images/thumbnails/water/thumb_Iceland_5.webp"}
+              alt={"Norway category image"}
+            />
+            <GalleryCategoryCard
               category={"/peak-district"}
               title={"THE PEAK DISTRICT"}
               imageUrl={"/images/thumbnails/water/thumb_Down and Under.webp"}
